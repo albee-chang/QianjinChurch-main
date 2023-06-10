@@ -91,60 +91,506 @@
       </div>
     </nav>
     <div class="header">
-      <img src="./src/assets/images/headerBg.png" alt="headerBg">
-      <div class="d-flex breadcrumb text-center justify-content-center">HOME / ABOUT</div>
+      <img src="./src/assets/images/headerBg.png" alt="headerBg" />
+      <div class="d-flex breadcrumb text-center justify-content-center">
+        HOME / ABOUT
+      </div>
     </div>
     <!-- 頁首結束 -->
     <div class="innerPageBg">
-      <img class="bg-left" src="./src/assets/images/bg-left.png" alt="bg-left">
-      <img class="bg-right" src="./src/assets/images/bg-right.png" alt="bg-right">
+      <img
+        class="bg-left"
+        src="./src/assets/images/bg-left.png"
+        alt="bg-left"
+      />
+      <img
+        class="bg-right"
+        src="./src/assets/images/bg-right.png"
+        alt="bg-right"
+      />
       <div class="container">
-        <div class="row" style="height: 945px; margin-top: 125px">
+        <div class="row" style="height: 100%; margin-top: 125px; margin-bottom: 10rem;">
           <div class="col-3" style="align-items: center">
             <div class="lsTitle">關於我們</div>
-            <div class="lsContent">教會簡介</div>
-            <div class="lsContent">願景介紹</div>
-            <div class="lsContent">環境交通</div>
-            <div class="lsContent">聚會資訊</div>
-            <div class="lsContent">奉獻資訊</div>
-            <div class="lsTitle" style="margin-top: 72px">牧師專區</div>
-            <div class="lsTitle" style="margin-top: 78px">同工專區</div>
-            <div class="lsContent">分類一</div>
+            <ul
+              class="nav mb-3 d-flex flex-column"
+              id="pills-tab"
+              role="tablist"
+              style="align-items: center"
+            >
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-link active"
+                  id="tab-churchAbout-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-churchAbout"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-churchAbout"
+                  aria-selected="true"
+                >
+                  教會簡介
+                </div>
+              </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-link"
+                  id="tab-vision-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-vision"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-vision"
+                  aria-selected="false"
+                >
+                  願景介紹
+                </div>
+              </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-link"
+                  id="tab-traffic-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-traffic"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-traffic"
+                  aria-selected="false"
+                >
+                  環境交通
+                </div>
+              </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-link"
+                  id="tab-reunionInfo-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-reunionInfo"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-reunionInfo"
+                  aria-selected="false"
+                >
+                  聚會資訊
+                </div>
+              </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-link"
+                  id="tab-dedicationInfo-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-dedicationInfo"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-dedicationInfo"
+                  aria-selected="false"
+                >
+                  奉獻資訊
+                </div>
+              </li>
+              <li class="lsTitle" style="margin-top: 72px" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-priestArea-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-priestArea"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-priestArea"
+                  aria-selected="false"
+                >
+                  牧師專區
+                </div>
+              </li>
+              <li class="lsTitle" style="margin-top: 78px" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-coworkers-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-coworkers"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-coworkers"
+                  aria-selected="false"
+                >
+                  同工專區
+                </div>
+              </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-coworkers1-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-coworkers1"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-coworkers1"
+                  aria-selected="false"
+                >
+                  分類一
+                </div>
+              </li>
+            </ul>
             <div class="lsContent">分類二</div>
             <div class="lsContent">分類三</div>
           </div>
           <div class="col-8">
-            <div class="topicTitle">/&ensp;教會簡介&ensp;/</div>
-            <div
-              style="
-                background-image: url('./src/assets/images/church_info.png');
-                width: 100%;
-                height: 435px;
-                margin-bottom: 35px;
-              "
-            ></div>
-            <p>
-              台灣基督長老教會是普世基督教會及改革宗教會大家庭的一份子。它的歷史根源可
-              以上溯至
-              1865年英國長老教會宣教師馬雅各醫生來台在南部及1872年加拿大長老
-              教會宣教師馬偕牧師在北部所開展的宣教工作。1912
-              年宣教師成立台灣大會，讓
-              屬不同母會的南北大會可以共同討論事工。1951
-              年召開會議議決成立今之台灣基 督長老教會總會。
-            </p>
-            <p>
-              在無數宣教師的熱心事奉及本地傳道人與信徒的積極參與下，長老教會通過醫療、
-              傳道、教育、社會服務等方式，一步步在全台灣各地立下教會的根基，並藉著小會
-              、中會/族群區會、總會的設立，逐漸走向組織化、自主化的階段。
-              我教會經歷過滿清、日本、國民黨政權等不同外來政權的統治，仍以「焚而不燬」
-              的精神見證著基督的主權。我們曾經面對過滿清時期的宣教困境及迫害，日治時代
-              的皇民化運動和政教糾葛，以及國民黨政權時期的二二八事件、白色恐怖、美麗島
-              事件等政治慘案。
-            </p>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="tab-churchAbout"
+                role="tabpanel"
+                aria-labelledby="tab-churchAbout-tab"
+              >
+                <div class="topicTitle">/&ensp;教會簡介&ensp;/</div>
+                <div
+                  style="
+                    background-image: url('./src/assets/images/church_info.png');
+                    width: 100%;
+                    height: 435px;
+                    margin-bottom: 35px;
+                  "
+                ></div>
+                <p>
+                  台灣基督長老教會是普世基督教會及改革宗教會大家庭的一份子。它的歷史根源可
+                  以上溯至
+                  1865年英國長老教會宣教師馬雅各醫生來台在南部及1872年加拿大長老
+                  教會宣教師馬偕牧師在北部所開展的宣教工作。1912
+                  年宣教師成立台灣大會，讓
+                  屬不同母會的南北大會可以共同討論事工。1951
+                  年召開會議議決成立今之台灣基 督長老教會總會。
+                </p>
+                <p>
+                  在無數宣教師的熱心事奉及本地傳道人與信徒的積極參與下，長老教會通過醫療、
+                  傳道、教育、社會服務等方式，一步步在全台灣各地立下教會的根基，並藉著小會
+                  、中會/族群區會、總會的設立，逐漸走向組織化、自主化的階段。
+                  我教會經歷過滿清、日本、國民黨政權等不同外來政權的統治，仍以「焚而不燬」
+                  的精神見證著基督的主權。我們曾經面對過滿清時期的宣教困境及迫害，日治時代
+                  的皇民化運動和政教糾葛，以及國民黨政權時期的二二八事件、白色恐怖、美麗島
+                  事件等政治慘案。
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-vision"
+                role="tabpanel"
+                aria-labelledby="tab-vision-tab"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="tab-churchAbout"
+                  role="tabpanel"
+                  aria-labelledby="tab-churchAbout-tab"
+                >
+                  <div class="topicTitle">/&ensp;願景介紹&ensp;/</div>
+                  <div
+                    style="
+                      background-image: url('./src/assets/images/church_info.png');
+                      width: 100%;
+                      height: 435px;
+                      margin-bottom: 35px;
+                    "
+                  ></div>
+                  <p>願景介紹</p>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-traffic"
+                role="tabpanel"
+                aria-labelledby="tab-traffic-tab"
+              >
+                <div class="topicTitle">/&ensp;環境交通&ensp;/</div>
+                <div
+                  style="
+                    background-image: url('./src/assets/images/church_info.png');
+                    width: 100%;
+                    height: 435px;
+                    margin-bottom: 35px;
+                  "
+                ></div>
+                <p>環境交通</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-reunionInfo"
+                role="tabpanel"
+                aria-labelledby="tab-reunionInfo-tab"
+              >
+                <div class="topicTitle">/&ensp;聚會資訊&ensp;/</div>
+                <div
+                  style="
+                    background-image: url('./src/assets/images/church_info.png');
+                    width: 100%;
+                    height: 435px;
+                    margin-bottom: 35px;
+                  "
+                ></div>
+                <p>聚會資訊</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-dedicationInfo"
+                role="tabpanel"
+                aria-labelledby="tab-dedicationInfo-tab"
+              >
+                <div class="topicTitle">/&ensp;奉獻資訊&ensp;/</div>
+                <div
+                  style="
+                    background-image: url('./src/assets/images/church_info.png');
+                    width: 100%;
+                    height: 435px;
+                    margin-bottom: 35px;
+                  "
+                ></div>
+                <p>奉獻資訊</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-priestArea"
+                role="tabpanel"
+                aria-labelledby="tab-priestArea-tab"
+              >
+                <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
+                <div class="priestInfo d-flex">
+                  <div
+                    style="
+                      background-image: url('./src/assets/images/father-james.png');
+                      width: 50%;
+                      height: 435px;
+                      margin-bottom: 35px;
+                    "
+                  ></div>
+                  <div class="descript">
+                    <p class="p-color">
+                      牧師姓名&ensp;/&ensp;<span style="color: black"
+                        >Andy</span
+                      >
+                    </p>
+                    <p class="p-color">基本介紹&ensp;/</p>
+                    <p>德生教會主任牧師</p>
+                    <p>信義基督教醫院家醫科醫師</p>
+                    <p>德生教會主任牧師</p>
+                    <p>信義基督教醫院家醫科醫師</p>
+                  </div>
+                </div>
+                <p>
+                  近年台灣教會界有許多不同的方向：<br />
+                  有的注重聖經研讀和神學，有的注重聖靈充滿和恩賜；有的注重保持優良傳統，有的注重改革與
+                  更新；有的注重傳揚福音搶救靈魂，有的注重生活實踐社會關懷；有的注重訓練門徒，有的注重
+                  牧養關顧；有的注重關懷資深長輩和成人，有的注重帶領年輕人和兒童。但我常在思考，在上帝
+                  的心意裡面，這些方向其實不一定互相排斥，反而是可以相輔相成：教會需要聖經，也需要聖靈
+                  ；教會需要傳承優良的傳統，也需要改革不斷進步；教會需要傳福音，也需要關懷社會；教會需
+                  要訓練耶穌的門徒，也需要牧養關顧有需要的人；教會不應該忽略資深長輩和成人，也不應該忽
+                  略年輕人和兒童。教會應該鼓勵不同恩賜和方向好好照上帝心意發展，並且也互相接納、彼此成
+                  全。
+                </p>
+
+                <div class="move_link">
+                  <div class="move_word">BACK</div>
+                  <div>
+                    <a href="./about.html"
+                      ><img src="./src/assets/images/back_link.png"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-coworkers"
+                role="tabpanel"
+                aria-labelledby="tab-coworkers-tab"
+              >
+                <div class="contentTitle">/&ensp;同工專區&ensp;/</div>
+                <div class="priestInfo d-flex flex-wrap">
+                  <div class="met_photo">
+                    <img src="./src/assets/images/darius.png" />
+                  </div>
+                  <div class="metDescript">
+                    <div class="field_title">姓&ensp;名</div>
+                    <p>Emily</p>
+                    <br />
+                    <div class="field_title">服事經歷</div>
+                    <p>台南中會佳里教會傳道師</p>
+                    <p>教育牧師</p>
+                    <p>新竹科學園區聯華電子助理工程師</p>
+                  </div>
+                </div>
+                <br />
+                <div class="field_title">負責事工</div>
+                <div style="padding: 20px">
+                  <p>
+                    原住民宣教委員會(傳道事工：原住民都市宣教夥伴方案、原住民小型教會方案、原宣
+                    普世)、中會/族群區會總幹事聯繫(原住民)、教會法規委員會、總委會事工小組
+                    ( 緊急
+                    處理小組、原住民教會募款小組、原住民族母語聖經翻譯審譯小組、長榮大學善處小
+                    組、宜灣教會產權糾紛善處小組)、台灣普世論壇(TEF)、台灣教會合作協會(NCCT)。
+                  </p>
+
+                  <p>
+                    傳道委員會、國外宣教師差派關懷、國外台灣人教會關懷、教會一覽表、21世紀新台
+                    灣宣教運動、總委會事工小組(教會音樂專職事奉的養成、聘任和薪資制度研議小組)。
+                  </p>
+                </div>
+                <div class="move_link">
+                  <div class="move_word">BACK</div>
+                  <div>
+                    <a href="./about.html"
+                      ><img src="./src/assets/images/back_link.png"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-coworkers1"
+                role="tabpanel"
+                aria-labelledby="tab-coworkers1-tab"
+              >
+                <div class="contentTitle">/&ensp;同工專區&ensp;/</div>
+
+                <div class="item_conainer d-flex flex-wrap">
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Emily.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Emily</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Rose.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Rose</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Nick.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Nick</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Nick.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Nick</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Rose2.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Rose</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Albe.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Albe</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Rose.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Rose</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Rose.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Rose</div>
+                  </div>
+
+                  <div class="workmetlist_item">
+                    <div
+                      class="fig"
+                      style="
+                        background-image: url('/src/assets/images/Albe.png');
+                      "
+                    ></div>
+                    <div class="circle"></div>
+                    <a href="./about.html">
+                      <div class="inner"></div>
+                    </a>
+                    <div class="topic">Albe</div>
+                  </div>
+
+                </div>
+                <div class="pagging">
+                  <div class="paging_word current_page">
+                    <a href="./about.html">1</a>
+                  </div>
+                  <div class="paging_word"><a href="./about.html">2</a></div>
+                  <div class="paging_word"><a href="./about.html">3</a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- footer start -->
     <footer class="text-white text-center pt-1 footerText">
       2023 © 前金長老教會 Designed By 耘想科技網頁設計

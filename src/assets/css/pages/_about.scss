@@ -43,3 +43,121 @@
     font-size: 14px;
   }
 }
+
+.tab-link {
+  color: #7a7a7a;
+  font-weight: bold;
+  font-size: 16px;
+  .active {
+    color: #67c0c8;
+  }
+  &:hover {
+    color: #67c0c8;
+    border: none;
+  }
+}
+
+// 牧師專區
+.descript {
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+.descript .p-color {
+  color: #64c2c9;
+}
+// 牧師專區結束
+
+// 同工專區
+.metDescript {
+  width: 50%;
+  margin-top: 53px;
+  margin-left: 20px;
+}
+
+.descript .p-color {
+  color: #64c2c9;
+}
+.met_photo {
+  width: 285px;
+  height: 337px;
+  margin-bottom: 35px;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.field_title {
+  width: 95%;
+  border-bottom: solid 3px #ffe66f;
+  color: #67c0c8;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+// 同工專區結束
+
+//同工專區分類內頁
+.workmetlist_item {
+  width: 250px;
+  height: 345px;
+  border-radius: 125px;
+  margin-bottom: 35px;
+  border: 1px #64c2c9 solid;
+  position: relative;
+  align-items: center;
+
+  &:hover {
+    background-color: #64c2c9;
+    color: white;
+  }
+
+  .fig {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 165px;
+    height: 197px;
+  }
+  .context {
+    margin-top: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    h5 {
+      font-weight: bolder;
+    }
+  }
+  .circle {
+    position: absolute;
+    top: 319px;
+    left: 103px;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .inner {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 320px;
+    left: 105px;
+    margin-right: 6px;
+    background-image: url("/src/assets/images/right_arrow.png");
+    &:hover {
+      background-image: url("/src/assets/images/right_arrow_hover.png");
+    }
+  }
+
+  .topic {
+    font-weight: bolder;
+    margin-top: 282px;
+    text-align: center;
+  }
+}
+//同工專區分類內頁結束
