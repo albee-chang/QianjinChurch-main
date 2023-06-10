@@ -166,9 +166,11 @@ p {
 }
 
 abbr[title] {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   cursor: help;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 address {
@@ -1996,7 +1998,9 @@ progress {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2021,6 +2025,10 @@ progress {
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
 }
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -2032,7 +2040,8 @@ progress {
 .form-control::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
-  margin-inline-end: 0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
   color: #212529;
   background-color: #e9ecef;
   pointer-events: none;
@@ -2080,7 +2089,8 @@ progress {
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
-  margin-inline-end: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
 }
 
 .form-control-lg {
@@ -2092,7 +2102,8 @@ progress {
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
   margin: -0.5rem -1rem;
-  margin-inline-end: 1rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
 }
 
 textarea.form-control {
@@ -2144,7 +2155,9 @@ textarea.form-control-lg {
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-select {
@@ -2216,8 +2229,11 @@ textarea.form-control-lg {
   background-position: center;
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  appearance: none;
-  print-color-adjust: exact;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -2311,7 +2327,9 @@ textarea.form-control-lg {
   height: 1.5rem;
   padding: 0;
   background-color: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .form-range:focus {
   outline: 0;
@@ -2332,11 +2350,14 @@ textarea.form-control-lg {
   background-color: #64c2c9;
   border: 0;
   border-radius: 1rem;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-webkit-slider-thumb {
+    -webkit-transition: none;
     transition: none;
   }
 }
@@ -2358,11 +2379,14 @@ textarea.form-control-lg {
   background-color: #64c2c9;
   border: 0;
   border-radius: 1rem;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-moz-range-thumb {
+    -moz-transition: none;
     transition: none;
   }
 }
@@ -2422,9 +2446,16 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
+.form-floating > .form-control::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
+  color: transparent;
+}
 .form-floating > .form-control::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
 }
 .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
@@ -2440,6 +2471,10 @@ textarea.form-control-lg {
 .form-floating > .form-select {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
@@ -2754,7 +2789,9 @@ textarea.form-control-lg {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
@@ -5114,7 +5151,9 @@ textarea.form-control-lg {
 }
 .btn-close:disabled, .btn-close.disabled {
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   opacity: 0.25;
 }
 
@@ -5160,6 +5199,7 @@ textarea.form-control-lg {
   --bs-toast-zindex: 1090;
   position: absolute;
   z-index: var(--bs-toast-zindex);
+  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   pointer-events: none;
@@ -6591,14 +6631,17 @@ textarea.form-control-lg {
   }
 }
 .placeholder-wave {
-  mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-  mask-size: 200% 100%;
+  -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+          mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  -webkit-mask-size: 200% 100%;
+          mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
 }
 
 @keyframes placeholder-wave {
   100% {
-    mask-position: -200% 0%;
+    -webkit-mask-position: -200% 0%;
+            mask-position: -200% 0%;
   }
 }
 .clearfix::after {
@@ -8166,15 +8209,21 @@ textarea.form-control-lg {
 }
 
 .user-select-all {
-  user-select: all !important;
+  -webkit-user-select: all !important;
+     -moz-user-select: all !important;
+          user-select: all !important;
 }
 
 .user-select-auto {
-  user-select: auto !important;
+  -webkit-user-select: auto !important;
+     -moz-user-select: auto !important;
+          user-select: auto !important;
 }
 
 .user-select-none {
-  user-select: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
 }
 
 .pe-none {
@@ -10798,7 +10847,8 @@ nav a {
 .aboutImg img {
   padding: 20px;
   width: 570px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about {
@@ -10940,7 +10990,8 @@ nav a {
 .newsLink img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .newsText {
@@ -10968,7 +11019,8 @@ nav a {
 .online img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 1.5rem;
 }
 
@@ -10978,7 +11030,8 @@ nav a {
 .onlineCourse div img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 1.5rem;
 }
 .onlineCourse div img:hover {
@@ -11027,7 +11080,8 @@ nav a {
   padding-top: 10%;
   width: 600px;
   height: 800px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .linkBtn {
@@ -11135,7 +11189,8 @@ footer .footerText {
 
 .header img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -3;
 }
 .header .breadcrumb {
@@ -11609,6 +11664,177 @@ footer .footerText {
   border-color: #5db1b8;
 }
 
+.annouceinnerItem .outside_border {
+  width: 100%;
+  height: 470px;
+  position: relative;
+}
+.annouceinnerItem .outside_border .news_picture {
+  height: 447px;
+  margin: 15px;
+  margin-left: 5px;
+  background-size: cover;
+}
+.annouceinnerItem .outside_border .news_picture div {
+  z-index: 2;
+  background-image: url("/src/assets/images/3star.png");
+}
+.annouceinnerItem .outside_border .news_picture img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.annouceinnerItem .outside_border .title_tag {
+  text-align: center;
+  display: inline-table;
+  padding-top: 10px;
+  position: absolute;
+  left: 20px;
+  letter-spacing: 0.2em;
+  color: #359ea6;
+  width: 100px;
+  height: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #ffe87a;
+}
+.annouceinnerItem .outside_border .title_tag span {
+  font-size: 0.1em;
+}
+.annouceinnerItem h5, .annouceinnerItem .h5 {
+  margin-top: 30px;
+  color: #359ea6;
+  margin-bottom: 10px;
+}
+
+.heartbutton {
+  margin-top: 52px;
+  color: #359ea6;
+  vertical-align: bottom;
+}
+.heartbutton span {
+  margin: auto;
+}
+
+.active_title {
+  border-bottom: 3px solid #ffe87a;
+  margin-top: 60px;
+}
+.active_title h5, .active_title .h5 {
+  font-weight: bolder;
+  color: #359ea6;
+}
+
+.avtive_photo {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  height: 430px;
+}
+.avtive_photo div {
+  width: 190px;
+  height: 190px;
+}
+.avtive_photo div img {
+  max-width: 200px;
+}
+
+.announce_item {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+.announce_item .news_descript {
+  width: 43%;
+  height: 280px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.announce_item .news_descript .title_tag {
+  text-align: center;
+  display: inline-table;
+  padding-top: 10px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  letter-spacing: 0.2em;
+  color: #359ea6;
+  width: 100px;
+  height: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #ffe87a;
+}
+.announce_item .news_descript .title_tag span {
+  font-size: 0.1em;
+}
+.announce_item .news_descript h5, .announce_item .news_descript .h5 {
+  color: #359ea6;
+  margin-bottom: 35px;
+}
+.announce_item .news_descript .move_link {
+  margin-top: 0px;
+}
+.announce_item .outside_border_reverse {
+  width: 49%;
+  height: 280px;
+  position: relative;
+}
+.announce_item .outside_border_reverse .news_picture {
+  background-image: url("/src/assets/images/news_1.png");
+  height: 250px;
+  margin: 15px;
+}
+.announce_item .outside_border_reverse .news_picture div {
+  z-index: 2;
+  background-image: url("/src/assets/images/3star.png");
+}
+.announce_item .outside_border_reverse .news_picture img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.announce_item .inner {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 225px;
+  left: 178px;
+  margin-right: 6px;
+  background-image: url("/src/assets/images/right_arrow.png");
+}
+.announce_item .inner:hover {
+  background-image: url("/src/assets/images/right_arrow_hover.png");
+}
+.announce_item .topic {
+  font-weight: bolder;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.carte {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.carte ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0;
+  padding: 15px;
+}
+.carte .title {
+  background-color: rgba(245, 229, 150, 0.8);
+}
+.carte .context {
+  margin: 0px;
+  background-color: rgba(225, 215, 202, 0.8);
+}
+
+.pulldown {
+  color: #5db1b8;
+  border-color: #5db1b8;
+}
+
 * {
   font-family: "Barlow", sans-serif;
   font-family: "Josefin Sans", sans-serif;
@@ -11617,9 +11843,7 @@ footer .footerText {
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -11672,7 +11896,8 @@ a {
 }
 .logo img {
   max-width: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nav-link {
@@ -11747,6 +11972,7 @@ a {
 
 .pagging {
   margin-top: 80px;
+  margin-bottom: 80px;
   float: right;
 }
 .pagging .paging_word {

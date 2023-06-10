@@ -16,6 +16,7 @@
 @import "./pages/registerterms";
 @import "./pages/bless";
 @import "./pages/newannounce";
+@import "./pages/announceinner";
 
 * {
   font-family: "Barlow", sans-serif;
@@ -145,6 +146,7 @@ a {
 
 .pagging{
   margin-top: 80px;
+  margin-bottom: 80px;
   float:right;
   .paging_word{
     margin-right: 5px;
