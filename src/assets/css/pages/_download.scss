@@ -1,0 +1,58 @@
+
+.dlContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+ 
+  div{
+    
+    margin-left: 30px;
+    margin-right: 22px;
+  }
+}
+
+.chain{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button{
+    width: 90px;
+    height: 30px;
+    background-image: url('/src/assets/images/chain.png');
+    border: 0px;
+   
+  }
+}
+
+.down_arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button{
+    width: 90px;
+    height: 30px;
+    background-image: url('/src/assets/images/down_arrow.png');
+    border: 0px;
+  }
+}
+
+.first_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  div{
+    margin-left: 30px;
+    margin-right: 22px;
+  }
+  color: #64c2c9;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+
+.current_page{
+  background-image: url('/src/assets/images/paging.png');
+}

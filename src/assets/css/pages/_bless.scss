@@ -1,0 +1,96 @@
+.bless_item{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 35px;
+  position: relative;
+
+  .duel_content{  
+    width: 100%;
+    height: 494px;
+  }
+  
+  .fig{
+    width: 100%;
+    height: 334px;
+    margin-bottom: 10px;
+  }
+  h2{
+    margin-left: 15px;
+    margin-bottom: 0px;
+    color: #538f93;
+    font-weight: bolder;
+  }
+
+  .context{
+    margin-top: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+    h5{
+      font-weight: bolder;
+    }
+  }
+  .circle{
+    position: absolute;
+    top:223px;
+    left:176px;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .inner{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:225px;
+    left:178px;
+    margin-right: 6px;
+    background-image: url('/src/assets/images/right_arrow.png');
+    &:hover{
+      background-image: url('/src/assets/images/right_arrow_hover.png');
+    }
+  }
+
+  .topic{
+    font-weight: bolder;
+    margin-top: 45px;
+    text-align: center;
+  }
+
+}
+
+
+.map_link{
+  margin-left: 17px;
+  .move_word{
+    color: #64c2c9;
+    vertical-align: bottom;
+  }
+  div{
+    display: inline-block;
+    
+  }
+}
+
+.carte{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  ul{
+    list-style: none;
+    margin: 0px;
+    padding-left: 0; 
+    padding:15px; 
+  }
+  .title{
+    background-color: rgba($color: #f5e596, $alpha: 0.8);
+    
+  }
+  .context{
+    margin: 0px;
+    background-color: rgba($color: #e1d7ca, $alpha: 0.8);
+    
+  }
+
+}

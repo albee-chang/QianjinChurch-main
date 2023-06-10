@@ -1,0 +1,50 @@
+.life_item{
+  width: 394px;
+  height: 310px;
+  margin-bottom: 35px;
+  position: relative;
+  .fig{
+    width: 100%;
+    height: 238px;
+  }
+  .context{
+    margin-top: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+    h5{
+      font-weight: bolder;
+    }
+  }
+  .circle{
+    position: absolute;
+    top:223px;
+    left:176px;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .inner{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:225px;
+    left:178px;
+    margin-right: 6px;
+    background-image: url('/src/assets/images/right_arrow.png');
+    &:hover{
+      background-image: url('/src/assets/images/right_arrow_hover.png');
+    }
+  }
+
+  .topic{
+    font-weight: bolder;
+    margin-top: 45px;
+    text-align: center;
+  }
+
+}
+
+
+

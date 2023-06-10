@@ -1,0 +1,278 @@
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.2rem;
+  margin: 16px 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.aboutImg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  overflow: hidden;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 355px;
+  padding-left: 5%;
+  img {
+    padding: 20px;
+    width: 570px;
+    object-fit: cover;
+  }
+}
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: url("../images/aboutBgImg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 100%;
+  margin: 0 auto;
+  z-index: -999;
+  .aboutBgColors1 {
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    background-color: $secondary;
+    width: 300px;
+    height: 380px;
+    z-index: -1;
+  }
+  .aboutBgColors2 {
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    background-color: $primary;
+    width: 780px;
+    height: 380px;
+    z-index: -2;
+  }
+  .about1 {
+    position: absolute;
+    color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 140px;
+    margin-left: 30%;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-left: 5rem;
+      transition: all 0.2s ease-in-out;
+    }
+    .aboutContent {
+      color: white;
+      margin-top: 2rem;
+      margin-left: 8rem;
+    }
+  }
+  .about2 {
+    position: absolute;
+    color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 140px;
+    margin-left: 53%;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-left: 5rem;
+      transition: all 0.2s ease-in-out;
+    }
+    .aboutContent {
+      color: white;
+      margin-top: 2rem;
+      margin-left: 8rem;
+    }
+  }
+  .moreBtn {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+  }
+}
+
+.newsDivide {
+  width: 100%;
+  border: 4px solid $secondary;
+  opacity: 1;
+}
+
+.newsLink {
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.newsText {
+  border-top: 3px solid #4f4a45;
+  border-bottom: 3px solid #4f4a45;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 10% 1rem 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.online {
+  background-image: url("../images/onlineBgImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: end;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 7rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.5rem;
+  }
+}
+.onlineCourse div {
+  margin-bottom: 6rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.5rem;
+  }
+  img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    z-index: -999;
+  }
+}
+.onlineDescription {
+  width: 45%;
+  margin-left: 50%;
+}
+.onlineCourseTitle {
+  margin-top: 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.reunion {
+  background-image: url("../images/reunionBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 1600px;
+  margin: 0 auto;
+  .reunionTitleEn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-top: 12rem;
+    .reunionTitle {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+  .reunionImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 10%;
+    width: 600px;
+    height: 800px;
+    object-fit: cover;
+  }
+}
+.linkBtn {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 2px solid #ffffff;
+  border-radius: 50% 50% 0% 50%;
+  background-color: #64c2c9;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  z-index: 999;
+  margin-top: -12%;
+  margin-left: 85%;
+  &:hover {
+    background-color: #ffe66f;
+    color: #64c2c9;
+    border: 2px solid #ffffff;
+  }
+}
+.aboutLinkBtn {
+  position: relative;
+  display: inline-block;
+  padding: 2px 8px;
+  border: 2px solid #ffffff;
+  border-radius: 50% 50% 0% 50%;
+  background-color: #64c2c9;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: -3%;
+  margin-left: 81%;
+  &:hover {
+    background-color: #ffe66f;
+    color: #64c2c9;
+    border: 2px solid #ffffff;
+  }
+}
+
+.newsImg {
+  position: relative;
+}
+.newsTitleNum {
+  position: absolute;
+  top: 2%;
+  left: 50px;
+  font-size: 124px;
+  color: #9c9c9c;
+}
+
+footer {
+  background-color: #64c2c9;
+  width: 100%;
+  height: 30px;
+  .footerText {
+    font-family: sans-serif;
+  }
+}
+
+.footerInfoLink div{
+  color: #9a8162;
+  font-size: 16px;
+  font-weight: bold;
+  a {
+    color: #9a8162;
+
+    &:hover {
+      color: #64c2c9;
+    }
+  }
+}

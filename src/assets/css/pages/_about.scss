@@ -1,0 +1,45 @@
+.topicTitle {
+  width: 435px;
+  height: 43px;
+  background-color: #64c2c9;
+  padding: 13px;
+  padding-left: 20px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.lsTitle {
+  text-align: center;
+  width: 145px;
+  height: 30px;
+  border-bottom: solid 5px #fee66e;
+  margin: auto;
+  color: #67c0c8;
+  font-weight: bold;
+}
+
+.lsContent {
+  text-align: center;
+  margin: auto;
+  width: 120px;
+  height: 30px;
+  color: #7a7a7a;
+  font-weight: bold;
+  margin-top: 20px;
+  border-bottom: solid 1px #7a7a7a;
+  padding-bottom: 0px;
+}
+
+.header {
+  img {
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+  }
+  .breadcrumb {
+    margin-top: -50px;
+    color: #67c0c8;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
