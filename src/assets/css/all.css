@@ -11835,6 +11835,141 @@ footer .footerText {
   border-color: #5db1b8;
 }
 
+.priest_item {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.priest_item .priest_descript {
+  width: 60%;
+  border-bottom: 1px solid #a6a4a4;
+  margin-left: 30px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-left: px;
+  height: 230px;
+}
+.priest_item .priest_descript .title_tag {
+  text-align: center;
+  display: inline-table;
+  padding-top: 10px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  letter-spacing: 0.2em;
+  color: #359ea6;
+  width: 100px;
+  height: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #ffe87a;
+}
+.priest_item .priest_descript .title_tag span {
+  font-size: 0.1em;
+}
+.priest_item .priest_descript h5, .priest_item .priest_descript .h5 {
+  color: #359ea6;
+  margin-bottom: 10px;
+}
+.priest_item .priest_descript h5 span, .priest_item .priest_descript .h5 span {
+  font-weight: normal;
+  color: #000000;
+}
+.priest_item .priest_descript ul, .priest_item .priest_descript li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bolder;
+}
+.priest_item .priest_descript .move_link {
+  margin-top: 0px;
+}
+.priest_item .priest_descript .move_link .move_word {
+  color: #64c2c9;
+  vertical-align: bottom;
+}
+.priest_item .outside_border {
+  width: 35%;
+  height: 280px;
+}
+.priest_item .outside_border .priest_picture {
+  border-radius: 100%;
+  height: 260px;
+  width: 260px;
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.priest_item .outside_border .priest_picture:hover {
+  box-shadow: 3px 3px 12px gray;
+  padding: 3px;
+}
+.priest_item .outside_border .priest_picture div {
+  z-index: 2;
+  background-image: url("/src/assets/images/3star.png");
+}
+.priest_item .outside_border_reverse {
+  width: 49%;
+  height: 280px;
+  position: relative;
+}
+.priest_item .outside_border_reverse .news_picture {
+  background-image: url("/src/assets/images/news_1.png");
+  height: 250px;
+  margin: 15px;
+}
+.priest_item .outside_border_reverse .news_picture div {
+  z-index: 2;
+  background-image: url("/src/assets/images/3star.png");
+}
+.priest_item .outside_border_reverse .news_picture img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.priest_item .inner {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 225px;
+  left: 178px;
+  margin-right: 6px;
+  background-image: url("/src/assets/images/right_arrow.png");
+}
+.priest_item .inner:hover {
+  background-image: url("/src/assets/images/right_arrow_hover.png");
+}
+.priest_item .topic {
+  font-weight: bolder;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.carte {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.carte ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0;
+  padding: 15px;
+}
+.carte .title {
+  background-color: rgba(245, 229, 150, 0.8);
+}
+.carte .context {
+  margin: 0px;
+  background-color: rgba(225, 215, 202, 0.8);
+}
+
+.pulldown {
+  color: #5db1b8;
+  border-color: #5db1b8;
+}
+
 * {
   font-family: "Barlow", sans-serif;
   font-family: "Josefin Sans", sans-serif;

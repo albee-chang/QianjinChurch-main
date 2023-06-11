@@ -17,7 +17,7 @@
 @import "./pages/bless";
 @import "./pages/newannounce";
 @import "./pages/announceinner";
-
+@import "./pages/priestlist";
 * {
   font-family: "Barlow", sans-serif;
   font-family: "Josefin Sans", sans-serif;
@@ -182,7 +182,6 @@ a {
     vertical-align: bottom;
   }
   div{
-    display: inline-block;
-    
+    display: inline-block; 
   }
 }
