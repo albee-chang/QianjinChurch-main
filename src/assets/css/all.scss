@@ -84,7 +84,16 @@ a {
 .nav-link:hover {
   border-bottom: 3px solid #ffe66f;
   border-left: 2px solid #ffe66f;
-  padding-left: 0.3rem;
+  padding-left: 0.7rem;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -10%;
+    border: 1px solid #ffe66f;
+    width: 18px;
+  }
 }
 .navTitleEn {
   font-size: 0.8rem;

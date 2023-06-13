@@ -109,7 +109,10 @@
         alt="bg-right"
       />
       <div class="container">
-        <div class="row" style="height: 100%; margin-top: 125px; margin-bottom: 10rem;">
+        <div
+          class="row"
+          style="height: 100%; margin-top: 125px; margin-bottom: 10rem"
+        >
           <div class="col-3" style="align-items: center">
             <div class="lsTitle">關於我們</div>
             <ul
@@ -230,9 +233,36 @@
                   分類一
                 </div>
               </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-coworkers2-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-coworkers2"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-coworkers2"
+                  aria-selected="false"
+                >
+                  分類二
+                </div>
+              </li>
+
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-coworkers3-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-coworkers3"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-coworkers3"
+                  aria-selected="false"
+                >
+                  分類三
+                </div>
+              </li>
             </ul>
-            <div class="lsContent">分類二</div>
-            <div class="lsContent">分類三</div>
           </div>
           <div class="col-8">
             <div class="tab-content" id="pills-tabContent">
@@ -351,47 +381,221 @@
                 role="tabpanel"
                 aria-labelledby="tab-priestArea-tab"
               >
-                <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
-                <div class="priestInfo d-flex">
-                  <div
-                    style="
-                      background-image: url('./src/assets/images/father-james.png');
-                      width: 50%;
-                      height: 435px;
-                      margin-bottom: 35px;
-                    "
-                  ></div>
-                  <div class="descript">
-                    <p class="p-color">
-                      牧師姓名&ensp;/&ensp;<span style="color: black"
-                        >Andy</span
-                      >
-                    </p>
-                    <p class="p-color">基本介紹&ensp;/</p>
-                    <p>德生教會主任牧師</p>
-                    <p>信義基督教醫院家醫科醫師</p>
-                    <p>德生教會主任牧師</p>
-                    <p>信義基督教醫院家醫科醫師</p>
+                <div style="display: block" id="priestInfoList">
+                  <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
+                  <div class="priest_item d-flex">
+                    <div class="outside_border">
+                      <div
+                        class="priest_picture"
+                        style="
+                          background-image: url('/src/assets/images/father-james.png');
+                        "
+                      ></div>
+                    </div>
+                    <div class="priest_descript">
+                      <h5>牧師姓名 / <span>Andy</span></h5>
+                      <h5>基本介紹 /</h5>
+                      <ul>
+                        <li>德生教會主任牧師</li>
+                        <li>信義基督教醫院家醫科醫師</li>
+                      </ul>
+
+                      <div class="move_link" type="button">
+                        <div class="move_word">MORE</div>
+                        <div>
+                          <img src="./src/assets/images/right_arrow.png"/>
+                        </div>
+                      </div>
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+
+                  <div class="priest_item d-flex flex-row-reverse">
+                    <div class="outside_border">
+                      <div
+                        class="priest_picture"
+                        style="
+                          background-image: url('/src/assets/images/active_1.png');
+                        "
+                      ></div>
+                    </div>
+                    <div class="priest_descript">
+                      <h5>牧師姓名 / <span>Sam</span></h5>
+                      <h5>基本介紹 /</h5>
+                      <ul>
+                        <li>東海大學哲學系畢業</li>
+                        <li>台灣神學院道學碩士</li>
+                      </ul>
+
+                      <div class="move_link" type="button">
+                        <div class="move_word">MORE</div>
+                        <div>
+                          <img src="./src/assets/images/right_arrow.png"/>
+                        </div>
+                      </div>
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+
+                  <div class="priest_item d-flex">
+                    <div class="outside_border">
+                      <div
+                        class="priest_picture"
+                        style="
+                          background-image: url('/src/assets/images/Nick.png');
+                        "
+                      ></div>
+                    </div>
+                    <div class="priest_descript">
+                      <h5>牧師姓名 / <span>Benny</span></h5>
+                      <h5>基本介紹 /</h5>
+                      <ul>
+                        <li>台灣神學院</li>
+                        <li>道學碩士</li>
+                      </ul>
+
+                      <div class="move_link" type="button">
+                        <div class="move_word">MORE</div>
+                        <div>
+                          <img src="./src/assets/images/right_arrow.png"/>
+                        </div>
+                      </div>
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+
+                  <div class="priest_item d-flex flex-row-reverse">
+                    <div class="outside_border">
+                      <div
+                        class="priest_picture"
+                        style="
+                          background-image: url('/src/assets/images/father-james.png');
+                        "
+                      ></div>
+                    </div>
+                    <div class="priest_descript">
+                      <h5>牧師姓名 / <span>Ted</span></h5>
+                      <h5>基本介紹 /</h5>
+                      <ul>
+                        <li>德生教會主任牧師</li>
+                        <li>信義基督教醫院家醫科醫師</li>
+                      </ul>
+
+                      <div class="move_link" type="button">
+                        <div class="move_word">MORE</div>
+                        <div>
+                          <img src="./src/assets/images/right_arrow.png"/>
+                        </div>
+                      </div>
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+
+                  <div class="priest_item d-flex">
+                    <div class="outside_border">
+                      <div
+                        class="priest_picture"
+                        style="
+                          background-image: url('/src/assets/images/Rose2.png');
+                        "
+                      ></div>
+                    </div>
+                    <div class="priest_descript">
+                      <h5>牧師姓名 / <span>Lisa</span></h5>
+                      <h5>基本介紹 /</h5>
+                      <ul>
+                        <li>東海大學哲學系畢業</li>
+                        <li>台灣神學院道學碩士</li>
+                      </ul>
+
+                      <div class="move_link" type="button">
+                        <div class="move_word">MORE</div>
+                        <div>
+                          <img src="./src/assets/images/right_arrow.png"/>
+                        </div>
+                      </div>
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+
+                  <div class="priest_item d-flex flex-row-reverse">
+                    <div class="outside_border">
+                      <div
+                        class="priest_picture"
+                        style="
+                          background-image: url('/src/assets/images/Rose.png');
+                        "
+                      ></div>
+                    </div>
+                    <div class="priest_descript">
+                      <h5>牧師姓名 / <span>Rebeca</span></h5>
+                      <h5>基本介紹 /</h5>
+                      <ul>
+                        <li>台灣神學院</li>
+                        <li>道學碩士</li>
+                      </ul>
+
+                      <div class="move_link" type="button">
+                        <div class="move_word">MORE</div>
+                        <div>
+                          <img src="./src/assets/images/right_arrow.png"/>
+                        </div>
+                      </div>
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+
+                  <div class="pagging">
+                    <div class="paging_word current_page">
+                      <a href="./about.html">1</a>
+                    </div>
+                    <div class="paging_word"><a href="./about.html">2</a></div>
+                    <div class="paging_word"><a href="./about.html">3</a></div>
                   </div>
                 </div>
-                <p>
-                  近年台灣教會界有許多不同的方向：<br />
-                  有的注重聖經研讀和神學，有的注重聖靈充滿和恩賜；有的注重保持優良傳統，有的注重改革與
-                  更新；有的注重傳揚福音搶救靈魂，有的注重生活實踐社會關懷；有的注重訓練門徒，有的注重
-                  牧養關顧；有的注重關懷資深長輩和成人，有的注重帶領年輕人和兒童。但我常在思考，在上帝
-                  的心意裡面，這些方向其實不一定互相排斥，反而是可以相輔相成：教會需要聖經，也需要聖靈
-                  ；教會需要傳承優良的傳統，也需要改革不斷進步；教會需要傳福音，也需要關懷社會；教會需
-                  要訓練耶穌的門徒，也需要牧養關顧有需要的人；教會不應該忽略資深長輩和成人，也不應該忽
-                  略年輕人和兒童。教會應該鼓勵不同恩賜和方向好好照上帝心意發展，並且也互相接納、彼此成
-                  全。
-                </p>
+                <div style="display: none" id="priestInfoSinglePage">
+                  <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
+                  <div class="priestInfo d-flex">
+                    <div
+                      style="
+                        background-image: url('./src/assets/images/father-james.png');
+                        width: 50%;
+                        height: 435px;
+                        margin-bottom: 35px;
+                      "
+                    ></div>
+                    <div class="descript">
+                      <p class="p-color">
+                        牧師姓名&ensp;/&ensp;<span style="color: black"
+                          >Andy</span
+                        >
+                      </p>
+                      <p class="p-color">基本介紹&ensp;/</p>
+                      <p>德生教會主任牧師</p>
+                      <p>信義基督教醫院家醫科醫師</p>
+                      <p>德生教會主任牧師</p>
+                      <p>信義基督教醫院家醫科醫師</p>
+                    </div>
+                  </div>
+                  <p>
+                    近年台灣教會界有許多不同的方向：<br />
+                    有的注重聖經研讀和神學，有的注重聖靈充滿和恩賜；有的注重保持優良傳統，有的注重改革與
+                    更新；有的注重傳揚福音搶救靈魂，有的注重生活實踐社會關懷；有的注重訓練門徒，有的注重
+                    牧養關顧；有的注重關懷資深長輩和成人，有的注重帶領年輕人和兒童。但我常在思考，在上帝
+                    的心意裡面，這些方向其實不一定互相排斥，反而是可以相輔相成：教會需要聖經，也需要聖靈
+                    ；教會需要傳承優良的傳統，也需要改革不斷進步；教會需要傳福音，也需要關懷社會；教會需
+                    要訓練耶穌的門徒，也需要牧養關顧有需要的人；教會不應該忽略資深長輩和成人，也不應該忽
+                    略年輕人和兒童。教會應該鼓勵不同恩賜和方向好好照上帝心意發展，並且也互相接納、彼此成
+                    全。
+                  </p>
 
-                <div class="move_link">
-                  <div class="move_word">BACK</div>
-                  <div>
-                    <a href="./about.html"
-                      ><img src="./src/assets/images/back_link.png"
-                    /></a>
+                  <div class="move_link">
+                    <div class="move_word">BACK</div>
+                    <div>
+                      <a href="./about.html"
+                        ><img src="./src/assets/images/back_link.png"
+                      /></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -447,7 +651,7 @@
                 role="tabpanel"
                 aria-labelledby="tab-coworkers1-tab"
               >
-                <div class="contentTitle">/&ensp;同工專區&ensp;/</div>
+                <div class="contentTitle">/&ensp;分類一&ensp;/</div>
 
                 <div class="item_conainer d-flex flex-wrap">
                   <div class="workmetlist_item">
@@ -575,7 +779,6 @@
                     </a>
                     <div class="topic">Albe</div>
                   </div>
-
                 </div>
                 <div class="pagging">
                   <div class="paging_word current_page">
@@ -601,5 +804,19 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // priestInfoSinglePage
+      const priestInfoList = document.getElementById("priestInfoList");
+      const priestInfoSinglePage = document.getElementById(
+        "priestInfoSinglePage"
+      );
+
+      priestInfoList.addEventListener("click", (e) => {
+        if (e.target.classList.contains("move_link")) {
+          priestInfoList.style.display = "none";
+          priestInfoSinglePage.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>
