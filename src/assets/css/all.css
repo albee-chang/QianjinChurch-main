@@ -11914,6 +11914,22 @@ footer .footerText {
   border-color: #5db1b8;
 }
 
+.circleLink {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #44c8da;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 26px;
+  line-height: 0;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
 * {
   font-family: "Barlow", sans-serif;
   font-family: "Josefin Sans", sans-serif;
