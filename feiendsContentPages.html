@@ -166,20 +166,19 @@
           </div>
           <div class="col-8">
             <div class="tab-content" id="pills-tabContent">
-              <div class="text-primary fw-bold p-5">
-                親愛的朋友您好： <br />
-                如果您想進一步認識基督信仰，請點選左側的問題分類，並尋找您感興趣的主題。
-                <br />
-                若是還有其它疑問，不在問題列表當中，歡迎使用「新朋友留言」，將您的問題傳給我們，我們會
-                儘快跟您回覆，謝謝！
-              </div>
-
               <div
                 class="tab-pane fade show active"
                 id="tab-priestArea"
                 role="tabpanel"
                 aria-labelledby="tab-priestArea-tab"
               >
+                <div class="text-primary fw-bold p-5">
+                  親愛的朋友您好： <br />
+                  如果您想進一步認識基督信仰，請點選左側的問題分類，並尋找您感興趣的主題。
+                  <br />
+                  若是還有其它疑問，不在問題列表當中，歡迎使用「新朋友留言」，將您的問題傳給我們，我們會
+                  儘快跟您回覆，謝謝！
+                </div>
                 <div class="topicTitle" style="width: 100%; margin: 0">
                   /&ensp;關於基督信仰&ensp;/
                 </div>
@@ -201,6 +200,7 @@
                     <div
                       id="collapse1"
                       class="accordion-collapse collapse"
+                      style="padding-left: 0;"
                       aria-labelledby="heading1"
                       data-bs-parent="#Q1"
                     >
@@ -246,6 +246,7 @@
                     <div
                       id="collapse2"
                       class="accordion-collapse collapse"
+                      style="padding-left: 0;"
                       aria-labelledby="heading2"
                       data-bs-parent="#Q2"
                     >
@@ -291,6 +292,7 @@
                     <div
                       id="collapse3"
                       class="accordion-collapse collapse"
+                      style="padding-left: 0;"
                       aria-labelledby="heading3"
                       data-bs-parent="#Q3"
                     >
@@ -336,6 +338,7 @@
                     <div
                       id="collapse4"
                       class="accordion-collapse collapse"
+                      style="padding-left: 0;"
                       aria-labelledby="heading4"
                       data-bs-parent="#Q4"
                     >
@@ -399,19 +402,5 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // priestInfoSinglePage
-      const priestInfoList = document.getElementById("priestInfoList");
-      const priestInfoSinglePage = document.getElementById(
-        "priestInfoSinglePage"
-      );
-
-      priestInfoList.addEventListener("click", (e) => {
-        if (e.target.classList.contains("move_link")) {
-          priestInfoList.style.display = "none";
-          priestInfoSinglePage.style.display = "block";
-        }
-      });
-    </script>
   </body>
 </html>

@@ -13,3 +13,17 @@
     cursor: pointer;
     margin-bottom: 2rem;
 }
+.moreBtn {
+    position: relative;
+    .inner {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: -10px;
+        left: 100%;
+        background-image: url("/src/assets/images/right_arrow.png");
+        &:hover {
+          background-image: url("/src/assets/images/right_arrow_hover.png");
+        }
+      }
+}
