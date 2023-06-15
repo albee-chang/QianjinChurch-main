@@ -1,0 +1,258 @@
+.courses_item{
+  width: 100%;
+  
+  margin-bottom: 15px;
+  position: relative;
+  
+
+  .large_border{
+    width: 48%;
+    border-radius: 5%;
+    width: 43%;
+    border: 1px solid #000000;
+    height: 550px;
+    margin: 50px;
+    position: relative;
+
+    .news_picture{
+      height: 332px;   
+      margin-top: 25px;
+      div{
+        z-index: 2;
+       
+      }
+
+      button{
+        position: absolute;
+        top:0px;
+        right: 40px;
+        border: 0px;
+        background: none;
+        padding: 0px;
+       
+        img:hover{
+          content:url('/src/assets/images/hreatCircleHover.png')
+        }
+       
+      }
+    }
+
+
+  }
+
+  .hover_border{
+    height: 580px;
+    width:440px;
+
+    &:hover{
+      border-radius: 40px 40px 0px 0px;
+      background-color: #f8f0e3;
+      box-shadow: 0 0 15px;
+      h5{
+        color: #397e83;
+      }
+    }
+   
+  }
+
+  .outside_border{
+    width: 90%;
+    border: 0px solid #000000;
+    height: 551px;
+    margin: 5%;
+    margin-top: 2%;
+    position: relative;
+    
+
+    .news_picture{
+      height: 332px;   
+      margin-top: 30px;
+      margin-bottom: 25px;
+      div{
+        z-index: 2;
+       
+      }
+
+      button{
+        position: absolute;
+        top:-25px;
+        right: 40px;
+        border: 0px;
+        background: none;
+        padding: 0px;
+       
+        img:hover{
+          content:url('/src/assets/images/hreatCircleHover.png')
+        }
+       
+      }
+    }
+    
+    .inner{
+      margin-bottom: 20px;
+      width: 35px;
+      height: 35px;
+      float:right;
+      margin-right: 12px;
+      background-image: url('/src/assets/images/midRightArrow.png');
+      &:hover{
+        width: 35px;
+        height: 35px;
+        background-image: url('/src/assets/images/midRightArrow_hover.png');
+      }
+    }
+
+
+  }
+  .dollar{
+    h5{
+      color: #6b6b6b;
+      font-weight: bolder;
+    }
+  }
+  h5{
+    color: #397e83;
+    font-weight: bolder;
+  }
+
+}
+
+
+
+
+.rowfiled{
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+  justify-content: space-around;
+  
+  font-weight: bolder;
+  background-color: #fcf9f5;
+  flex-wrap: wrap;
+  
+  h5{
+    color: #397e83;
+    font-weight: bolder;
+  }
+
+
+  .outside_border{
+    width: 255px;
+    
+    
+    position: relative;
+
+    .news_picture{
+      height: 332px;   
+      margin-top: 25px;
+      margin-bottom: 20px;
+      div{
+        z-index: 2;
+       
+      }
+
+      button{
+        position: absolute;
+        top:10px;
+        right: 10px;
+        border: 0px;
+        background: none;
+        padding: 0px;
+       
+        img:hover{
+          content:url('/src/assets/images/hreatCircleHover.png')
+        }
+       
+      }
+      
+    }
+    .inner{
+      margin-bottom: 20px;
+      width: 30px;
+      height: 30px;
+      float:right;
+      margin-right: 12px;
+      background-image: url('/src/assets/images/s_right_arrow.png');
+      &:hover{
+       
+      }
+    }
+    
+  }
+    
+}
+
+.accordion {
+	width: 100%;
+  
+
+}
+.accordion article {
+	cursor: pointer;
+}
+
+label {
+  text-align: center;
+	display: block;
+	padding: 0 20px;
+	height: 40px;
+	border-bottom: 1px solid #7a7a7a;
+	cursor: pointer;
+	line-height: 40px;
+	font-size: 16px;
+	color: #7a7a7a;
+  width: 120px;
+  height: 30px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+article{
+  p {
+    text-align: center;
+    overflow: hidden;
+    padding: 0 20px;
+    margin: 0;
+    margin-top: 5px;
+    border-top: none;
+    border-bottom-width: 0;
+    max-height: 0;
+    line-height: 30px;
+    transition: all .5s ease;
+
+  }
+  
+  a{    
+    span{
+      color: white;
+    }
+    color: #7a7a7a;
+    &:hover{
+      text-decoration: #c6eff2 underline  ;
+      text-underline-offset: -3px;
+      text-decoration-thickness: 7px; 
+      color: #7a7a7a;
+    }
+    &:active{
+      text-decoration: #c6eff2 underline  ;
+      text-underline-offset: -3px;
+      text-decoration-thickness: 7px; 
+      color: #7a7a7a;
+    }
+
+  }
+  
+  
+
+}
+
+input:nth-child(1):checked ~ article:nth-of-type(1) p,
+input:nth-child(2):checked ~ article:nth-of-type(2) p,
+input:nth-child(3):checked ~ article:nth-of-type(3) p,
+input:nth-child(4):checked ~ article:nth-of-type(4) p,
+input:nth-child(5):checked ~ article:nth-of-type(5) p,
+input:nth-child(6):checked ~ article:nth-of-type(6) p {
+	border-bottom-width: 1px;
+	max-height: 130px;
+}
