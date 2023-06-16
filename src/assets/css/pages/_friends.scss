@@ -1,29 +1,85 @@
 .circleLink {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background-color: #44c8da;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  position: relative;
+  .classifyTitle {
+    display: block;
+    position: absolute;
     color: white;
     font-size: 26px;
-    line-height: 0;
-    cursor: pointer;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    z-index: 99;
+  }
+  .classifyImg {
+    z-index: -1;
+    width: 350px;
+    height: 350px;
+  }
+  &:hover {
+    transition: all 0.5s;
+    box-shadow: 0 5px 10px 4px #c0c0c0c2;
+    background-color: #64c2c9b0;
+    .classifyTitle {
+      transform: translateY(20px);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 45%;
+      width: 10%;
+      height: 20%;
+      background-image: url("/src/assets/images/crossImg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 999;
+    }
+  }
 }
 .moreBtn {
-    position: relative;
-    .inner {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        top: -10px;
-        left: 100%;
-        background-image: url("/src/assets/images/right_arrow.png");
-        &:hover {
-          background-image: url("/src/assets/images/right_arrow_hover.png");
-        }
-      }
+  position: relative;
+  .inner {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    background-image: url("/src/assets/images/right_arrow.png");
+    &:hover {
+      background-image: url("/src/assets/images/right_arrow_hover.png");
+    }
+  }
+}
+
+.leaveMessageArea {
+  position: relative;
+  .linkArrow {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 115px;
+    height: 40px;
+    background-image: url("/src/assets/images/leaveMessageArrow.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 999;
+  }
+  .leaveMessageBg {
+    z-index: -1;
+  }
 }
