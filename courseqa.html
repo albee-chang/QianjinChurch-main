@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>前金教會</title>
+  <!-- 載入 Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- 載入 Bootstrap icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+  <!-- 載入 Google Noto Sans Traditional Chinese Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Josefin+Sans:wght@700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Serif+TC:wght@500&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/assets/css/pages/onlinecourse.css" />
+  <link rel="stylesheet" href="./src/assets/css/all.css" />
+</head>
+
+<body>
+  <!-- 頁首 -->
+  <nav class="navbar navbar-expand-md sticky-top bg-primary">
+    <div class="container-fluid text-white d-flex justify-content-center">
+      <a class="navbar-brand logo" href="./index.html">
+        <img src="./src/assets/images/logo.png" alt="logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="nav-link active" aria-current="page" href="#">關於我們</a>
+        <a class="nav-link" href="#">你好新朋友</a>
+        <a class="nav-link" href="#">我的參與</a>
+        <a class="nav-link" href="#">學習成長</a>
+        <a class="nav-link" href="#">資源專區</a>
+        <a class="nav-link" href="#">公告消息</a>
+        <a class="nav-link" href="#">聯絡據點</a>
+      </div>
+    </div>
+  </nav>
+  <div class="header">
+    <img src="./src/assets/images/headerBg.png" alt="headerBg">
+    <div class="d-flex breadcrumb text-center justify-content-center">HOME / 線上課程</div>
+  </div>
+  <!-- 頁首結束 -->
+  <div class="innerPageBg">
+    <img class="bg-left" src="./src/assets/images/bg-left.png" alt="bg-left">
+    <img class="bg-right" src="./src/assets/images/bg-right.png" alt="bg-right">
+    <div class="container">
+      <div class="row" style="height: 100%; margin-top: 120px;">
+        <div class="col-3" style="align-items: center;">
+          <div class="lsTitle" style="margin-bottom: 50px;">課程說明</div>
+          <div class="lsTitle">線上課程</div>
+         
+          <div class="accordion">
+            <input id="collapse1" type="radio" name="tap-input" hidden />
+            <input id="collapse2" type="radio" name="tap-input" hidden />
+            <input id="collapse3" type="radio" name="tap-input" hidden />
+            <input id="collapse4" type="radio" name="tap-input" hidden />
+            <input id="collapse5" type="radio" name="tap-input" hidden />
+            <input id="collapse6" type="radio" name="tap-input" hidden />
+
+            <article>
+              <label for="collapse1">初信課程</label>
+              <div> <p><a href=""><span>一</span>標題一<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題二<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題三<span>一</span></a></p></div>
+            
+            </article>
+            <article>
+              <label for="collapse2">聖經課程</label>
+              <div> <p><a href="/"><span>一</span>標題一<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題二<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題三<span>一</span></a></p></div>
+            </article>
+            <article>
+              <label for="collapse3">禱告課程</label>
+              <div> <p><a href="/"><span>一</span>標題一<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題二<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題三<span>一</span></a></p></div>
+            </article>
+            <article>
+              <label for="collapse4">神學課程</label>
+              <div> <p><a href="/"><span>一</span>標題一<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題二<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題三<span>一</span></a></p></div>
+            </article>
+            <article>
+              <label for="collapse5">心理課程</label>
+              <div> <p><a href="/"><span>一</span>標題一<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題二<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題三<span>一</span></a></p></div>
+            </article>
+            <article>
+              <label for="collapse6">個人成長</label>
+              <div> <p><a href="/"><span>一</span>標題一<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題二<span>一</span></a></p></div>
+              <div> <p><a href="/"><span>一</span>標題三<span>一</span></a></p></div>
+            </article>
+          </div>
+
+        </div>
+        <div class="col-8 course_qa">
+          <div class="contentTitle">/&ensp;線上課程&ensp;/</div>
+          <div class="onlinecourses_item">
+            <div class="hover_border d-flex">
+              <button type="button"><img src="/src/assets/images/course_heart.png"></button>
+              
+              <div class="news_picture" style=" background-image: url('/src/assets/images/coursebook.png');">
+                 
+              </div>
+                
+             
+              <div class="coursedescript">
+                <h5>調和的靈與呼求主名</h5>
+                <p>今天我們來看基督徒最基本要認識的。約
+                  翰福音四章二十四節說，“神就是靈，所
+                  基督徒最基本的認識之一神的本質是靈今
+                  天我們來看基督徒最基本要認識的。</p>
+                <div class="dollar"><h5>NT $12,000</h5></div>
+                <div class="d-flex">
+                <div style="margin-top: 40px; color: #75c6d2; font-weight: bolder; font-size: 18px;">立即購課</div>
+                <a href="./about.html">  
+                  <div class="inner"></div>
+                </a>
+                </div>
+              </div>
+            </div>   
+          </div>
+
+          <div class="d-flex">
+            <div class="select_tag"><a href="./about.html"><h5>課程預覽</h5></a></div>
+            <div class="select_tag"><a href="./about.html"><h5>課程問答</h5></a></div>
+            <div class="underline"></div>
+          </div>
+          
+
+          <div class="row">
+            <div class="col-6">
+              <div class="accordion" id="Q1">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading1">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse1"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">上課前，需要準備什麼呢？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse1"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading1"
+                    data-bs-parent="#Q1"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q3">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading3">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse3"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">付款失敗怎麼辦？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse3"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading3"
+                    data-bs-parent="#Q3"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q5">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading5">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse5"
+                      aria-expanded="false"
+                      aria-controls="collapse5"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">為什麼登入後沒有顯示課程？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse5"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading5"
+                    data-bs-parent="#Q5"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q7">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading7">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse7"
+                      aria-expanded="false"
+                      aria-controls="collapse7"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">為什麼登入後沒有顯示課程？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse7"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading7"
+                    data-bs-parent="#Q7"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q9">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading9">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse9"
+                      aria-expanded="false"
+                      aria-controls="collapse9"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">為什麼登入後沒有顯示課程？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse9"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading9"
+                    data-bs-parent="#Q9"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="accordion" id="Q2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading2">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse2"
+                      aria-expanded="false"
+                      aria-controls="collapse2"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">付款失敗怎麼辦？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse2"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading2"
+                    data-bs-parent="#Q2"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q4">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading4">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse4"
+                      aria-expanded="false"
+                      aria-controls="collapse4"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">為什麼登入後沒有顯示課程？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse4"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading4"
+                    data-bs-parent="#Q4"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading6">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse6"
+                      aria-expanded="false"
+                      aria-controls="collapse6"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">怎麼加入課程討論社團？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse6"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading6"
+                    data-bs-parent="#Q6"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q8">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading8">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse8"
+                      aria-expanded="false"
+                      aria-controls="collapse8"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">付款失敗怎麼辦？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse8"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading8"
+                    data-bs-parent="#Q8"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="Q10">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading10">
+                    <button
+                      class="accordion-button collapsed text-primary fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse10"
+                      aria-expanded="false"
+                      aria-controls="collapse10"
+                    >
+                      <span style="color: #e3c63c;">Q:&ensp;</span> <span style="color:#397e83; font-weight: border;">為什麼登入後沒有顯示？</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse10"
+                    class="accordion-collapse collapse"
+                    style="padding-left: 0;"
+                    aria-labelledby="heading10"
+                    data-bs-parent="#Q10"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-1 text-primary fw-bold">A:</div>
+                      <div class="col-12">
+                        我們來到今天晚上要講的題目，就是這
+                        位基督。基督是整本聖經裡面的主題，
+                        倘若沒有基督，也就沒有聖經，甚至沒
+                        有基督教。其他宗教如回教、道教、佛
+                        教之類，如果沒有了教主，卻仍可以存
+                        在。但是若沒有耶穌基督，那就沒有基
+                        督教了。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="move_link" style="margin-top: 100px; margin-bottom: 100px;">
+            <div class="move_word">BACK</div>
+            <div>
+              <a href="./priestlist.html"
+                ><img src="./src/assets/images/back_link.png"
+              /></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- footer start -->
+
+  <footer class="text-white text-center pt-1 footerText">
+    2023 © 前金長老教會 Designed By 耘想科技網頁設計
+  </footer>
+  <script src="./src/assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

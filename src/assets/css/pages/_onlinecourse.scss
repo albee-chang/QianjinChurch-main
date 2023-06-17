@@ -1,0 +1,282 @@
+.onlinecourses_item{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  position: relative;
+ 
+  .hover_border{
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+    width:100%; 
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f8f0e3;
+    box-shadow: 0 0 15px;
+    h5{
+     
+      font-weight: bolder;
+      color: #397e83;
+    }
+    
+    button{
+      position: absolute;
+      top:-10px;
+      right: 30px;
+      border: 0px;
+      background: none;
+      padding: 0px;
+     
+      img:hover{
+        content:url('/src/assets/images/course_heart.png')
+      }
+     
+    }
+
+  }
+
+  .news_picture{
+    width: 370px;
+    height: 340px;   
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+   
+  }
+
+  .coursedescript{
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-top: 65px;
+   
+    width: 400px;
+  }
+   
+  p{
+    margin-top: 30px;    
+  }
+  .dollar{
+    
+    padding-top: 10px;
+    border-top: 1px solid #397e83;
+    width: 380px;
+
+  }
+
+  .inner{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 46px;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 12px;
+    background-image: url('/src/assets/images/course_arrow.png');
+    &:hover{
+      
+    }
+  }
+ 
+}
+
+.select_tag{
+  margin-top: 70px;
+  border-bottom: 1px solid #397e83;
+  width: 130px;
+  text-align: center;
+  a{color: #b4b4b4;}
+  
+  font-weight: border;
+  &:hover{
+    a{color: #397e83;}
+    border-bottom: 5px solid #ffe66f;
+    font-weight: border;
+  }
+}
+
+.underline{
+  border-bottom: 1px solid #397e83;
+  width:100%;
+}
+
+.preview_right{
+  width: 400px;
+  height: 413px;
+  background-color: #f8f8f8;
+  padding: 25px;
+  padding-right: 0px;
+  li{
+    list-style:none;
+    h5{
+      color: #397e83;
+      font-weight: border;
+      margin-bottom: 0px;
+      margin-top: 20px;
+    } 
+  }
+}
+
+.video_source{
+  display: inline;
+  vertical-align: bottom;
+  width: 600px;
+  height: 413px;
+  position: relative;
+  justify-content:end;
+  div{
+    margin-top: 370px;
+    margin-left: 20px;
+    font-weight: border;
+    color: #397e83;
+  }
+}
+
+
+.rowfiled{
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+  justify-content: space-around;
+  
+  font-weight: bolder;
+  background-color: #fcf9f5;
+  flex-wrap: wrap;
+  
+  h5{
+    color: #397e83;
+    font-weight: bolder;
+  }
+
+
+  .outside_border{
+    width: 255px;
+    
+    
+    position: relative;
+
+    .news_picture{
+      height: 332px;   
+      margin-top: 25px;
+      margin-bottom: 20px;
+      div{
+        z-index: 2;
+       
+      }
+
+      button{
+        position: absolute;
+        top:10px;
+        right: 10px;
+        border: 0px;
+        background: none;
+        padding: 0px;
+       
+        img:hover{
+          content:url('/src/assets/images/hreatCircleHover.png')
+        }
+       
+      }
+      
+    }
+    .inner{
+      margin-bottom: 20px;
+      width: 30px;
+      height: 30px;
+      float:right;
+      margin-right: 12px;
+      background-image: url('/src/assets/images/s_right_arrow.png');
+      &:hover{
+       
+      }
+    }
+    
+  }
+    
+}
+
+.course_qa{
+  .accordion {
+    width: 90%;
+    --bs-accordion-bg: #f8f8f8;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .accordion-item:last-of-type {
+    border: 0px;
+    --bs-accordion-btn-icon: url('/src/assets/images/pulldownarrow.png');
+    --bs-accordion-btn-icon-width:0.8rem;
+    --bs-accordion-btn-padding-x: 1.5rem;
+    --bs-accordion-btn-padding-y: 1.5rem;
+  }
+  
+}
+
+
+.accordion article {
+	cursor: pointer;
+}
+
+label {
+  text-align: center;
+	display: block;
+	padding: 0 20px;
+	height: 40px;
+	border-bottom: 1px solid #7a7a7a;
+	cursor: pointer;
+	line-height: 40px;
+	font-size: 16px;
+	color: #7a7a7a;
+  width: 120px;
+  height: 30px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+article{
+  p {
+    text-align: center;
+    overflow: hidden;
+    padding: 0 20px;
+    margin: 0;
+    margin-top: 5px;
+    border-top: none;
+    border-bottom-width: 0;
+    max-height: 0;
+    line-height: 30px;
+    transition: all .5s ease;
+
+  }
+  
+  a{    
+    span{
+      color: white;
+    }
+    color: #7a7a7a;
+    &:hover{
+      text-decoration: #c6eff2 underline  ;
+      text-underline-offset: -3px;
+      text-decoration-thickness: 7px; 
+      color: #7a7a7a;
+    }
+    &:active{
+      text-decoration: #c6eff2 underline  ;
+      text-underline-offset: -3px;
+      text-decoration-thickness: 7px; 
+      color: #7a7a7a;
+    }
+
+  }
+  
+  
+
+}
+
+input:nth-child(1):checked ~ article:nth-of-type(1) p,
+input:nth-child(2):checked ~ article:nth-of-type(2) p,
+input:nth-child(3):checked ~ article:nth-of-type(3) p,
+input:nth-child(4):checked ~ article:nth-of-type(4) p,
+input:nth-child(5):checked ~ article:nth-of-type(5) p,
+input:nth-child(6):checked ~ article:nth-of-type(6) p {
+	border-bottom-width: 1px;
+	max-height: 130px;
+}
