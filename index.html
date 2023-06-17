@@ -185,6 +185,10 @@
     <div class="main mb-5">
       <!-- About Us -->
       <div class="about">
+        <a href="./about.html" class="moreBtn move_link">
+          <div class="move_word me-2">MORE</div>
+          <div class="inner"></div>
+        </a>
         <div class="about1">
           <h1>主日禮拜直播時段</h1>
           <ul class="aboutContent">
@@ -201,7 +205,8 @@
             <li>青年崇拜：每週六晚上6：00</li>
           </ul>
         </div>
-        <div class="aboutImg">
+
+        <div class="aboutImg d-flex flex-lg-nowrap">
           <img src="src\assets\images\index_about01.png" alt="about" />
           <img src="src\assets\images\index_about02.png" alt="about" />
         </div>
@@ -209,9 +214,7 @@
           <div class="aboutBgColors1"></div>
           <div class="aboutBgColors2"></div>
         </div>
-        <a href="#" class="moreBtn">MORE</a>
       </div>
-      <a href="#" class="btn aboutLinkBtn">A</a>
       <!-- About Us 結束 -->
       <!-- News -->
       <div class="container">
@@ -228,29 +231,67 @@
       </div>
       <hr class="newsDivide" />
       <div class="newsLink row">
-        <div class="col-12 col-md-4 newsImg">
+        <div class="col-12 col-md-4 newsImg position-relative">
           <a href="#">
             <div class="newsTitleNum">01.</div>
-            <img src="./src/assets/images/news01.png" alt="news"
-          /></a>
+            <span
+              class="newsTitleCh position-absolute"
+              style="top: 15%; left: 50%; height: 30%"
+              >新春主日 <br />恩惠慈愛袋著走</span
+            >
+            <img src="./src/assets/images/news01.png" alt="news" />
+            <a
+              href="./news.html"
+              class="move_link position-absolute bottom-0 end-0 me-3 mb-3"
+            >
+              <div class="inner"></div> </a
+          ></a>
         </div>
-        <div class="col-12 col-md-4 newsImg">
+        <div class="col-12 col-md-4 newsImg position-relative">
           <a href="#"
             ><div class="newsTitleNum">02.</div>
-            <img src="./src/assets/images/news02.png" alt="news"
-          /></a>
+            <span
+              class="newsTitleCh position-absolute"
+              style="top: 15%; left: 57%; height: 30%"
+              >集結號 <br />敬拜狂跑</span
+            >
+            <img src="./src/assets/images/news02.png" alt="news" /><a
+              href="./news.html"
+              class="move_link position-absolute bottom-0 end-0 me-3 mb-3"
+            >
+              <div class="inner"></div>
+            </a>
+          </a>
         </div>
-        <div class="col-12 col-md-4 newsImg">
+        <div class="col-12 col-md-4 newsImg position-relative">
           <a href="#"
             ><div class="newsTitleNum">03.</div>
-            <img src="./src/assets/images/news03.png" alt="news"
-          /></a>
+            <span
+              class="newsTitleCh position-absolute"
+              style="top: 15%; left: 57%; height: 30%"
+              >升旗季刊 <br />禮物交換所</span
+            >
+            <img src="./src/assets/images/news03.png" alt="news" /><a
+              href="./news.html"
+              class="move_link position-absolute bottom-0 end-0 me-3 mb-3"
+            >
+              <div class="inner"></div> </a
+          ></a>
         </div>
-        <div class="col-12 newsImg">
+        <div class="col-12 newsImg position-relative">
           <a href="#"
             ><div class="newsTitleNum">04.</div>
-            <img src="./src/assets/images/news04.png" alt="news"
-          /></a>
+            <span
+              class="newsTitleCh position-absolute"
+              style="top: 15%; left: 20%; height: 30%"
+              >We care 社會關懷 <br />2023 弱勢家庭年菜募集計畫</span
+            >
+            <img src="./src/assets/images/news04.png" alt="news" /><a
+              href="./news.html"
+              class="move_link position-absolute bottom-0 end-0 me-3 mb-3"
+            >
+              <div class="inner"></div> </a
+          ></a>
         </div>
       </div>
       <div class="newsText row">
@@ -268,60 +309,76 @@
             <div class="onlineTitle title">學習成長</div>
           </div>
 
-          <div class="onlineDescription desText">
+          <div class="onlineDescription desText" style="position: relative">
             The convenience and diversity of online learning provides education
             with a different way of learning. In recent years, online learning
             has also become a part of the global education trend that cannot be
             ignored.
+            <hr
+              class="newsDivide"
+              style="position: absolute; right: -105%; top: 0%"
+            />
           </div>
           <div class="onlineCourse row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 position-relative">
               <a href="#">
                 <img src="./src/assets/images/online01.png" alt="" />
               </a>
-              <a href="#" class="btn linkBtn">A</a>
+              <a href="./about.html" class="move_link position-absolute" style="bottom: -23%;right: 10%;">
+                <div class="inner"></div>
+              </a>
               <h5 class="onlineCourseTitle text-center">初信課程</h5>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 position-relative">
               <a href="#">
                 <img src="./src/assets/images/online02.png" alt="" />
               </a>
-              <a href="#" class="btn linkBtn">A</a>
+              <a href="./about.html" class="move_link position-absolute" style="bottom: -23%;right: 10%;">
+                <div class="inner"></div>
+              </a>
               <h5 class="onlineCourseTitle text-center">聖經課程</h5>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 position-relative">
               <a href="#">
                 <img src="./src/assets/images/online03.png" alt="" />
               </a>
-              <a href="#" class="btn linkBtn">A</a>
+              <a href="./about.html" class="move_link position-absolute" style="bottom: -23%;right: 10%;">
+                <div class="inner"></div>
+              </a>
               <h5 class="onlineCourseTitle text-center">神學課程</h5>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 position-relative">
               <a href="#">
                 <img src="./src/assets/images/online04.png" alt="" />
               </a>
-              <a href="#" class="btn linkBtn">A</a>
+              <a href="./about.html" class="move_link position-absolute" style="bottom: -23%;right: 10%;">
+                <div class="inner"></div>
+              </a>
               <h5 class="onlineCourseTitle text-center">心理課程</h5>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 position-relative">
               <a href="#">
                 <img src="./src/assets/images/online05.png" alt="" />
               </a>
-              <a href="#" class="btn linkBtn">A</a>
+              <a href="./about.html" class="move_link position-absolute" style="bottom: -23%;right: 10%;">
+                <div class="inner"></div>
+              </a>
               <h5 class="onlineCourseTitle text-center">推薦影片</h5>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 position-relative">
               <a href="#">
                 <img src="./src/assets/images/online06.png" alt="" />
               </a>
-              <a href="#" class="btn linkBtn">A</a>
+              <a href="./about.html" class="move_link position-absolute" style="bottom: -23%;right: 10%;">
+                <div class="inner"></div>
+              </a>
               <h5 class="onlineCourseTitle text-center">好書推薦</h5>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="reunion">
+    <div class="reunion position-relative">
       <div class="reunionTitleEn">
         REUNION
         <div class="reunionTitle">聚會時間表</div>
@@ -331,11 +388,14 @@
         src="./src/assets/images/reunionImg.png"
         alt="reunionImg"
       />
+      <a href="#" class="move_link position-absolute" style="bottom: 32%;right: 26%;">
+        <div class="inner"></div>
+      </a>
     </div>
     <!-- footer start -->
     <div class="footerInfo d-flex justify-content-center row">
-      <div class="col-2"></div>
-      <div class="col-4">
+      <div class="col-12 col-md-2"></div>
+      <div class="col-12 col-md-4">
         <div class="row footerInfoLink my-2">
           <div class="col-3"><a href="./about.html">關於我們</a></div>
           <div class="col-3"><a href="./friends.html">你好新朋友</a></div>
@@ -369,7 +429,7 @@
           </div>
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-12 col-md-2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8792841486347!2d120.29559499999998!3d22.620982599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e418077dd%3A0x47a1c159edf61a0a!2zODAx6auY6ZuE5biC5YmN6YeR5Y2A5LqU56aP5LiJ6LevOTfomZ8!5e0!3m2!1szh-TW!2stw!4v1685451908392!5m2!1szh-TW!2stw"
           width="400"
@@ -380,11 +440,26 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="col-4"></div>
+      <div class="col-12 col-md-4"></div>
       <div class="col-12 d-flex justify-content-center mt-3">
-        <a href=""><img class="socialMediaIcon mx-1" src="./src/assets/images/fbIcon.png" alt="fbIcon"></a>
-        <a href=""><img class="socialMediaIcon mx-1" src="./src/assets/images/lineIcon.png" alt="lineIcon"></a>
-        <a href=""><img class="socialMediaIcon mx-1" src="./src/assets/images/messengerIcon.png" alt="messengerIcon"></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/fbIcon.png"
+            alt="fbIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/lineIcon.png"
+            alt="lineIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/messengerIcon.png"
+            alt="messengerIcon"
+        /></a>
       </div>
     </div>
     <a href="#" class="scroll-to-top"></a>

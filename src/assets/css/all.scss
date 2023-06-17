@@ -227,6 +227,7 @@ a {
 .move_link {
   margin-top: 30px;
   float: right;
+  cursor: pointer;
   .move_word {
     color: #64c2c9;
     vertical-align: bottom;
@@ -261,5 +262,15 @@ a {
   z-index: 999;
   &:hover {
     box-shadow: 0 1px 6px 4px rgba(155, 155, 155, 0.3);
+  }
+}
+
+.inner {
+  width: 35px;
+  height: 35px;
+  margin-right: 6px;
+  background-image: url("/src/assets/images/right_arrow.png");
+  &:hover {
+    background-image: url("/src/assets/images/right_arrow_hover.png");
   }
 }
