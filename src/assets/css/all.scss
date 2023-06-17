@@ -54,6 +54,7 @@ a {
   position: relative;
   height: 86px;
 }
+
 .collapse {
   display: flex;
   justify-content: center;
@@ -102,6 +103,41 @@ a {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
 }
+
+.navIcon {
+  width: 19px;
+  height: 19px;
+  margin-right: 0.5rem;
+}
+
+.navbarIcons {
+  position: absolute;
+  right: 16%;
+  top: 2%;
+}
+//navbarIcons RWD 平板
+@media (max-width: 1300px) {
+  .navbarIcons {
+    position: absolute;
+    right: 12%;
+    top: 2%;
+  }
+}
+@media (max-width: 1200px) {
+  .navbarIcons {
+    position: absolute;
+    right: 9%;
+    top: 2%;
+  }
+}
+@media (max-width: 996px) {
+  .navbarIcons {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+  }
+}
+
 .footerInfo {
   margin-top: -10rem;
   margin-bottom: 3rem;
@@ -128,79 +164,80 @@ a {
     z-index: 999;
   }
 }
+.socialMediaIcon {
+  width: 25px;
+  height: 25px;
+}
 
-.contentTitle{
+.contentTitle {
   max-width: 100%;
   height: 43px;
   background-color: #64c2c9;
-  padding:13px;
+  padding: 13px;
   padding-left: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 35px;
 }
 
-
-.item_conainer{
+.item_conainer {
   justify-content: space-between;
 }
 
-.yearPull{
+.yearPull {
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 22px;
   color: #64c2c9;
-  
-  div{
+
+  div {
     width: 12%;
     border-bottom: #64c2c9 3px solid;
-  } 
+  }
 }
 
-.pagging{
+.pagging {
   margin-top: 80px;
   margin-bottom: 80px;
-  float:right;
-  .paging_word{
+  float: right;
+  .paging_word {
     margin-right: 5px;
     text-align: center;
     justify-items: center;
-    line-height:45px;
+    line-height: 45px;
     font-size: 20px;
     width: 35px;
     height: 35px;
-    
   }
-  div{
-    display: inline-block; 
+  div {
+    display: inline-block;
   }
-  a{
+  a {
     color: #6c6b6b;
-    &:hover{
+    &:hover {
       color: #000000;
     }
-
   }
 }
 
-.font_bolder{
+.font_bolder {
   font-weight: bolder;
 }
 
-.move_link{
+.move_link {
   margin-top: 30px;
-  float:right;
-  .move_word{
+  float: right;
+  .move_word {
     color: #64c2c9;
     vertical-align: bottom;
   }
-  div{
-    display: inline-block; 
+  div {
+    display: inline-block;
   }
 }
 
 .innerPageFooter {
- background-image: url(../images/innerPageFooterBg.png);
- background-repeat: no-repeat;
+  background-image: url(../images/innerPageFooterBg.png);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   width: 100%;
@@ -210,3 +247,18 @@ a {
   z-index: -999;
 }
 
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: url(../images/backtopBtn.png);
+  cursor: pointer;
+  z-index: 999;
+  &:hover {
+    box-shadow: 0 1px 6px 4px rgba(155, 155, 155, 0.3);
+  }
+}

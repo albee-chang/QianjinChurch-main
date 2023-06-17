@@ -12204,6 +12204,10 @@ input:nth-child(6):checked ~ article:nth-of-type(6) p {
   max-height: 130px;
 }
 
+.coursesLink {
+  color: #848484;
+}
+
 * {
   font-family: "Barlow", sans-serif;
   font-family: "Josefin Sans", sans-serif;
@@ -12296,6 +12300,39 @@ a {
   letter-spacing: 0.1rem;
 }
 
+.navIcon {
+  width: 19px;
+  height: 19px;
+  margin-right: 0.5rem;
+}
+
+.navbarIcons {
+  position: absolute;
+  right: 16%;
+  top: 2%;
+}
+
+@media (max-width: 1300px) {
+  .navbarIcons {
+    position: absolute;
+    right: 12%;
+    top: 2%;
+  }
+}
+@media (max-width: 1200px) {
+  .navbarIcons {
+    position: absolute;
+    right: 9%;
+    top: 2%;
+  }
+}
+@media (max-width: 996px) {
+  .navbarIcons {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+  }
+}
 .footerInfo {
   margin-top: -10rem;
   margin-bottom: 3rem;
@@ -12324,13 +12361,18 @@ a {
   z-index: 999;
 }
 
+.socialMediaIcon {
+  width: 25px;
+  height: 25px;
+}
+
 .contentTitle {
   max-width: 100%;
   height: 43px;
   background-color: #64c2c9;
   padding: 13px;
   padding-left: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 35px;
 }
 
@@ -12399,4 +12441,19 @@ a {
   padding-top: 10rem;
   position: relative;
   z-index: -999;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: url(../images/backtopBtn.png);
+  cursor: pointer;
+  z-index: 999;
+}
+.scroll-to-top:hover {
+  box-shadow: 0 1px 6px 4px rgba(155, 155, 155, 0.3);
 }/*# sourceMappingURL=all.css.map */

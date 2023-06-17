@@ -37,7 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/assets/css/about.css" />
+    <link rel="stylesheet" href="./src/assets/css/pages/newannounce.css" />
     <link rel="stylesheet" href="./src/assets/css/all.css" />
   </head>
   <body>
@@ -105,154 +105,240 @@
       <div class="container">
         <div class="row" style="height: 100%; margin-top: 120px">
           <div class="col-3" style="align-items: center">
-            <div class="lsTitle">最新公告</div>
-            <div class="lsContent">近期活動</div>
-            <div class="lsContent">活動紀錄</div>
-            <div class="lsContent pulldown">
-              &ensp;&ensp;2023 &ensp;&ensp;<img
-                src="/src/assets/images/down_pull.png"
-              />
-            </div>
+            <div class="lsTitle fs-5">最新公告</div>
+            <ul
+              class="nav mb-3 d-flex flex-column"
+              id="pills-tab"
+              role="tablist"
+              style="align-items: center"
+            >
+              <li class="lsContent mt-3" role="presentation">
+                <div
+                  class="tab-link active"
+                  id="tab-activity-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-activity"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-activity"
+                  aria-selected="true"
+                >
+                  近期活動
+                </div>
+              </li>
+              <li class="lsContent mt-3" role="presentation">
+                <div
+                  class="tab-link"
+                  id="tab-record-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-record"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-record"
+                  aria-selected="false"
+                >
+                  活動紀錄
+                </div>
+              </li>
+              <li class="mt-2" role="presentation">
+                <div
+                  class="tab-link"
+                  id="tab-yearSelect-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-yearSelect"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-yearSelect"
+                  aria-selected="false"
+                >
+                  <div class="lsContent pulldown">
+                    &ensp;&ensp;2023 &ensp;&ensp;<img
+                      src="/src/assets/images/down_pull.png"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="col-8">
-            <div class="contentTitle">/&ensp;最新公告&ensp;/</div>
-
-            <div class="announce_item d-flex">
-              <div class="news_descript">
-                <div class="title_tag">30<span>./MAR</span></div>
-                <h5>新春主日恩惠慈愛袋著走</h5>
-                <p>
-                  由於今年為「青年」年，通常議會會場
-                  外會有大型電子螢幕輪播總會青年、大
-                </p>
-                <div class="move_link">
-                  <div>
-                    <a href="./about.html"
-                      ><img src="./src/assets/images/right_arrow.png"
-                    /></a>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="tab-activity"
+                role="tabpanel"
+                aria-labelledby="tab-activity-tab"
+              >
+                <div class="contentTitle">/&ensp;最新公告&ensp;/</div>
+                <div class="announce_item d-flex">
+                  <div class="news_descript">
+                    <div class="title_tag">30<span>./MAR</span></div>
+                    <h5>新春主日恩惠慈愛袋著走</h5>
+                    <p>
+                      由於今年為「青年」年，通常議會會場
+                      外會有大型電子螢幕輪播總會青年、大
+                    </p>
+                    <div class="move_link">
+                      <div>
+                        <a href=""
+                          ><img src="./src/assets/images/right_arrow.png"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outside_border">
+                    <div
+                      class="news_picture"
+                      style="
+                        background-image: url('/src/assets/images/news_1.png');
+                      "
+                    >
+                      <img src="/src/assets/images/3star.png" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="outside_border">
-                <div
-                  class="news_picture"
-                  style="background-image: url('/src/assets/images/news_1.png')"
-                >
-                  <img src="/src/assets/images/3star.png" />
+
+                <div class="announce_item d-flex flex-row-reverse">
+                  <div class="news_descript">
+                    <div class="title_tag">27<span>./MAR</span></div>
+                    <h5>集結號敬拜狂跑</h5>
+                    <p>
+                      台灣基督長老教會第68屆總會通常議會 4月18
+                      至20日在台北凱達飯店舉行，總
+                    </p>
+                    <div class="move_link">
+                      <div>
+                        <a href=""
+                          ><img src="./src/assets/images/right_arrow.png"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outside_border_reverse">
+                    <div
+                      class="news_picture"
+                      style="
+                        background-image: url('/src/assets/images/news_2.png');
+                      "
+                    >
+                      <img src="/src/assets/images/3star.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="announce_item d-flex">
+                  <div class="news_descript">
+                    <div class="title_tag">22<span>./MAR</span></div>
+                    <h5>旌旗季刊禮物交換所</h5>
+                    <p>
+                      祈請牧者與牧者配偶(限牧者40歲以上)
+                      定期進行身體健康檢查，請記得提早預
+                    </p>
+                    <div class="move_link">
+                      <div>
+                        <a href=""
+                          ><img src="./src/assets/images/right_arrow.png"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outside_border">
+                    <div
+                      class="news_picture"
+                      style="
+                        background-image: url('/src/assets/images/news_3.png');
+                      "
+                    >
+                      <img src="/src/assets/images/3star.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="announce_item d-flex flex-row-reverse">
+                  <div class="news_descript">
+                    <div class="title_tag">19<span>./MAR</span></div>
+                    <h5>We care 社會關懷 2023 弱勢家庭年菜募集計劃</h5>
+                    <p>
+                      您有聘僱外籍看護嗎？您和外籍看護溝
+                      通時是否遇到困難？當外籍看護休假時
+                    </p>
+                    <div class="move_link">
+                      <div>
+                        <a href=""
+                          ><img src="./src/assets/images/right_arrow.png"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outside_border_reverse">
+                    <div
+                      class="news_picture"
+                      style="
+                        background-image: url('/src/assets/images/news_4.png');
+                      "
+                    >
+                      <img src="/src/assets/images/3star.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="announce_item d-flex">
+                  <div class="news_descript">
+                    <div class="title_tag">11<span>./MAR</span></div>
+                    <h5>健檢有時保養有時</h5>
+                    <p>
+                      祈祈請牧者與牧者配偶(限牧者40歲以上)
+                      定期進行身體健康檢查，請記得提早預
+                    </p>
+                    <div class="move_link">
+                      <div>
+                        <a href=""
+                          ><img src="./src/assets/images/right_arrow.png"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outside_border">
+                    <div
+                      class="news_picture"
+                      style="
+                        background-image: url('/src/assets/images/news_5.png');
+                      "
+                    >
+                      <img src="/src/assets/images/3star.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pagging">
+                  <div class="paging_word current_page">
+                    <a href="">1</a>
+                  </div>
+                  <div class="paging_word"><a href="">2</a></div>
+                  <div class="paging_word"><a href="">3</a></div>
                 </div>
               </div>
             </div>
-
-            <div class="announce_item d-flex flex-row-reverse">
-              <div class="news_descript">
-                <div class="title_tag">27<span>./MAR</span></div>
-                <h5>集結號敬拜狂跑</h5>
-                <p>
-                  台灣基督長老教會第68屆總會通常議會 4月18
-                  至20日在台北凱達飯店舉行，總
-                </p>
-                <div class="move_link">
-                  <div>
-                    <a href="./about.html"
-                      ><img src="./src/assets/images/right_arrow.png"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="outside_border_reverse">
-                <div
-                  class="news_picture"
-                  style="background-image: url('/src/assets/images/news_2.png')"
-                >
-                  <img src="/src/assets/images/3star.png" />
-                </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade"
+                id="tab-record"
+                role="tabpanel"
+                aria-labelledby="tab-record-tab"
+                style="height: 900px"
+              >
+                <div class="contentTitle">/&ensp;活動紀錄&ensp;/</div>
               </div>
             </div>
-
-            <div class="announce_item d-flex">
-              <div class="news_descript">
-                <div class="title_tag">22<span>./MAR</span></div>
-                <h5>旌旗季刊禮物交換所</h5>
-                <p>
-                  祈請牧者與牧者配偶(限牧者40歲以上)
-                  定期進行身體健康檢查，請記得提早預
-                </p>
-                <div class="move_link">
-                  <div>
-                    <a href="./about.html"
-                      ><img src="./src/assets/images/right_arrow.png"
-                    /></a>
-                  </div>
-                </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade"
+                id="tab-yearSelect"
+                role="tabpanel"
+                aria-labelledby="tab-yearSelect-tab"
+                style="height: 900px"
+              >
+                <div class="contentTitle">/&ensp;2023&ensp;/</div>
               </div>
-              <div class="outside_border">
-                <div
-                  class="news_picture"
-                  style="background-image: url('/src/assets/images/news_3.png')"
-                >
-                  <img src="/src/assets/images/3star.png" />
-                </div>
-              </div>
-            </div>
-
-            <div class="announce_item d-flex flex-row-reverse">
-              <div class="news_descript">
-                <div class="title_tag">19<span>./MAR</span></div>
-                <h5>We care 社會關懷 2023 弱勢家庭年菜募集計劃</h5>
-                <p>
-                  您有聘僱外籍看護嗎？您和外籍看護溝
-                  通時是否遇到困難？當外籍看護休假時
-                </p>
-                <div class="move_link">
-                  <div>
-                    <a href="./about.html"
-                      ><img src="./src/assets/images/right_arrow.png"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="outside_border_reverse">
-                <div
-                  class="news_picture"
-                  style="background-image: url('/src/assets/images/news_4.png')"
-                >
-                  <img src="/src/assets/images/3star.png" />
-                </div>
-              </div>
-            </div>
-
-            <div class="announce_item d-flex">
-              <div class="news_descript">
-                <div class="title_tag">11<span>./MAR</span></div>
-                <h5>健檢有時保養有時</h5>
-                <p>
-                  祈祈請牧者與牧者配偶(限牧者40歲以上)
-                  定期進行身體健康檢查，請記得提早預
-                </p>
-                <div class="move_link">
-                  <div>
-                    <a href="./about.html"
-                      ><img src="./src/assets/images/right_arrow.png"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="outside_border">
-                <div
-                  class="news_picture"
-                  style="background-image: url('/src/assets/images/news_5.png')"
-                >
-                  <img src="/src/assets/images/3star.png" />
-                </div>
-              </div>
-            </div>
-
-            <div class="pagging">
-              <div class="paging_word current_page">
-                <a href="./about.html">1</a>
-              </div>
-              <div class="paging_word"><a href="./about.html">2</a></div>
-              <div class="paging_word"><a href="./about.html">3</a></div>
             </div>
           </div>
         </div>
