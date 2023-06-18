@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前金教會</title>
+    <!-- 載入 Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- 載入 Bootstrap icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- 載入 Google Noto Sans Traditional Chinese Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Josefin+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Serif+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/assets/css/pages/friends.css" />
+    <link rel="stylesheet" href="./src/assets/css/all.css" />
+  </head>
+  <body>
+    <!-- 頁首 -->
+    <nav class="navbar navbar-expand-md sticky-top bg-primary">
+      <div class="container-fluid text-white d-flex justify-content-center">
+        <a class="logo" href="./index.html">
+          <img src="./src/assets/images/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="nav-link" aria-current="page" href="./about.html"
+            >關於我們 <br />
+            <span class="navTitleEn">ABOUT</span>
+          </a>
+          <a class="nav-link" href="./friends.html"
+            >你好新朋友<br />
+            <span class="navTitleEn">FRIENDS</span>
+          </a>
+          <a class="nav-link" href="./activity.html"
+            >我的參與<br />
+            <span class="navTitleEn">ACTIVITY</span>
+          </a>
+          <a class="nav-link" href="./online.html"
+            >學習成長<br />
+            <span class="navTitleEn">ONLINE</span>
+          </a>
+          <a class="nav-link" href="./resource.html"
+            >資源專區<br />
+            <span class="navTitleEn">RESOURCE</span>
+          </a>
+          <a class="nav-link active" href="./news.html"
+            >公告消息<br />
+            <span class="navTitleEn">NEWS</span>
+          </a>
+          <a class="nav-link" href="./contact.html"
+            >聯絡據點<br />
+            <span class="navTitleEn">CONTACT</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- 頁首結束 -->
+    <div class="innerPageBg" style="min-height: 900px; margin-top: 120px">
+      <img
+        class="bg-left"
+        src="./src/assets/images/bg-left.png"
+        alt="bg-left"
+      />
+      <img
+        class="bg-right"
+        src="./src/assets/images/bg-right.png"
+        alt="bg-right"
+      />
+      <div
+        class="container d-flex justify-content-center flex-column align-items-center position-relative"
+      >
+        <div class="contentTitle" style="width: 80%; height: 100%">
+          /&ensp;見證故事&ensp;/
+        </div>
+        <div
+          class="dropdown position-absolute"
+          style="width: 150px; top: 12%; right: 11%"
+        >
+          <button
+            class="yearSelect dropdown-toggle"
+            type="button"
+            id="yearSelects"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            2023
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="yearSelects">
+            <li><a class="dropdown-item" href="#">2022</a></li>
+            <li><a class="dropdown-item" href="#">2021</a></li>
+            <li><a class="dropdown-item" href="#">2020</a></li>
+          </ul>
+        </div>
+        <div
+          class="storyContentBg d-flex justify-content-center align-items-center"
+          style="
+            width: 80%;
+            height: 460px;
+            background-color: #faf6f2;
+            margin-top: 80px;
+          "
+        >
+          <img
+            class="storyContentImg"
+            src="./src/assets/images/course_rowB.png"
+            alt="storyContentImg"
+          />
+          <div class="dateMark">
+            30.<br />
+            MAR
+          </div>
+        </div>
+      </div>
+      <div class="container" style="width: 70%; margin-top: 120px">
+        <h3 class="text-primary fw-bold">根基立磐石，疫情蒙祝福</h3>
+        <p class="fs-4 mb-5" style="color: #898989; letter-spacing: 0.2rem">
+          突然間，校園關閉，補習班安親班不能開放，到了五月底，我們的暑期營隊面臨一個很大的挑戰：在三天之內，收到家長如雪片般來的退費申請……
+        </p>
+        <p class="fs-4" style="letter-spacing: 0.3rem">
+          2016夏天，我和英國籍的先生Ian成立了十十豐盛語言訓練中心。<br />
+          「十十豐盛」這個名稱是Ian在為語言訓練中心禱告尋求時，領受約翰福音第十章第10節:
+          「盜賊來，無非要偷竊、殺害、毀壞；我來了，是要叫羊(或作人)得生命，
+          並且得的更豐
+          盛」的經文後所命名的。六年來，神教導我們依靠他的話語，堅持不動搖，每一次艱難與
+          挑戰，我們都帶著二個還在念小學、幼稚園的兒子一起禱告、尋求神，得著祂所賜的話語
+          ，也得著繼續向前的力量，而神也按著祂信實，讓我們夫妻以及孩子一起經歷上帝的信實
+          、大能與豐盛的恩典。
+          <br />
+          去年疫情，許多安親班面臨外師缺乏的困境，神保守我們絲毫不受影響，還讓我們以超乎
+          想像的恩典價格，買了屬於自己的房子；今年疫情期間，神更是不斷做新事，不論國外訂
+          購原文書，船運卡在海關完全趕不及開學使用，卻在一天內送達教室的神蹟，以及更多超
+          乎所求所想的恩典，都在在使我們看見他的話語有何等奇妙的大能！
+          <br />
+          我們的語言訓練中心學生以中、小學的學生為主，採小班制實體班教學，每周大約有400
+          個孩子進出我們這大安捷運站附近的教室。
+        </p>
+        <div>
+          <i class="bi bi-heart-fill text-secondary fs-2 btn collectionBtn"></i
+          ><span class="fs-3 text-primary">597</span>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="front">
+            <img
+              class="mb-3"
+              src="./src/assets/images/frontArrow.png"
+              alt=""
+            /><span class="text-primary mx-2 fs-4">上一篇</span>
+          </a>
+          <a href="#" class="next">
+            <span class="text-primary mx-2 fs-4">下一篇</span>
+            <img
+              class="mb-3"
+              src="./src/assets/images/nextArrow.png"
+              alt=""
+            />
+          </a>
+          <a href="#" class="float-end fs-5">Back
+            <img class="mb-2" src="./src/assets/images/back_link.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start -->
+    <div
+      class="footerInfo d-flex justify-content-center row innerPageFooter"
+      style="height: 430px; margin-top: 100px"
+    >
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./about.html">關於我們</a></div>
+          <div class="col-3"><a href="./friends.html">你好新朋友</a></div>
+          <div class="col-3"><a href="./activity.html">我的參與</a></div>
+          <div class="col-3"><a href="./online.html">學習成長</a></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./resource.html">資源專區</a></div>
+          <div class="col-3"><a href="./news.html">公告消息</a></div>
+          <div class="col-3"><a href="./contact.html">聯絡據點</a></div>
+          <div class="col-3"><a href="./members.html">會員中心</a></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./collection.html">我的收藏</a></div>
+          <div class="col-3"><a href="./register.html">會員註冊條款</a></div>
+          <div class="col-3"><a href="./privacyPolicy.html">隱私權政策</a></div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-4">
+            <i class="bi bi-telephone-fill"></i> 07-2212945
+          </div>
+          <div class="col-8">
+            <i class="bi bi-geo-alt-fill"></i> 高雄市前金區五福三路97號
+          </div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-12">
+            <i class="bi bi-calendar-fill"></i> 週一未營業 / 週二至週日
+            AM9:00-PM5:00
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8792841486347!2d120.29559499999998!3d22.620982599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e418077dd%3A0x47a1c159edf61a0a!2zODAx6auY6ZuE5biC5YmN6YeR5Y2A5LqU56aP5LiJ6LevOTfomZ8!5e0!3m2!1szh-TW!2stw!4v1685451908392!5m2!1szh-TW!2stw"
+          width="400"
+          height="155"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-12 d-flex justify-content-center mt-3">
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/fbIcon.png"
+            alt="fbIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/lineIcon.png"
+            alt="lineIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/messengerIcon.png"
+            alt="messengerIcon"
+        /></a>
+      </div>
+    </div>
+    <a href="#" class="scroll-to-top"></a>
+    <footer class="text-white text-center pt-1 footerText">
+      2023 © 前金長老教會 Designed By 耘想科技網頁設計
+    </footer>
+    <!-- footer end -->
+    <script>
+      var dropdownElementList = [].slice.call(
+        document.querySelectorAll(".dropdown-toggle")
+      );
+      var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl);
+      });
+    </script>
+    <script src="./src/assets/js/main.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
