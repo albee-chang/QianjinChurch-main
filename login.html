@@ -24,7 +24,7 @@
     rel="stylesheet" />
 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./src/assets/css/pages/download.css" />
+  <link rel="stylesheet" href="./src/assets/css/pages/login.css" />
   <link rel="stylesheet" href="./src/assets/css/all.css" />
 </head>
 
@@ -51,39 +51,74 @@
   </nav>
   <div class="header">
     <img src="./src/assets/images/headerBg.png" alt="headerBg">
-    <div class="d-flex breadcrumb text-center justify-content-center">HOME / 會員註冊條款</div>
+    <div class="d-flex breadcrumb text-center justify-content-center">HOME / 會員登入</div>
   </div>
   <!-- 頁首結束 -->
   <div class="innerPageBg">
     <img class="bg-left" src="./src/assets/images/bg-left.png" alt="bg-left">
     <img class="bg-right" src="./src/assets/images/bg-right.png" alt="bg-right">
     <div class="container">
-      <div class="contentTitle" style="margin-top:125px">/&ensp;會員註冊條款&ensp;/</div>
 
-      <div class="register_context">
-        <h3>您同意以下會員註冊條款，已進行會員註冊程序</h3>
-        <ol>
-          <li>遵守中華民國相關法規及一切使用網際網路之國際慣例。</li>
-          <li>商品下訂單尚未出貨前可以隨意更改訂單狀態，如修改訂單取消訂單(客製化商品除外)，一但出貨將無
-            法取消交易。</li>
-          <li>會員保證願意承擔一切因個人行為而直接或間接導致的民事及刑事法律責任。</li>
-          <li>嚴禁惡意刪改、入侵、散播病毒或破壞本站之任何資料或頁面，否則將承擔所有法律責任。</li>
-          <li>會員若有任何問題與爭議，本站保留最終裁決權利。</li>
-          <li>會員若蓄意觸犯上述任何一項條例，本站將立即處以停權處份，並追究相關法律責任。</li>
-          <li>本公司有權利中止取消您的重複可疑訂單。</li>
-        </ol>
+      <div class="row">
+
+        <div class="col-6">
+          <div class="contentTitle" style="margin-top:125px; margin-bottom: 50px; ">/&ensp;登入&ensp;/</div>
+          
+           <p style="font-size: 20px; color: #7facaf; line-height: 32px; margin-bottom: 50px;">
+            歡迎回來，請登入您的會員帳號及密碼<br>
+            您可以選擇一般會員帳號及密碼登入，或<br>
+            選用 Facebook 帳號登入
+           </p>
+
+           <p style="font-size: 24px; color: #397e83; margin-left: 20px;">帳&ensp;號 &ensp;Account</p>
+           <input type="text" class="form-control join_input_area" placeholder="請輸入會員帳號" aria-label="First name">
+           <p style="font-size: 24px; color: #397e83; margin-left: 20px; margin-top: 20px;">密&ensp;碼 &ensp;Password</p>
+           <input type="text" class="form-control join_input_area" placeholder="請輸入密碼" aria-label="First name">
+           <div style="float: right; margin-top: 10px;"><img src="/src/assets/images/lock.png" alt="forget password">我忘記密碼了</div>
+           <div class="login_move_link">
+            <div class="move_word font_bolder">登入</div>
+            <div><a href="./about.html" ><img src="./src/assets/images/right_arrow.png"></a></div>
+          </div>
+
+          <div style="margin-left: 15%; margin-top: 80px;"><a href="./about.html" ><img src="./src/assets/images/google_regist.png"></a></div>
+          <div style="margin-left: 16%; margin-top: 10px; margin-bottom: 300px;"><a href="./about.html" ><img src="./src/assets/images/line_sync.png"></a></div>
+
+        </div>
+
+
+        <div class="col-6">
+          <div class="contentTitle" style="margin-top:125px">/&ensp;建立新帳號&ensp;/</div>
+          
+          <div class="login_rightside">
+            <p> 加入會員或繼續結帳</p>
+            <p>
+              歡迎加入線上購物的行列！
+              加入我們的會員，能讓您享有更方便快速的購
+              物流程，只要填寫一次會員資料，下次登入都
+              不用再輸入任何資料，讓您輕鬆自在的享受自
+              由購物的樂趣。
+              您可以使用 Facebook帳號登入，以節省時間
+              。您也可以不必加入會員，繼續進行結帳，我
+              們在稍後將會為您自動產生會員帳號。
+            </p>
+  
+            <p style=" margin-bottom: 135px;">
+              如果您已經有會員帳號或購買記錄，請直接登入即可。
+            </p>
+  
+            <div class="login_move_link">
+              <div class="move_word font_bolder">加入會員</div>
+              <div><a href="./about.html" ><img src="./src/assets/images/right_arrow.png"></a></div>
+            </div>
+          </div>
+          
+          
+
+          </div>  
+        </div>
       </div>
 
-      <div class="form-check register_checkbox">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault" style="width: 200px; border: 0px; line-height: 50px;">
-          我已經詳細閱讀並同意
-        </label>
-      </div>
-      <div class="move_link" style="margin-bottom: 160px;">
-        <div class="move_word font_bolder">下一步</div>
-        <div><a href="./about.html" ><img src="./src/assets/images/right_arrow.png"></a></div>
-      </div>
+      
     </div>
   </div>
   <!-- footer start -->
