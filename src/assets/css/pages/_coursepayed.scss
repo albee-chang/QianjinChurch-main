@@ -1,0 +1,74 @@
+.course_payed{
+  .toparea{
+   
+    width: 100%;
+    height: 200px;
+    padding-top:50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    box-shadow: 0 0 2px 0px;
+    .heartcircle{
+      position: absolute;
+      top:-17px;
+      right: 30px;
+    }
+   
+    h4{
+      color: #397183;
+      font-weight: border;
+    }
+  }
+
+  .select_tag{
+    margin-top: 70px;
+    border-bottom: 1px solid #397e83;
+    width: 130px;
+    text-align: center;
+    a{color: #b4b4b4;}
+    
+    font-weight: border;
+    &:hover{
+      a{color: #397e83;}
+      border-bottom: 5px solid #ffe66f;
+      font-weight: border;
+    }
+  }
+
+  .underline{
+    border-bottom: 1px solid #397e83;
+    width:100%;
+  }
+
+
+  .pay_content{
+    margin-left: 15px;
+    width: 100%;
+  
+    padding: 22px;
+    background-color: #f8f8f8f8;
+  }
+ 
+  .pay_video_part{
+    padding-left: 15px; 
+    padding-right: 17%;
+    margin-top: 20px;
+    border-top: 1px solid #8b8b8b8b;
+    height: 95px;
+
+    div{
+      margin-top: 25px;
+    }
+
+    h5{
+      color: #397e83;
+      margin-bottom: 1px;
+    }
+
+    p{
+      color: #aaaaaa;
+    }
+
+  }
+
+}

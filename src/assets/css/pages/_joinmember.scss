@@ -1,0 +1,118 @@
+.select_area{
+  height: 40px;
+  background-color: #f1f1f1f1;
+  border: 0px;
+  border-radius: 0%;
+  width: 50%;
+}
+
+.join_input_area{
+  height: 40px;
+  border: 0px;
+  border-bottom: 1px solid #b7b7b7;
+  border-radius: 0%;
+  width: 98%;
+  margin: auto;
+  margin-top: 5px;
+  padding-left: 18px;
+  font-weight: bolder;
+  color: #a2a2a2;
+}
+
+.join_select_area{
+  height: 40px;
+  border: 0px;
+  border-bottom: 1px solid #b7b7b7;
+  border-radius: 0%;
+  width: 98%;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 13px;
+  font-weight: bolder;
+  color: #a2a2a2;
+}
+
+.input_title{
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  color: #397e83;
+}
+
+.register_checkbox{
+  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-left: 30px;
+  width: 290px;
+  height: 45px;
+  line-height: 50px;
+  background-color: #e0e1de;
+  font-weight: bolder;
+  .form-check-input{
+    margin-top:15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+
+.joinmember_checkbox{
+  margin-top: 60px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  width: 330px;
+  height: 45px;
+  line-height: 50px;
+  background-color: #e0e1de;
+  font-weight: bolder;
+  .form-check-input{
+    margin-top:15px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+.cart_context{
+  color: #397e83;
+  width: 280px;
+  align-items: center;
+  .cart_title{
+    text-align: center;
+    
+   
+    h5{
+      padding-bottom: 20px;
+      border-bottom: #397e83 1px solid;
+      margin-bottom: 15px;
+      font-weight: bolder;
+      font-size: 26px;
+    }
+  }
+}
+
+.ordercard{
+  padding-top: 30px;
+  height: 340px;
+  box-shadow: 0 0 3px;
+}
+
+.gender_button{
+  width: 90px; 
+  height: 40px;
+  border: 1px solid #b7b7b7;
+  margin-left: 30px;
+  background-color: white;
+  &:hover{
+    border: 0px;
+    background-color: #64c2c9;
+  }
+  &:active{
+    border: 0px;
+    background-color: #64c2c9;
+  }
+  &:focus{
+    border: 0px;
+    background-color: #64c2c9;
+  }
+}

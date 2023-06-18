@@ -1,0 +1,83 @@
+.order_content{
+  border: 1px solid #f0f0f0;
+  height: 470px;
+  box-shadow: 0 0 3px 0px;
+  padding-top: 35px;
+  padding-left: 30px;
+  
+}
+
+.order_content_unpay{
+  margin-top: 100px;
+  height: 300px;
+  padding-top: 35px;
+  padding-left: 30px;
+}
+
+
+.order_topline{
+  width: 30%;
+  height: 80px;
+ 
+}
+
+.finish_pay{
+  width: 125px;
+  height: 30px;
+  background-color: #64c2c9;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+}
+
+.fail_pay{
+  width: 125px;
+  height: 30px;
+  background-color: #b23c3c;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+}
+
+.sucess_review{
+  width: 125px;
+  height: 30px;
+  background-color: #ffe66f;
+  color: #64c2c9;
+  text-align: center;
+  line-height: 35px;
+}
+
+.fail_review{
+  width: 125px;
+  height: 30px;
+  background-color: #b23c3c;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+}
+
+.reviewing{
+  width: 125px;
+  height: 30px;
+  background-color: #64c2c9;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+}
+
+.order_table_tilte{
+  width: 33%;
+  height: 40px;
+  padding-left: 60px;
+  line-height: 40px;
+  background-color: #dbdbdb;
+}
+
+.order_table_content{
+  width: 33%;
+  height: 40px;
+  padding-left: 60px;
+  line-height: 40px;
+  background-color: #e9e9e9;
+}
