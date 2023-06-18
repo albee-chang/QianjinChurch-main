@@ -10856,21 +10856,20 @@ nav a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow: hidden;
   background-image: url("../images/aboutBgImg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
-  z-index: -999;
 }
 .about .aboutBgColors1 {
   position: absolute;
   top: 200px;
   left: 15%;
   background-color: #ffe66f;
-  width: 300px;
+  width: 20%;
   height: 380px;
   z-index: -1;
 }
@@ -10879,7 +10878,7 @@ nav a {
   top: 200px;
   left: 35%;
   background-color: #64c2c9;
-  width: 780px;
+  width: 50%;
   height: 380px;
   z-index: -2;
 }
@@ -10890,7 +10889,7 @@ nav a {
   flex-direction: column;
   justify-content: left;
   margin-top: 140px;
-  margin-left: 30%;
+  margin-left: 27%;
 }
 .about .about1 h1, .about .about1 .h1 {
   font-size: 2rem;
@@ -10910,7 +10909,7 @@ nav a {
   flex-direction: column;
   justify-content: left;
   margin-top: 140px;
-  margin-left: 53%;
+  margin-left: 51%;
 }
 .about .about2 h1, .about .about2 .h1 {
   font-size: 2rem;
@@ -10925,8 +10924,14 @@ nav a {
 }
 .about .moreBtn {
   position: absolute;
-  bottom: 0;
-  right: 20%;
+  bottom: -3%;
+  right: 16%;
+}
+
+.newsTitleCh {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -11056,6 +11061,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  z-index: -999;
   width: 100%;
   height: 1600px;
   margin: 0 auto;
@@ -11082,6 +11088,7 @@ nav a {
   height: 800px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -999;
 }
 
 .linkBtn {
@@ -11128,9 +11135,9 @@ nav a {
 
 .newsTitleNum {
   position: absolute;
-  top: 2%;
-  left: 50px;
-  font-size: 124px;
+  top: 0;
+  left: 35px;
+  font-size: 120px;
   color: #9c9c9c;
 }
 
@@ -12262,6 +12269,10 @@ input:nth-child(6):checked ~ article:nth-of-type(6) p {
   max-height: 130px;
 }
 
+.coursesLink {
+  color: #848484;
+}
+
 .select_area {
   height: 40px;
   background-color: rgba(241, 241, 241, 0.9450980392);
@@ -13212,6 +13223,30 @@ input:nth-child(6):checked ~ article:nth-of-type(6) p {
   background-color: #e9e9e9;
 }
 
+.activityImg {
+  width: 255px;
+  height: 330px;
+  margin: 0 auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10%;
+}
+
+.vedioImg01 {
+  width: 390px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vedioImg02 {
+  width: 258px;
+  height: 258px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 * {
   font-family: "Barlow", sans-serif;
   font-family: "Josefin Sans", sans-serif;
@@ -13303,6 +13338,39 @@ a {
   letter-spacing: 0.1rem;
 }
 
+.navIcon {
+  width: 19px;
+  height: 19px;
+  margin-right: 0.5rem;
+}
+
+.navbarIcons {
+  position: absolute;
+  right: 16%;
+  top: 2%;
+}
+
+@media (max-width: 1300px) {
+  .navbarIcons {
+    position: absolute;
+    right: 12%;
+    top: 2%;
+  }
+}
+@media (max-width: 1200px) {
+  .navbarIcons {
+    position: absolute;
+    right: 9%;
+    top: 2%;
+  }
+}
+@media (max-width: 996px) {
+  .navbarIcons {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+  }
+}
 .footerInfo {
   margin-top: -10rem;
   margin-bottom: 3rem;
@@ -13331,13 +13399,18 @@ a {
   z-index: 999;
 }
 
+.socialMediaIcon {
+  width: 25px;
+  height: 25px;
+}
+
 .contentTitle {
   max-width: 100%;
   height: 43px;
   background-color: #64c2c9;
   padding: 13px;
   padding-left: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 35px;
 }
 
@@ -13387,6 +13460,7 @@ a {
 .move_link {
   margin-top: 30px;
   float: right;
+  cursor: pointer;
 }
 .move_link .move_word {
   color: #64c2c9;
@@ -13406,4 +13480,29 @@ a {
   padding-top: 10rem;
   position: relative;
   z-index: -999;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: url(../images/backtopBtn.png);
+  cursor: pointer;
+  z-index: 999;
+}
+.scroll-to-top:hover {
+  box-shadow: 0 1px 6px 4px rgba(155, 155, 155, 0.3);
+}
+
+.inner {
+  width: 35px;
+  height: 35px;
+  margin-right: 6px;
+  background-image: url("/src/assets/images/right_arrow.png");
+}
+.inner:hover {
+  background-image: url("/src/assets/images/right_arrow_hover.png");
 }/*# sourceMappingURL=all.css.map */
