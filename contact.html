@@ -37,7 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/assets/css/about.css" />
+    <link rel="stylesheet" href="./src/assets/css/pages/contactus.css" />
     <link rel="stylesheet" href="./src/assets/css/all.css" />
   </head>
   <body>
@@ -91,20 +91,139 @@
       </div>
     </nav>
     <!-- 頁首結束 -->
-    <div style="background-image: url('./src/assets/images/bg.png')">
+    <div class="innerPageBg">
+      <img
+        class="bg-left"
+        src="./src/assets/images/bg-left.png"
+        alt="bg-left"
+      />
+      <img
+        class="bg-right"
+        src="./src/assets/images/bg-right.png"
+        alt="bg-right"
+      />
       <div class="container">
-        <div class="row" style="height: 945px; margin-top: 310px">
-          <div class="col-3" style="align-items: center"></div>
+        <div
+          class="row"
+          style="height: 100%; margin-top: 120px; margin-bottom: 10rem"
+        >
+          <div class="col-3" style="align-items: center">
+            <div class="lsTitle">聯絡我們</div>
+
+            <div class="lsTitle" style="margin-top: 78px">祝福網</div>
+            <div class="lsContent">分類一</div>
+            <div class="lsContent">分類二</div>
+            <div class="lsContent">分類三</div>
+          </div>
           <div class="col-8">
-            <div class="topicTitle">/</div>
-            <div
-              style="
-                background-image: url('./src/assets/images/church_info.png');
-                width: 100%;
-                height: 435px;
-                margin-bottom: 35px;
-              "
-            ></div>
+            <div class="contentTitle" style="margin-bottom: 10px">
+              /&ensp;聯絡我們&ensp;/
+            </div>
+            <div style="margin-left: 15px">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8793127756444!2d120.29298997608413!3d22.620981531193866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e423ee131%3A0xaaf6daea0eccc622!2z5Y-w54Gj5Z-6552j6ZW36ICB5pWZ5pyDIOWJjemHkeaVmeacgw!5e0!3m2!1szh-TW!2stw!4v1687003190382!5m2!1szh-TW!2stw"
+                width="100%"
+                height="315"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <div
+                class="d-flex flex-wrap justify-content-between"
+                style="margin-top: 20px"
+              >
+                <div>
+                  <img src="/src/assets/images/contact_phone.png" />
+                  <span style="margin-left: 15px; line-height: 50px"
+                    >07-2212945</span
+                  >
+                </div>
+                <div>
+                  <img src="/src/assets/images/contact_map.png" />
+                  <span style="margin-left: 15px; line-height: 50px"
+                    >高雄市前金區五福三路97號</span
+                  >
+                </div>
+                <div style="align-items: center; margin-top: 5px">
+                  <img type="button" src="/src/assets/images/fb.png" />
+                  <img type="button" src="/src/assets/images/line.png" />
+                  <img type="button" src="/src/assets/images/messenger.png" />
+                </div>
+              </div>
+
+              <div
+                class="d-flex flex-wrap"
+                style="margin-top: 20px; margin-bottom: 30px"
+              >
+                <div>
+                  <img src="/src/assets/images/contact_date.png" />
+                </div>
+                <div>
+                  <span style="margin-left: 15px; line-height: 30px"
+                    >週一 | 教會公休</span
+                  >
+                  <br />
+                  <span style="margin-left: 15px; line-height: 30px"
+                    >週二至週六 | 行政辦公室 &ensp;&ensp;AM 9:00 - PM
+                    18:00</span
+                  >
+                  <br />
+                  <span style="margin-left: 15px; line-height: 30px"
+                    >周日 | AM 6:30 - PM 18:00</span
+                  >
+                  <br />
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap joinus_input_row">
+              <div class="contact_input_title">姓名</div>
+              <input
+                type="text"
+                class="form-control contact_input_area"
+                placeholder="NAME"
+                aria-label="First name"
+              />
+            </div>
+            <div class="d-flex flex-wrap joinus_input_row">
+              <div class="contact_input_title">電話</div>
+              <input
+                type="text"
+                class="form-control contact_input_area"
+                placeholder="TEL"
+                aria-label="First name"
+              />
+            </div>
+            <div class="d-flex flex-wrap joinus_input_row">
+              <div class="contact_input_title">信箱</div>
+              <input
+                type="text"
+                class="form-control contact_input_area"
+                placeholder="EMAIL"
+                aria-label="First name"
+              />
+            </div>
+            <div class="d-flex flex-wrap joinus_input_row">
+              <div class="message_title">留言</div>
+              <textarea
+                type="text"
+                class="form-control contact_input_area"
+                style="height: 200px; margin: auto; margin-left: 12px"
+                placeholder="MESSAGE"
+                aria-label="First name"
+              ></textarea>
+            </div>
+
+            <div class="move_link" style="margin-top: 40px; margin-right: 10px">
+              <div class="move_word font_bolder">SEND</div>
+              <div>
+                <a href="./about.html"
+                  ><img src="./src/assets/images/right_arrow.png"
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
