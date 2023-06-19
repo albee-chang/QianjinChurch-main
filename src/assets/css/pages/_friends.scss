@@ -83,3 +83,31 @@
     z-index: -1;
   }
 }
+
+
+// 見證故事內頁
+.storyContentBg {
+  position: relative;
+
+  .storyContentImg {
+    width: 910px;
+    height: 490px;
+    object-fit: cover;  
+    border-radius: 50px;
+    margin-top: 100px;
+  }
+  .dateMark {
+    background-color:#ffe97aea;
+    color: #64c2c9;
+    position: absolute;
+    bottom: -22%;
+    right: 2%;
+    font-size: 36px;
+    line-height: 2.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0 50px  0  0 ;
+  }
+}
+.collectionBtn:hover {
+  color: #64c2c9;
+}

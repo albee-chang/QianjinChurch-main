@@ -284,3 +284,20 @@ a {
     background-image: url("/src/assets/images/right_arrow_hover.png");
   }
 }
+
+// 下拉選單樣式
+.yearSelect {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #64c2c9;
+  background-color: #ffffff;
+  padding-left: 10px;
+  color: #64c2c9;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color: #000000;
+  }
+}
