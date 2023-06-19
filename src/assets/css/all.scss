@@ -47,6 +47,9 @@
 a {
   text-decoration: none;
 }
+.active {
+  font-weight: bold;
+}
 .titleEN {
   font-size: 3rem;
   display: flex;
@@ -283,6 +286,7 @@ a {
   &:hover {
     background-image: url("/src/assets/images/right_arrow_hover.png");
   }
+  background-repeat: no-repeat;
 }
 
 // 下拉選單樣式
@@ -300,4 +304,27 @@ a {
   &:hover {
     color: #000000;
   }
+}
+
+.lsTitle {
+  text-align: center;
+  width: 145px;
+  height: 30px;
+  border-bottom: solid 5px #fee66e;
+  margin: auto;
+  color: #67c0c8;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.lsContent {
+  text-align: center;
+  margin: auto;
+  width: 120px;
+  height: 30px;
+  color: #7a7a7a;
+  font-weight: bold;
+  margin-top: 20px;
+  border-bottom: solid 1px #7a7a7a;
+  padding-bottom: 0px;
 }

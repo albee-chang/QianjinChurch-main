@@ -90,6 +90,17 @@
         </div>
       </div>
     </nav>
+    <div class="header">
+      <img src="./src/assets/images/headerBg.png" alt="headerBg" />
+      <div
+        class="d-flex breadcrumb text-center justify-content-center position-relative"
+      >
+        <a href="./index.html" class="position-absolute" style="top: -100%">
+          <i class="bi bi-house-fill text-primary"></i
+        ></a>
+        HOME / 最新公告
+      </div>
+    </div>
     <!-- 頁首結束 -->
     <div class="innerPageBg">
       <img
@@ -105,23 +116,36 @@
       <div class="container">
         <div class="row" style="height: 100%; margin-top: 120px">
           <div class="col-3" style="align-items: center">
-            <div class="lsTitle fs-5">最新公告</div>
             <ul
               class="nav mb-3 d-flex flex-column"
               id="pills-tab"
               role="tablist"
               style="align-items: center"
             >
-              <li class="lsContent mt-3" role="presentation">
+              <li class="lsTitle" role="presentation">
                 <div
                   class="tab-link active"
+                  id="tab-latestNews-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-latestNews"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-latestNews"
+                  aria-selected="true"
+                >
+                  最新公告
+                </div>
+              </li>
+              <li class="lsContent mt-3" role="presentation">
+                <div
+                  class="tab-link"
                   id="tab-activity-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#tab-activity"
                   type="button"
                   role="tab"
                   aria-controls="tab-activity"
-                  aria-selected="true"
+                  aria-selected="false"
                 >
                   近期活動
                 </div>
@@ -164,9 +188,104 @@
             <div class="tab-content" id="pills-tabContent">
               <div
                 class="tab-pane fade show active"
+                id="tab-latestNews"
+                role="tabpanel"
+                aria-labelledby="tab-latestNews-tab"
+              >
+                <div class="contentTitle" style="margin-bottom: 20px">
+                  /&ensp;最新公告&ensp;/
+                </div>
+                <div class="annouceinnerItem">
+                  <div class="announceInner_item d-flex">
+                    <div class="outside_border">
+                      <div class="title_tag">30<span>./MAR</span></div>
+                      <div
+                        class="news_picture"
+                        style="
+                          background-image: url('/src/assets/images/announce_inner_hand.png');
+                        "
+                      >
+                        <img src="/src/assets/images/3star.png" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <h5>新春主日恩惠慈愛袋著走</h5>
+                  <p>
+                    由於今年為「青年」年，通常議會會場外會有大型電子螢幕輪播總會青年、大型電子螢幕輪
+                    嘿！沒錯，就是你！
+                  </p>
+                  <p>
+                    邀請你一起參與旌旗社青大集結！
+                    身為這個世代的社青，你是不是也有一顆想竭力追求神的心？
+                    不只要在敬拜中看見神的榮美，更想要緊緊抓住神的應許
+                    不單學習神的樣式，更渴慕在團隊中建造神喜悅的合一
+                    快快手刀報名2023社青愛神營，今年夏天我們一起勇敢追隨祂！
+                  </p>
+                  <u
+                    >「我是世界的光。跟從我的，就不在黑暗裡走，必要得著生命的光」約翰福音8:12</u
+                  >
+
+                  <div class="heartbutton">
+                    <button
+                      type="button"
+                      style="border: 0px; background-color: white"
+                    >
+                      <img src="/src/assets/images/heart.png" />
+                    </button>
+                    <span>723</span>
+                  </div>
+                </div>
+
+                <div class="active_title"><h5>活動花絮</h5></div>
+                <div class="d-flex avtive_photo">
+                  <div>
+                    <img src="/src/assets/images/active_1.png" alt="active1" />
+                  </div>
+                  <div>
+                    <img src="/src/assets/images/active_2.png" alt="active2" />
+                  </div>
+                  <div>
+                    <img src="/src/assets/images/active_3.png" alt="active3" />
+                  </div>
+                  <div>
+                    <img src="/src/assets/images/active_4.png" alt="active4" />
+                  </div>
+
+                  <div>
+                    <img src="/src/assets/images/active_5.png" alt="active1" />
+                  </div>
+                  <div>
+                    <img src="/src/assets/images/active_6.png" alt="active2" />
+                  </div>
+                  <div>
+                    <img src="/src/assets/images/active_7.png" alt="active3" />
+                  </div>
+                  <div>
+                    <img src="/src/assets/images/active_8.png" alt="active4" />
+                  </div>
+                </div>
+
+                <div
+                  class="move_link"
+                  style="margin-top: 95px; margin-bottom: 95px"
+                >
+                  <div class="move_word">BACK</div>
+                  <div>
+                    <a href="./about.html"
+                      ><img src="./src/assets/images/back_link.png"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade"
                 id="tab-activity"
                 role="tabpanel"
                 aria-labelledby="tab-activity-tab"
+                style="height: 900px"
               >
                 <div class="contentTitle">/&ensp;最新公告&ensp;/</div>
                 <div class="announce_item d-flex">
@@ -345,9 +464,83 @@
       </div>
     </div>
     <!-- footer start -->
+    <div
+      class="footerInfo d-flex justify-content-center row innerPageFooter"
+      style="height: 430px; margin-top: 100px"
+    >
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./about.html">關於我們</a></div>
+          <div class="col-3"><a href="./friends.html">你好新朋友</a></div>
+          <div class="col-3"><a href="./activity.html">我的參與</a></div>
+          <div class="col-3"><a href="./online.html">學習成長</a></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./resource.html">資源專區</a></div>
+          <div class="col-3"><a href="./news.html">公告消息</a></div>
+          <div class="col-3"><a href="./contact.html">聯絡據點</a></div>
+          <div class="col-3"><a href="./members.html">會員中心</a></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./collection.html">我的收藏</a></div>
+          <div class="col-3"><a href="./register.html">會員註冊條款</a></div>
+          <div class="col-3"><a href="./privacyPolicy.html">隱私權政策</a></div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-4">
+            <i class="bi bi-telephone-fill"></i> 07-2212945
+          </div>
+          <div class="col-8">
+            <i class="bi bi-geo-alt-fill"></i> 高雄市前金區五福三路97號
+          </div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-12">
+            <i class="bi bi-calendar-fill"></i> 週一未營業 / 週二至週日
+            AM9:00-PM5:00
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8792841486347!2d120.29559499999998!3d22.620982599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e418077dd%3A0x47a1c159edf61a0a!2zODAx6auY6ZuE5biC5YmN6YeR5Y2A5LqU56aP5LiJ6LevOTfomZ8!5e0!3m2!1szh-TW!2stw!4v1685451908392!5m2!1szh-TW!2stw"
+          width="400"
+          height="155"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-12 d-flex justify-content-center mt-3">
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/fbIcon.png"
+            alt="fbIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/lineIcon.png"
+            alt="lineIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/messengerIcon.png"
+            alt="messengerIcon"
+        /></a>
+      </div>
+    </div>
+    <a href="#" class="scroll-to-top"></a>
     <footer class="text-white text-center pt-1 footerText">
       2023 © 前金長老教會 Designed By 耘想科技網頁設計
     </footer>
+    <!-- footer end -->
     <script src="./src/assets/js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"

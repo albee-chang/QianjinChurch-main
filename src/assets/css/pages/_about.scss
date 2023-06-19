@@ -8,27 +8,7 @@
   margin-left: 20px;
 }
 
-.lsTitle {
-  text-align: center;
-  width: 145px;
-  height: 30px;
-  border-bottom: solid 5px #fee66e;
-  margin: auto;
-  color: #67c0c8;
-  font-weight: bold;
-}
 
-.lsContent {
-  text-align: center;
-  margin: auto;
-  width: 120px;
-  height: 30px;
-  color: #7a7a7a;
-  font-weight: bold;
-  margin-top: 20px;
-  border-bottom: solid 1px #7a7a7a;
-  padding-bottom: 0px;
-}
 
 .header {
   img {
@@ -45,9 +25,6 @@
 }
 
 .tab-link {
-  color: #7a7a7a;
-  font-weight: bold;
-  font-size: 16px;
   .active {
     color: #67c0c8;
   }
