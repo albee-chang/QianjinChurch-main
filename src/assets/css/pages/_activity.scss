@@ -2,43 +2,124 @@
   width: 255px;
   height: 330px;
   margin: 0 auto;
-  display: block;
   object-fit: cover;
   border-radius: 10%;
 }
 
-.prayerMeeting {
-  width: 390px;
-  height: 240px;
-  margin: 0 auto;
+.overlay {
   position: relative;
- 
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 5px darkcyan;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.overlay:hover:before {
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.plus-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 1.8rem;
+  padding-right: 0.6rem;
+  padding-top: 0.1rem;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 100;
+  color: white;
+  opacity: 0;
+}
+
+.overlay:hover .plus-icon {
+  opacity: 1;
+}
+
+.overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+  opacity: 0;
+}
+
+.overlay:hover i {
+  opacity: 1;
+}
+
+.prayerMeeting {
+  margin: 0 auto;
+  width: 350px;
+  height: 240px;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+  background-color: yellow;
+  transition: all 0.5s ease;
+}
+
+.prayerMeeting:hover img {
+  opacity: 0.5;
 }
 
 .prayerMeeting img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.prayerMeeting .overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border: 3px solid white;
-    cursor: pointer;
-    background-color: rgba(255, 230, 111, 0.8);
-    box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+/* 點擊滿版樣式 */
+
+.prayerMeeting.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  transition: none;
+  .overlay:before {
+    display: none;
   }
+  :hover img {
+    opacity: 1;
+  }
+}
 
-.prayerMeeting:hover .overlay {
-  opacity: 0.8;
+.prayerMeeting.fullscreen .prayerMeeting-img {
+  margin-top: 30vh;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: zoom-out;
+}
 
+.prayerMeeting.fullscreen .plus-icon,
+.prayerMeeting.fullscreen i {
+  display: none;
+}
 
-  
+.navbar {
+  z-index: 9999;
 }
