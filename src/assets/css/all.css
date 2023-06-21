@@ -12093,15 +12093,14 @@ h2, .h2 {
 .courses_item .outside_border .news_picture button img:hover {
   content: url("/src/assets/images/hreatCircleHover.png");
 }
-.courses_item .outside_border .inner {
-  margin-bottom: 20px;
+.courses_item .outside_border .buyCourseLink {
   width: 35px;
   height: 35px;
   float: right;
   margin-right: 12px;
   background-image: url("/src/assets/images/midRightArrow.png");
 }
-.courses_item .outside_border .inner:hover {
+.courses_item .outside_border .buyCourseLink:hover {
   width: 35px;
   height: 35px;
   background-image: url("/src/assets/images/midRightArrow_hover.png");
@@ -13005,6 +13004,10 @@ input:nth-child(6):checked ~ article:nth-of-type(6) p {
   transition: all 0.2s;
 }
 
+body {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -13142,10 +13145,10 @@ a {
 }
 .innerPageBg .bg-right {
   position: absolute;
-  bottom: -15%;
+  bottom: -5%;
   right: -25%;
   width: 40%;
-  z-index: 999;
+  z-index: 2;
 }
 
 .socialMediaIcon {
@@ -13202,8 +13205,17 @@ a {
   color: #000000;
 }
 
-.font_bolder {
-  font-weight: bolder;
+.move_link {
+  margin-top: 15px;
+  float: right;
+  cursor: pointer;
+}
+.move_link .move_word {
+  color: #64c2c9;
+  vertical-align: bottom;
+}
+.move_link div {
+  display: inline-block;
 }
 
 .move_link1 {
@@ -13219,16 +13231,23 @@ a {
   display: inline-block;
 }
 
+.footerInfo {
+  background-color: transparent;
+}
+
 .innerPageFooter {
   background-image: url(../images/innerPageFooterBg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  margin-top: 2rem;
+  margin-bottom: 0%;
   width: 100%;
   height: 100%;
-  padding-top: 10rem;
+  padding-top: 12rem;
   position: relative;
-  z-index: -999;
+  bottom: 0;
+  z-index: 1;
 }
 
 .scroll-to-top {

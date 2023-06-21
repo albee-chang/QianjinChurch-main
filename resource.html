@@ -67,7 +67,7 @@
             >你好新朋友<br />
             <span class="navTitleEn">FRIENDS</span>
           </a>
-          <a class="nav-link active" href="./activity.html"
+          <a class="nav-link" href="./activity.html"
             >我的參與<br />
             <span class="navTitleEn">ACTIVITY</span>
           </a>
@@ -87,6 +87,32 @@
             >聯絡據點<br />
             <span class="navTitleEn">CONTACT</span>
           </a>
+        </div>
+        <div class="navbarIcons d-flex justify-content-center">
+          <div class="navIcon">
+            <a href="./login.html"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/memberIcon.png"
+                alt="memberIcon"
+            /></a>
+          </div>
+          <div class="navIcon">
+            <a href="./orderreview.html"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/cartIcon.png"
+                alt="cartIcon"
+            /></a>
+          </div>
+          <div class="navIcon">
+            <a href="#"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/searchIcon.png"
+                alt="searchIcon"
+            /></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -115,27 +141,27 @@
       />
       <div class="container">
         <div class="row" style="height: 100%; margin-top: 125px">
-          <div class="col-3" style="align-items: center">
+          <div class="col-12 col-md-3" style="align-items: center">
             <ul
               class="nav mb-3 d-flex flex-column"
               id="pills-tab"
               role="tablist"
               style="align-items: center"
             >
-            <li class="lsTitle" role="presentation">
-              <div
-                class="tab-title active"
-                id="tab-vedioArea-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#tab-vedioArea"
-                type="button"
-                role="tab"
-                aria-controls="tab-vedioArea"
-                aria-selected="true"
-              >
-              影音專區
-              </div>
-            </li>
+              <li class="lsTitle" role="presentation">
+                <div
+                  class="tab-title active"
+                  id="tab-vedioArea-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-vedioArea"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-vedioArea"
+                  aria-selected="true"
+                >
+                  影音專區
+                </div>
+              </li>
               <li class="lsContent" role="presentation">
                 <div
                   class="tab-link"
@@ -153,12 +179,12 @@
               <li class="lsContent" role="presentation">
                 <div
                   class="tab-link"
-                  id="tab-vision-tab"
+                  id="tab-language-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#tab-vision"
+                  data-bs-target="#tab-language"
                   type="button"
                   role="tab"
-                  aria-controls="tab-vision"
+                  aria-controls="tab-language"
                   aria-selected="false"
                 >
                   華語講道
@@ -167,12 +193,12 @@
               <li class="lsContent" role="presentation">
                 <div
                   class="tab-link"
-                  id="tab-traffic-tab"
+                  id="tab-prayer-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#tab-traffic"
+                  data-bs-target="#tab-prayer"
                   type="button"
                   role="tab"
-                  aria-controls="tab-traffic"
+                  aria-controls="tab-prayer"
                   aria-selected="false"
                 >
                   禱告會
@@ -181,12 +207,12 @@
               <li class="lsContent" role="presentation">
                 <div
                   class="tab-link"
-                  id="tab-reunionInfo-tab"
+                  id="tab-morningPrayer-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#tab-reunionInfo"
+                  data-bs-target="#tab-morningPrayer"
                   type="button"
                   role="tab"
-                  aria-controls="tab-reunionInfo"
+                  aria-controls="tab-morningPrayer"
                   aria-selected="false"
                 >
                   早導會
@@ -196,12 +222,12 @@
               <li class="lsTitle" style="margin-top: 72px" role="presentation">
                 <div
                   class="tab-title"
-                  id="tab-priestArea-tab"
+                  id="tab-download-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#tab-priestArea"
+                  data-bs-target="#tab-download"
                   type="button"
                   role="tab"
-                  aria-controls="tab-priestArea"
+                  aria-controls="tab-download"
                   aria-selected="false"
                 >
                   檔案下載
@@ -224,12 +250,12 @@
               <li class="lsContent" role="presentation">
                 <div
                   class="tab-title"
-                  id="tab-coworkers2-tab"
+                  id="tab-category02-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#tab-coworkers2"
+                  data-bs-target="#tab-category02"
                   type="button"
                   role="tab"
-                  aria-controls="tab-coworkers2"
+                  aria-controls="tab-category02"
                   aria-selected="false"
                 >
                   分類二
@@ -239,12 +265,12 @@
               <li class="lsContent" role="presentation">
                 <div
                   class="tab-title"
-                  id="tab-coworkers3-tab"
+                  id="tab-category03-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#tab-coworkers3"
+                  data-bs-target="#tab-category03"
                   type="button"
                   role="tab"
-                  aria-controls="tab-coworkers3"
+                  aria-controls="tab-category03"
                   aria-selected="false"
                 >
                   分類三
@@ -252,7 +278,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-8">
+          <div class="col-12 col-md-8">
             <div class="tab-content" id="pills-tabContent">
               <div
                 class="tab-pane fade show active"
@@ -387,37 +413,14 @@
                   <div class="paging_word"><a href="./about.html">3</a></div>
                 </div>
               </div>
+
               <div
                 class="tab-pane fade"
-                id="tab-vision"
+                id="tab-Taiwanese"
                 role="tabpanel"
-                aria-labelledby="tab-vision-tab"
+                aria-labelledby="tab-Taiwanese-tab"
               >
-                <div
-                  class="tab-pane fade show active"
-                  id="tab-Taiwanese"
-                  role="tabpanel"
-                  aria-labelledby="tab-Taiwanese-tab"
-                >
-                  <div class="topicTitle">/&ensp;台語講道&ensp;/</div>
-                  <div
-                    style="
-                      background-image: url('./src/assets/images/church_info.png');
-                      width: 100%;
-                      height: 435px;
-                      margin-bottom: 35px;
-                    "
-                  ></div>
-                  <p>願景介紹</p>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="tab-traffic"
-                role="tabpanel"
-                aria-labelledby="tab-traffic-tab"
-              >
-                <div class="topicTitle">/&ensp;環境交通&ensp;/</div>
+                <div class="topicTitle">/&ensp;台語講道&ensp;/</div>
                 <div
                   style="
                     background-image: url('./src/assets/images/church_info.png');
@@ -426,15 +429,16 @@
                     margin-bottom: 35px;
                   "
                 ></div>
-                <p>環境交通</p>
+                <p>願景介紹</p>
               </div>
+
               <div
                 class="tab-pane fade"
-                id="tab-reunionInfo"
+                id="tab-language"
                 role="tabpanel"
-                aria-labelledby="tab-reunionInfo-tab"
+                aria-labelledby="tab-language-tab"
               >
-                <div class="topicTitle">/&ensp;聚會資訊&ensp;/</div>
+                <div class="topicTitle">/&ensp;華語講道&ensp;/</div>
                 <div
                   style="
                     background-image: url('./src/assets/images/church_info.png');
@@ -443,15 +447,15 @@
                     margin-bottom: 35px;
                   "
                 ></div>
-                <p>聚會資訊</p>
+                <p>華語講道</p>
               </div>
               <div
                 class="tab-pane fade"
-                id="tab-dedicationInfo"
+                id="tab-prayer"
                 role="tabpanel"
-                aria-labelledby="tab-dedicationInfo-tab"
+                aria-labelledby="tab-prayer-tab"
               >
-                <div class="topicTitle">/&ensp;奉獻資訊&ensp;/</div>
+                <div class="topicTitle">/&ensp;禱告會&ensp;/</div>
                 <div
                   style="
                     background-image: url('./src/assets/images/church_info.png');
@@ -460,276 +464,139 @@
                     margin-bottom: 35px;
                   "
                 ></div>
-                <p>奉獻資訊</p>
+                <p>禱告會</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-morningPrayer"
+                role="tabpanel"
+                aria-labelledby="tab-morningPrayer-tab"
+              >
+                <div class="topicTitle">/&ensp;早禱會&ensp;/</div>
+                <div
+                  style="
+                    background-image: url('./src/assets/images/church_info.png');
+                    width: 100%;
+                    height: 435px;
+                    margin-bottom: 35px;
+                  "
+                ></div>
+                <p>早禱會</p>
               </div>
               <div
                 class="tab-pane fade"
                 id="tab-priestArea"
                 role="tabpanel"
                 aria-labelledby="tab-priestArea-tab"
-              >
-                <div style="display: block" id="priestInfoList">
-                  <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
-                  <div class="priest_item d-flex">
-                    <div class="outside_border">
-                      <div
-                        class="priest_picture"
-                        style="
-                          background-image: url('/src/assets/images/father-james.png');
-                        "
-                      ></div>
-                    </div>
-                    <div class="priest_descript">
-                      <h5>牧師姓名 / <span>Andy</span></h5>
-                      <h5>基本介紹 /</h5>
-                      <ul>
-                        <li>德生教會主任牧師</li>
-                        <li>信義基督教醫院家醫科醫師</li>
-                      </ul>
-
-                      <div class="move_link" type="button">
-                        <div class="move_word">MORE</div>
-                        <div>
-                          <img src="./src/assets/images/right_arrow.png" />
-                        </div>
-                      </div>
-                      <div class="underline"></div>
-                    </div>
-                  </div>
-
-                  <div class="priest_item d-flex flex-row-reverse">
-                    <div class="outside_border">
-                      <div
-                        class="priest_picture"
-                        style="
-                          background-image: url('/src/assets/images/active_1.png');
-                        "
-                      ></div>
-                    </div>
-                    <div class="priest_descript">
-                      <h5>牧師姓名 / <span>Sam</span></h5>
-                      <h5>基本介紹 /</h5>
-                      <ul>
-                        <li>東海大學哲學系畢業</li>
-                        <li>台灣神學院道學碩士</li>
-                      </ul>
-
-                      <div class="move_link" type="button">
-                        <div class="move_word">MORE</div>
-                        <div>
-                          <img src="./src/assets/images/right_arrow.png" />
-                        </div>
-                      </div>
-                      <div class="underline"></div>
-                    </div>
-                  </div>
-
-                  <div class="priest_item d-flex">
-                    <div class="outside_border">
-                      <div
-                        class="priest_picture"
-                        style="
-                          background-image: url('/src/assets/images/Nick.png');
-                        "
-                      ></div>
-                    </div>
-                    <div class="priest_descript">
-                      <h5>牧師姓名 / <span>Benny</span></h5>
-                      <h5>基本介紹 /</h5>
-                      <ul>
-                        <li>台灣神學院</li>
-                        <li>道學碩士</li>
-                      </ul>
-
-                      <div class="move_link" type="button">
-                        <div class="move_word">MORE</div>
-                        <div>
-                          <img src="./src/assets/images/right_arrow.png" />
-                        </div>
-                      </div>
-                      <div class="underline"></div>
-                    </div>
-                  </div>
-
-                  <div class="priest_item d-flex flex-row-reverse">
-                    <div class="outside_border">
-                      <div
-                        class="priest_picture"
-                        style="
-                          background-image: url('/src/assets/images/father-james.png');
-                        "
-                      ></div>
-                    </div>
-                    <div class="priest_descript">
-                      <h5>牧師姓名 / <span>Ted</span></h5>
-                      <h5>基本介紹 /</h5>
-                      <ul>
-                        <li>德生教會主任牧師</li>
-                        <li>信義基督教醫院家醫科醫師</li>
-                      </ul>
-
-                      <div class="move_link" type="button">
-                        <div class="move_word">MORE</div>
-                        <div>
-                          <img src="./src/assets/images/right_arrow.png" />
-                        </div>
-                      </div>
-                      <div class="underline"></div>
-                    </div>
-                  </div>
-
-                  <div class="priest_item d-flex">
-                    <div class="outside_border">
-                      <div
-                        class="priest_picture"
-                        style="
-                          background-image: url('/src/assets/images/Rose2.png');
-                        "
-                      ></div>
-                    </div>
-                    <div class="priest_descript">
-                      <h5>牧師姓名 / <span>Lisa</span></h5>
-                      <h5>基本介紹 /</h5>
-                      <ul>
-                        <li>東海大學哲學系畢業</li>
-                        <li>台灣神學院道學碩士</li>
-                      </ul>
-
-                      <div class="move_link" type="button">
-                        <div class="move_word">MORE</div>
-                        <div>
-                          <img src="./src/assets/images/right_arrow.png" />
-                        </div>
-                      </div>
-                      <div class="underline"></div>
-                    </div>
-                  </div>
-
-                  <div class="priest_item d-flex flex-row-reverse">
-                    <div class="outside_border">
-                      <div
-                        class="priest_picture"
-                        style="
-                          background-image: url('/src/assets/images/Rose.png');
-                        "
-                      ></div>
-                    </div>
-                    <div class="priest_descript">
-                      <h5>牧師姓名 / <span>Rebeca</span></h5>
-                      <h5>基本介紹 /</h5>
-                      <ul>
-                        <li>台灣神學院</li>
-                        <li>道學碩士</li>
-                      </ul>
-
-                      <div class="move_link" type="button">
-                        <div class="move_word">MORE</div>
-                        <div>
-                          <img src="./src/assets/images/right_arrow.png" />
-                        </div>
-                      </div>
-                      <div class="underline"></div>
-                    </div>
-                  </div>
-
-                  <div class="pagging">
-                    <div class="paging_word current_page">
-                      <a href="./about.html">1</a>
-                    </div>
-                    <div class="paging_word"><a href="./about.html">2</a></div>
-                    <div class="paging_word"><a href="./about.html">3</a></div>
-                  </div>
-                </div>
-                <div style="display: none" id="priestInfoSinglePage">
-                  <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
-                  <div class="priestInfo d-flex">
-                    <div
-                      style="
-                        background-image: url('./src/assets/images/father-james.png');
-                        width: 50%;
-                        height: 435px;
-                        margin-bottom: 35px;
-                      "
-                    ></div>
-                    <div class="descript">
-                      <p class="p-color">
-                        牧師姓名&ensp;/&ensp;<span style="color: black"
-                          >Andy</span
-                        >
-                      </p>
-                      <p class="p-color">基本介紹&ensp;/</p>
-                      <p>德生教會主任牧師</p>
-                      <p>信義基督教醫院家醫科醫師</p>
-                      <p>德生教會主任牧師</p>
-                      <p>信義基督教醫院家醫科醫師</p>
-                    </div>
-                  </div>
-                  <p>
-                    近年台灣教會界有許多不同的方向：<br />
-                    有的注重聖經研讀和神學，有的注重聖靈充滿和恩賜；有的注重保持優良傳統，有的注重改革與
-                    更新；有的注重傳揚福音搶救靈魂，有的注重生活實踐社會關懷；有的注重訓練門徒，有的注重
-                    牧養關顧；有的注重關懷資深長輩和成人，有的注重帶領年輕人和兒童。但我常在思考，在上帝
-                    的心意裡面，這些方向其實不一定互相排斥，反而是可以相輔相成：教會需要聖經，也需要聖靈
-                    ；教會需要傳承優良的傳統，也需要改革不斷進步；教會需要傳福音，也需要關懷社會；教會需
-                    要訓練耶穌的門徒，也需要牧養關顧有需要的人；教會不應該忽略資深長輩和成人，也不應該忽
-                    略年輕人和兒童。教會應該鼓勵不同恩賜和方向好好照上帝心意發展，並且也互相接納、彼此成
-                    全。
-                  </p>
-
-                  <div class="move_link">
-                    <div class="move_word">BACK</div>
-                    <div>
-                      <a href="./about.html"
-                        ><img src="./src/assets/images/back_link.png"
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ></div>
               <div
                 class="tab-pane fade"
-                id="tab-coworkers"
+                id="tab-download"
                 role="tabpanel"
-                aria-labelledby="tab-coworkers-tab"
+                aria-labelledby="tab-download-tab"
               >
-                <div class="contentTitle">/&ensp;同工專區&ensp;/</div>
-                <div class="priestInfo d-flex flex-wrap">
-                  <div class="met_photo">
-                    <img src="./src/assets/images/darius.png" />
-                  </div>
-                  <div class="metDescript">
-                    <div class="field_title">姓&ensp;名</div>
-                    <p>Emily</p>
-                    <br />
-                    <div class="field_title">服事經歷</div>
-                    <p>台南中會佳里教會傳道師</p>
-                    <p>教育牧師</p>
-                    <p>新竹科學園區聯華電子助理工程師</p>
+                <div class="contentTitle">/&ensp;檔案下載&ensp;/</div>
+                <div class="first_row">
+                  <div>門徒培育種籽教會申請辦法與申請表格</div>
+                  <div class="chain">
+                    <button type="button"></button>
                   </div>
                 </div>
-                <br />
-                <div class="field_title">負責事工</div>
-                <div style="padding: 20px">
-                  <p>
-                    原住民宣教委員會(傳道事工：原住民都市宣教夥伴方案、原住民小型教會方案、原宣
-                    普世)、中會/族群區會總幹事聯繫(原住民)、教會法規委員會、總委會事工小組
-                    ( 緊急
-                    處理小組、原住民教會募款小組、原住民族母語聖經翻譯審譯小組、長榮大學善處小
-                    組、宜灣教會產權糾紛善處小組)、台灣普世論壇(TEF)、台灣教會合作協會(NCCT)。
-                  </p>
-
-                  <p>
-                    傳道委員會、國外宣教師差派關懷、國外台灣人教會關懷、教會一覽表、21世紀新台
-                    灣宣教運動、總委會事工小組(教會音樂專職事奉的養成、聘任和薪資制度研議小組)。
-                  </p>
+                <div class="dlContainer">
+                  <div>財委會會計程式</div>
+                  <div class="down_arrow">
+                    <button type="button"></button>
+                  </div>
                 </div>
-                <div class="move_link">
-                  <div class="move_word">BACK</div>
+                <div class="dlContainer">
+                  <div>教會財稅相關 Q&A 手冊 (第七版) 勘誤表</div>
+                  <div class="chain">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>資料查詢服務</div>
+                  <div class="down_arrow">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>2023年事工資源手冊</div>
+                  <div class="chain">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>2023教勢統計表格</div>
+                  <div class="down_arrow">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>神學院推薦表</div>
+                  <div class="chain">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
                   <div>
-                    <a href="./about.html"
-                      ><img src="./src/assets/images/back_link.png"
-                    /></a>
+                    牧師、傳道師外聘（聘任）申請書（內含機構、申請者用之表格）
                   </div>
+                  <div class="down_arrow">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>財委會會計程式</div>
+                  <div class="chain">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>教會財稅相關 Q&A 手冊 (第七版) 勘誤表</div>
+                  <div class="down_arrow">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>資料查詢服務</div>
+                  <div class="chain">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>2023年事工資源手冊</div>
+                  <div class="down_arrow">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>2023教勢統計表格</div>
+                  <div class="chain">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>神學院推薦表</div>
+                  <div class="down_arrow">
+                    <button type="button"></button>
+                  </div>
+                </div>
+                <div class="dlContainer">
+                  <div>
+                    牧師、傳道師外聘（聘任）申請書（內含機構、申請者用之表格）
+                  </div>
+                  <div class="chain">
+                    <button type="button"></button>
+                  </div>
+                </div>
+
+                <div class="pagging">
+                  <div class="paging_word current_page">
+                    <a href="./about.html">1</a>
+                  </div>
+                  <div class="paging_word"><a href="./about.html">2</a></div>
+                  <div class="paging_word"><a href="./about.html">3</a></div>
                 </div>
               </div>
               <div
@@ -739,141 +606,22 @@
                 aria-labelledby="tab-category01-tab"
               >
                 <div class="contentTitle">/&ensp;分類一&ensp;/</div>
-
-                <div class="item_conainer d-flex flex-wrap">
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Emily.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Emily</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Rose.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Rose</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Nick.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Nick</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Nick.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Nick</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Rose2.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Rose</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Albe.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Albe</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Rose.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Rose</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Rose.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Rose</div>
-                  </div>
-
-                  <div class="workmetlist_item">
-                    <div
-                      class="fig"
-                      style="
-                        background-image: url('/src/assets/images/Albe.png');
-                      "
-                    ></div>
-                    <div class="circle"></div>
-                    <a href="./about.html">
-                      <div class="inner"></div>
-                    </a>
-                    <div class="topic">Albe</div>
-                  </div>
-                </div>
-                <div class="pagging">
-                  <div class="paging_word current_page">
-                    <a href="./about.html">1</a>
-                  </div>
-                  <div class="paging_word"><a href="./about.html">2</a></div>
-                  <div class="paging_word"><a href="./about.html">3</a></div>
-                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-category02"
+                role="tabpanel"
+                aria-labelledby="tab-category02-tab"
+              >
+                <div class="contentTitle">/&ensp;分類二&ensp;/</div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-category03"
+                role="tabpanel"
+                aria-labelledby="tab-category03-tab"
+              >
+                <div class="contentTitle">/&ensp;分類三&ensp;/</div>
               </div>
             </div>
           </div>
@@ -885,8 +633,8 @@
       class="footerInfo d-flex justify-content-center row innerPageFooter"
       style="height: 430px; margin-top: 100px"
     >
-      <div class="col-2"></div>
-      <div class="col-4">
+      <div class="col-12 col-md-2"></div>
+      <div class="col-12 col-md-4">
         <div class="row footerInfoLink my-2">
           <div class="col-3"><a href="./about.html">關於我們</a></div>
           <div class="col-3"><a href="./friends.html">你好新朋友</a></div>
@@ -897,12 +645,14 @@
           <div class="col-3"><a href="./resource.html">資源專區</a></div>
           <div class="col-3"><a href="./news.html">公告消息</a></div>
           <div class="col-3"><a href="./contact.html">聯絡據點</a></div>
-          <div class="col-3"><a href="./members.html">會員中心</a></div>
+          <div class="col-3"><a href="./membermodify.html">會員中心</a></div>
         </div>
         <div class="row footerInfoLink my-2">
           <div class="col-3"><a href="./collection.html">我的收藏</a></div>
-          <div class="col-3"><a href="./register.html">會員註冊條款</a></div>
-          <div class="col-3"><a href="./privacyPolicy.html">隱私權政策</a></div>
+          <div class="col-3">
+            <a href="./registerterms.html">會員註冊條款</a>
+          </div>
+          <div class="col-3"><a href="./joinmember.html">隱私權政策</a></div>
           <div class="col-3"></div>
         </div>
         <div class="row footerInfoLink my-2">
@@ -920,7 +670,7 @@
           </div>
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-12 col-md-2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8792841486347!2d120.29559499999998!3d22.620982599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e418077dd%3A0x47a1c159edf61a0a!2zODAx6auY6ZuE5biC5YmN6YeR5Y2A5LqU56aP5LiJ6LevOTfomZ8!5e0!3m2!1szh-TW!2stw!4v1685451908392!5m2!1szh-TW!2stw"
           width="400"
@@ -931,7 +681,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="col-4"></div>
+      <div class="col-12 col-md-4"></div>
       <div class="col-12 d-flex justify-content-center mt-3">
         <a href=""
           ><img
