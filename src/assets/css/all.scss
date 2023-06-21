@@ -22,7 +22,6 @@
 @import "./pages/courses";
 @import "./pages/mycart";
 @import "./pages/onlinecourse";
-@import "./pages/onlinecourse";
 @import "./pages/login";
 @import "./pages/contactus";
 @import "./pages/coursepayed";
@@ -237,8 +236,8 @@ a {
   font-weight: bolder;
 }
 
-.move_link {
-  margin-top: 30px;
+.move_link1 {
+  margin-top: 15px;
   float: right;
   cursor: pointer;
   .move_word {
@@ -284,6 +283,24 @@ a {
   background-image: url("/src/assets/images/right_arrow.png");
   &:hover {
     background-image: url("/src/assets/images/right_arrow_hover.png");
+  }
+  background-repeat: no-repeat;
+}
+.inner1 {
+  width: 35px;
+  height: 35px;
+  background-image: url("/src/assets/images/right_arrow.png");
+  &:hover {
+    background-image: url("/src/assets/images/right_arrow_hover.png");
+  }
+  background-repeat: no-repeat;
+}
+.inner2 {
+  width: 35px;
+  height: 35px;
+  background-image: url("/src/assets/images/back_link.png");
+  &:hover {
+    background-image: url("/src/assets/images/back_link.png");
   }
   background-repeat: no-repeat;
 }

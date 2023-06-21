@@ -11444,36 +11444,47 @@ footer .footerText {
   margin-right: 15px;
 }
 
-.bless_item {
-  width: 100%;
-  height: 400px;
-  margin-bottom: 35px;
-  position: relative;
+.duel_content {
+  width: 405px;
+  height: 235px;
+  object-fit: cover;
+  object-position: top;
 }
-.bless_item .duel_content {
-  width: 100%;
-  height: 494px;
+
+.buildingName {
+  color: #397e83;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
-.bless_item .fig {
+
+.mapLinkIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.fig {
   width: 100%;
   height: 334px;
   margin-bottom: 10px;
 }
-.bless_item h2, .bless_item .h2 {
+
+h2, .h2 {
   margin-left: 15px;
   margin-bottom: 0px;
   color: #538f93;
   font-weight: bolder;
 }
-.bless_item .context {
+
+.context {
   margin-top: 16px;
   padding-left: 6px;
   padding-right: 6px;
 }
-.bless_item .context h5, .bless_item .context .h5 {
+.context h5, .context .h5 {
   font-weight: bolder;
 }
-.bless_item .circle {
+
+.circle {
   position: absolute;
   top: 223px;
   left: 176px;
@@ -11482,7 +11493,8 @@ footer .footerText {
   border-radius: 100%;
   background-color: white;
 }
-.bless_item .inner {
+
+.inner {
   width: 35px;
   height: 35px;
   position: absolute;
@@ -11491,10 +11503,11 @@ footer .footerText {
   margin-right: 6px;
   background-image: url("/src/assets/images/right_arrow.png");
 }
-.bless_item .inner:hover {
+.inner:hover {
   background-image: url("/src/assets/images/right_arrow_hover.png");
 }
-.bless_item .topic {
+
+.topic {
   font-weight: bolder;
   margin-top: 45px;
   text-align: center;
@@ -11509,25 +11522,6 @@ footer .footerText {
 }
 .map_link div {
   display: inline-block;
-}
-
-.carte {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-.carte ul {
-  list-style: none;
-  margin: 0px;
-  padding-left: 0;
-  padding: 15px;
-}
-.carte .title {
-  background-color: rgba(245, 229, 150, 0.8);
-}
-.carte .context {
-  margin: 0px;
-  background-color: rgba(225, 215, 202, 0.8);
 }
 
 .announce_item {
@@ -12041,10 +12035,9 @@ footer .footerText {
   position: relative;
 }
 .storyContentBg .storyContentImg {
-  width: 910px;
-  height: 490px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 90%;
+  height: 400px;
+  object-fit: cover;
   border-radius: 50px;
   margin-top: 100px;
 }
@@ -12052,16 +12045,37 @@ footer .footerText {
   background-color: rgba(255, 233, 122, 0.9176470588);
   color: #64c2c9;
   position: absolute;
-  bottom: -22%;
+  bottom: -10%;
   right: 2%;
-  font-size: 36px;
-  line-height: 2.2rem;
-  padding: 0.5rem 1rem;
+  font-size: 20px;
+  line-height: 1.5rem;
+  padding: 0.8rem 0.7rem;
   border-radius: 0 50px 0 0;
 }
 
 .collectionBtn:hover {
   color: #64c2c9;
+}
+
+.contectBtn {
+  display: block;
+  background-color: #ffe97a;
+  padding: 0.6rem 1.2rem 0.1rem 1.2rem;
+  border-radius: 25px 25px 0 0;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+  margin-top: 1rem;
+  float: right;
+  cursor: pointer;
+  width: 180px;
+}
+.contectBtn:hover {
+  background-color: #64c2c9;
+  color: white;
+}
+
+.accordion-body {
+  background-color: #faf6f2;
 }
 
 .courses_item {
@@ -12829,6 +12843,7 @@ input:nth-child(6):checked ~ article:nth-of-type(6) p {
   max-height: 130px;
 }
 
+
 .login_move_link {
   margin-top: 60px;
   margin-left: 45%;
@@ -13578,16 +13593,16 @@ a {
   font-weight: bolder;
 }
 
-.move_link {
-  margin-top: 30px;
+.move_link1 {
+  margin-top: 15px;
   float: right;
   cursor: pointer;
 }
-.move_link .move_word {
+.move_link1 .move_word {
   color: #64c2c9;
   vertical-align: bottom;
 }
-.move_link div {
+.move_link1 div {
   display: inline-block;
 }
 
@@ -13627,6 +13642,26 @@ a {
 }
 .inner:hover {
   background-image: url("/src/assets/images/right_arrow_hover.png");
+}
+
+.inner1 {
+  width: 35px;
+  height: 35px;
+  background-image: url("/src/assets/images/right_arrow.png");
+  background-repeat: no-repeat;
+}
+.inner1:hover {
+  background-image: url("/src/assets/images/right_arrow_hover.png");
+}
+
+.inner2 {
+  width: 35px;
+  height: 35px;
+  background-image: url("/src/assets/images/back_link.png");
+  background-repeat: no-repeat;
+}
+.inner2:hover {
+  background-image: url("/src/assets/images/back_link.png");
 }
 
 .yearSelect {

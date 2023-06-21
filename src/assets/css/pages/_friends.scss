@@ -84,30 +84,51 @@
   }
 }
 
-
 // 見證故事內頁
 .storyContentBg {
   position: relative;
 
   .storyContentImg {
-    width: 910px;
-    height: 490px;
-    object-fit: cover;  
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
     border-radius: 50px;
     margin-top: 100px;
   }
   .dateMark {
-    background-color:#ffe97aea;
+    background-color: #ffe97aea;
     color: #64c2c9;
     position: absolute;
-    bottom: -22%;
+    bottom: -10%;
     right: 2%;
-    font-size: 36px;
-    line-height: 2.2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0 50px  0  0 ;
+    font-size: 20px;
+    line-height: 1.5rem;
+    padding: 0.8rem 0.7rem;
+    border-radius: 0 50px 0 0;
   }
 }
 .collectionBtn:hover {
   color: #64c2c9;
+}
+
+.contectBtn {
+  display: block;
+  background-color: #ffe97a;
+  padding: 0.6rem 1.2rem 0.1rem 1.2rem;
+  border-radius: 25px 25px 0 0;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+  margin-top: 1rem;
+  float: right;
+  cursor: pointer;
+  width: 180px;
+  &:hover {
+    background-color: #64c2c9;
+    color: white;
+  }
+
+}
+
+.accordion-body {
+  background-color: #faf6f2;
 }

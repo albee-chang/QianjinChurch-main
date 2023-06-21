@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前金教會</title>
+    <!-- 載入 Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- 載入 Bootstrap icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- 載入 Google Noto Sans Traditional Chinese Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Josefin+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Serif+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/assets/css/pages/friends.css" />
+    <link rel="stylesheet" href="./src/assets/css/all.css" />
+  </head>
+
+  <body>
+    <!-- 頁首 -->
+    <nav class="navbar navbar-expand-md sticky-top bg-primary">
+      <div class="container-fluid text-white d-flex justify-content-center">
+        <a class="logo" href="./index.html">
+          <img src="./src/assets/images/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="nav-link" aria-current="page" href="./about.html"
+            >關於我們 <br />
+            <span class="navTitleEn">ABOUT</span>
+          </a>
+          <a class="nav-link" href="./friends.html"
+            >你好新朋友<br />
+            <span class="navTitleEn">FRIENDS</span>
+          </a>
+          <a class="nav-link" href="./activity.html"
+            >我的參與<br />
+            <span class="navTitleEn">ACTIVITY</span>
+          </a>
+          <a class="nav-link" href="./online.html"
+            >學習成長<br />
+            <span class="navTitleEn">ONLINE</span>
+          </a>
+          <a class="nav-link" href="./resource.html"
+            >資源專區<br />
+            <span class="navTitleEn">RESOURCE</span>
+          </a>
+          <a class="nav-link" href="./news.html"
+            >公告消息<br />
+            <span class="navTitleEn">NEWS</span>
+          </a>
+          <a class="nav-link" href="./contact.html"
+            >聯絡據點<br />
+            <span class="navTitleEn">CONTACT</span>
+          </a>
+        </div>
+        <div class="navbarIcons d-flex justify-content-center">
+          <div class="navIcon">
+            <a href="./members.html"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/memberIcon.png"
+                alt="memberIcon"
+            /></a>
+          </div>
+          <div class="navIcon">
+            <a href="./carts.html"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/cartIcon.png"
+                alt="cartIcon"
+            /></a>
+          </div>
+          <div class="navIcon">
+            <a href="#"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/searchIcon.png"
+                alt="searchIcon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+      <img src="./src/assets/images/headerBg.png" alt="headerBg" />
+      <div
+        class="d-flex breadcrumb text-center justify-content-center position-relative"
+      >
+        <a href="./index.html" class="position-absolute" style="top: -100%">
+          <i class="bi bi-house-fill text-primary"></i
+        ></a>
+        HOME / 耶穌是誰
+      </div>
+    </div>
+    <!-- 頁首結束 -->
+    <div class="innerPageBg">
+      <img
+        class="bg-left"
+        src="./src/assets/images/bg-left.png"
+        alt="bg-left"
+      />
+      <img
+        class="bg-right"
+        src="./src/assets/images/bg-right.png"
+        alt="bg-right"
+      />
+      <div
+        class="container"
+        style="height: 100%; width: 70%; margin-top: 120px; min-height: 900px"
+      >
+        <div class="text-primary fw-bold mb-5 fs-5">
+          親愛的朋友您好： <br />
+          如果您想進一步認識基督信仰，請點選左側的問題分類，並尋找您感興趣的主題。
+          <br />
+          若是還有其它疑問，不在問題列表當中，歡迎使用「新朋友留言」，將您的問題傳給我們，我們會儘快跟您回覆，謝謝！
+          <a class="contectBtn" href="./contact.html"
+            >新朋友留言 <img src="./src/assets/images/blueLinkArrow.png" alt=""
+          /></a>
+        </div>
+        <br />
+        <br />
+        <!-- QA 手風琴下單選單 -->
+        <div class="accordion" id="Q1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button
+                class="accordion-button collapsed text-white fw-bold bg-primary w-100 fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+                aria-expanded="false"
+                aria-controls="collapse1"
+              >
+                Q: &ensp;
+                <span class="fs-5"> /&ensp;耶穌是誰？&ensp;/</span>
+              </button>
+            </h2>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse"
+              style="padding-left: 0"
+              aria-labelledby="heading1"
+              data-bs-parent="#Q1"
+            >
+              <div class="accordion-body row">
+                <div class="col-12 text-primary fs-3">A:</div>
+                <div class="col-12">
+                  耶穌誕生在猶太的伯利恆。他的母親是瑪利亞。當瑪利亞還是處女尚未與未婚夫約瑟成婚的時候，她由聖靈感孕生了耶穌。
+                  約瑟不願意明明羞辱她，想暗暗的把她休了。主的使者在他夢裡顯現，叫他把馬利亞娶過來。耶穌長大受洗之後，聖靈將他
+                  引到曠野，禁食四十天，勝過魔鬼的試探。
+                  <br /><br />
+                  耶穌充滿了聖靈的能力，回到加利利，在猶太人各會堂，帶著權柄，傳講天國的福音，還行了很多上帝跡奇事。他平靜風浪
+                  ，醫治痲瘋病人，叫瘸子走路，瞎子看見，聾子聽見，啞巴說話，死人復活，驅趕魔鬼。耶穌究竟是誰？他的鄉人說：『這
+                  人哪來這樣的智慧和異能呢？這不是那木匠的兒子嗎？他母親不是叫馬利亞嗎？他兄弟們不是叫雅各、約瑟、西門、猶大嗎
+                  ？他姊妹們不是都在我們這裡嗎？他這一切是從哪裡來的呢？
+                  』（馬太13：54-56）
+                  <br /><br />
+                  耶穌從跟隨他做門徒當中挑選了十二位使徒，其中有他所召的漁夫西門彼得和他兄弟安得烈，雅各和他兄弟約翰。耶穌就問
+                  他的門徒，『人們說人子是誰？　”』他們回答說：『有人說是施洗的約翰；有人說是以利亞；又有人說是耶利米或是先知中
+                  的一位。』耶穌問他們：『你們說我是誰？』西門‧彼得回答說：『你是基督，是永生上帝的兒子。』（馬太16：13-17）
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion mt-3" id="Q2">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+              <button
+                class="accordion-button collapsed text-white fw-bold bg-primary w-100 fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+              Q: &ensp;
+              <span class="fs-5">
+                /&ensp;神既是不能看見的，怎知道有神呢？&ensp;/</span
+              >
+              </button>
+            </h2>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              style="padding-left: 0"
+              aria-labelledby="heading2"
+              data-bs-parent="#Q2"
+            >
+              <div class="accordion-body row">
+                <div class="col-12 text-primary fs-3">A:</div>
+                <div class="col-12">
+                  如果受浸是人建立的宗教儀式，我們就可以完全忽略它，不必再討論。然而，如果這是神命定進
+                  入神國的作法，我們就需要照著作，以完成從黑暗的權勢，移民到神愛子光明國度的手續。
+                  (歌羅西書1:13)。主耶穌雖是無限的神，但當祂來到地上作第一位神人的時候，也主動去施浸約
+                  翰那裏受浸，照著神新約的規定，作了榜樣。(馬太福音3:15)。
+                  <br /><br />
+                  當我們心裏接受基督作生命，口裏承認基督是救主，神就將祂永遠的生命賜給我們，我們就從神
+                  生了。這樣我們就能看見神的國，就如我們接到另一個國家的移民許可和簽證，使我們有資格和
+                  權利成為那個國家的國民。(約翰福音3:3-5）。然而我們還需要正式公開的經過海關，進入那個
+                  國家，才算完成這個移民手續。<br /><br />
+                  作基督徒不僅是裏面接受神永遠的生命而已，在外面也要開始過一個新的生活。就像我們進入一
+                  個新的國家，在那個國家展開新的生活一樣。所以信而受浸，才完成了成為神家中的親人、神國
+                  的子民的第一步。(馬可福音16:16）。<br /><br />
+                  移民神國的許可是由神照著我們的相信與接受發給我們的，然而還需要我們主動的去受浸，以浸
+                  入基督的身體，成為基督身體上的肢體。(哥林多前書12:13)。完成這個移民手續後，才正式的
+                  開始在神的國裏，在基督身體中過新的生活。我們的相信是邁出進入神國的第一條腿，要完全進
+                  入神的國，另一條腿（受浸）也必須跟進，這才算是邁進了完整的第
+                  一步。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion mt-3" id="Q3">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button
+                class="accordion-button collapsed text-white fw-bold bg-primary w-100 fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                Q: &ensp;
+                <span class="fs-5">
+                  /&ensp;神愛世人有什麼旨意和應許？&ensp;/</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              style="padding-left: 0"
+              aria-labelledby="heading3"
+              data-bs-parent="#Q3"
+            >
+              <div class="accordion-body row">
+                <div class="col-12 text-primary fs-3">A :</div>
+                <div class="col-12">
+                  如果受浸是人建立的宗教儀式，我們就可以完全忽略它，不必再討論。然而，如果這是神命定進
+                  入神國的作法，我們就需要照著作，以完成從黑暗的權勢，移民到神愛子光明國度的手續。
+                  (歌羅西書1:13)。主耶穌雖是無限的神，但當祂來到地上作第一位神人的時候，也主動去施浸約
+                  翰那裏受浸，照著神新約的規定，作了榜樣。(馬太福音3:15)。
+                  <br /><br />
+                  當我們心裏接受基督作生命，口裏承認基督是救主，神就將祂永遠的生命賜給我們，我們就從神
+                  生了。這樣我們就能看見神的國，就如我們接到另一個國家的移民許可和簽證，使我們有資格和
+                  權利成為那個國家的國民。(約翰福音3:3-5）。然而我們還需要正式公開的經過海關，進入那個
+                  國家，才算完成這個移民手續。<br /><br />
+                  作基督徒不僅是裏面接受神永遠的生命而已，在外面也要開始過一個新的生活。就像我們進入一
+                  個新的國家，在那個國家展開新的生活一樣。所以信而受浸，才完成了成為神家中的親人、神國
+                  的子民的第一步。(馬可福音16:16）。<br /><br />
+                  移民神國的許可是由神照著我們的相信與接受發給我們的，然而還需要我們主動的去受浸，以浸
+                  入基督的身體，成為基督身體上的肢體。(哥林多前書12:13)。完成這個移民手續後，才正式的
+                  開始在神的國裏，在基督身體中過新的生活。我們的相信是邁出進入神國的第一條腿，要完全進
+                  入神的國，另一條腿（受浸）也必須跟進，這才算是邁進了完整的第
+                  一步。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion mt-3" id="Q4">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button
+                class="accordion-button collapsed text-white fw-bold bg-primary w-100 fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+                aria-expanded="false"
+                aria-controls="collapse4"
+              >
+              Q: &ensp;
+              <span class="fs-5">
+                /&ensp;神在宇宙中居於什麼地位？&ensp;/</span
+              >
+              </button>
+            </h2>
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              style="padding-left: 0"
+              aria-labelledby="heading4"
+              data-bs-parent="#Q4"
+            >
+              <div class="accordion-body row">
+                <div class="col-12 text-primary fs-3">A:</div>
+                <div class="col-12">
+                  如果受浸是人建立的宗教儀式，我們就可以完全忽略它，不必再討論。然而，如果這是神命定進
+                  入神國的作法，我們就需要照著作，以完成從黑暗的權勢，移民到神愛子光明國度的手續。
+                  (歌羅西書1:13)。主耶穌雖是無限的神，但當祂來到地上作第一位神人的時候，也主動去施浸約
+                  翰那裏受浸，照著神新約的規定，作了榜樣。(馬太福音3:15)。
+                  <br /><br />
+                  當我們心裏接受基督作生命，口裏承認基督是救主，神就將祂永遠的生命賜給我們，我們就從神
+                  生了。這樣我們就能看見神的國，就如我們接到另一個國家的移民許可和簽證，使我們有資格和
+                  權利成為那個國家的國民。(約翰福音3:3-5）。然而我們還需要正式公開的經過海關，進入那個
+                  國家，才算完成這個移民手續。<br /><br />
+                  作基督徒不僅是裏面接受神永遠的生命而已，在外面也要開始過一個新的生活。就像我們進入一
+                  個新的國家，在那個國家展開新的生活一樣。所以信而受浸，才完成了成為神家中的親人、神國
+                  的子民的第一步。(馬可福音16:16）。<br /><br />
+                  移民神國的許可是由神照著我們的相信與接受發給我們的，然而還需要我們主動的去受浸，以浸
+                  入基督的身體，成為基督身體上的肢體。(哥林多前書12:13)。完成這個移民手續後，才正式的
+                  開始在神的國裏，在基督身體中過新的生活。我們的相信是邁出進入神國的第一條腿，要完全進
+                  入神的國，另一條腿（受浸）也必須跟進，這才算是邁進了完整的第
+                  一步。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion mt-3" id="Q5">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+              <button
+                class="accordion-button collapsed text-white fw-bold bg-primary w-100 fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse5"
+                aria-expanded="false"
+                aria-controls="collapse5"
+              >
+              Q: &ensp;
+              <span class="fs-5">
+                /&ensp;神對待世人是甚麼態度？&ensp;/</span
+              >
+              </button>
+            </h2>
+            <div
+              id="collapse5"
+              class="accordion-collapse collapse"
+              style="padding-left: 0"
+              aria-labelledby="heading5"
+              data-bs-parent="#Q5"
+            >
+              <div class="accordion-body row">
+                <div class="col-12 text-primary fs-3">A:</div>
+                <div class="col-12">
+                  如果受浸是人建立的宗教儀式，我們就可以完全忽略它，不必再討論。然而，如果這是神命定進
+                  入神國的作法，我們就需要照著作，以完成從黑暗的權勢，移民到神愛子光明國度的手續。
+                  (歌羅西書1:13)。主耶穌雖是無限的神，但當祂來到地上作第一位神人的時候，也主動去施浸約
+                  翰那裏受浸，照著神新約的規定，作了榜樣。(馬太福音3:15)。
+                  <br /><br />
+                  當我們心裏接受基督作生命，口裏承認基督是救主，神就將祂永遠的生命賜給我們，我們就從神
+                  生了。這樣我們就能看見神的國，就如我們接到另一個國家的移民許可和簽證，使我們有資格和
+                  權利成為那個國家的國民。(約翰福音3:3-5）。然而我們還需要正式公開的經過海關，進入那個
+                  國家，才算完成這個移民手續。<br /><br />
+                  作基督徒不僅是裏面接受神永遠的生命而已，在外面也要開始過一個新的生活。就像我們進入一
+                  個新的國家，在那個國家展開新的生活一樣。所以信而受浸，才完成了成為神家中的親人、神國
+                  的子民的第一步。(馬可福音16:16）。<br /><br />
+                  移民神國的許可是由神照著我們的相信與接受發給我們的，然而還需要我們主動的去受浸，以浸
+                  入基督的身體，成為基督身體上的肢體。(哥林多前書12:13)。完成這個移民手續後，才正式的
+                  開始在神的國裏，在基督身體中過新的生活。我們的相信是邁出進入神國的第一條腿，要完全進
+                  入神的國，另一條腿（受浸）也必須跟進，這才算是邁進了完整的第
+                  一步。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion mt-3" id="Q6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+              <button
+                class="accordion-button collapsed text-white fw-bold bg-primary w-100 fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse6"
+                aria-expanded="false"
+                aria-controls="collapse6"
+              >
+              Q: &ensp;
+              <span class="fs-5">
+                /&ensp;甚麼時候起才有神？&ensp;/</span
+              >
+              </button>
+            </h2>
+            <div
+              id="collapse6"
+              class="accordion-collapse collapse"
+              style="padding-left: 0"
+              aria-labelledby="heading6"
+              data-bs-parent="#Q6"
+            >
+              <div class="accordion-body row">
+                <div class="col-12 text-primary fs-3">A:</div>
+                <div class="col-12">
+                  如果受浸是人建立的宗教儀式，我們就可以完全忽略它，不必再討論。然而，如果這是神命定進
+                  入神國的作法，我們就需要照著作，以完成從黑暗的權勢，移民到神愛子光明國度的手續。
+                  (歌羅西書1:13)。主耶穌雖是無限的神，但當祂來到地上作第一位神人的時候，也主動去施浸約
+                  翰那裏受浸，照著神新約的規定，作了榜樣。(馬太福音3:15)。
+                  <br /><br />
+                  當我們心裏接受基督作生命，口裏承認基督是救主，神就將祂永遠的生命賜給我們，我們就從神
+                  生了。這樣我們就能看見神的國，就如我們接到另一個國家的移民許可和簽證，使我們有資格和
+                  權利成為那個國家的國民。(約翰福音3:3-5）。然而我們還需要正式公開的經過海關，進入那個
+                  國家，才算完成這個移民手續。<br /><br />
+                  作基督徒不僅是裏面接受神永遠的生命而已，在外面也要開始過一個新的生活。就像我們進入一
+                  個新的國家，在那個國家展開新的生活一樣。所以信而受浸，才完成了成為神家中的親人、神國
+                  的子民的第一步。(馬可福音16:16）。<br /><br />
+                  移民神國的許可是由神照著我們的相信與接受發給我們的，然而還需要我們主動的去受浸，以浸
+                  入基督的身體，成為基督身體上的肢體。(哥林多前書12:13)。完成這個移民手續後，才正式的
+                  開始在神的國裏，在基督身體中過新的生活。我們的相信是邁出進入神國的第一條腿，要完全進
+                  入神的國，另一條腿（受浸）也必須跟進，這才算是邁進了完整的第
+                  一步。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagging">
+            <div class="paging_word current_page">
+              <a href="./about.html">1</a>
+            </div>
+            <div class="paging_word"><a href="./about.html">2</a></div>
+            <div class="paging_word"><a href="./about.html">3</a></div>
+          </div>
+      </div>
+    </div>
+    <!-- footer start -->
+    <div
+      class="footerInfo d-flex justify-content-center row innerPageFooter"
+      style="height: 430px; margin-top: 100px"
+    >
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./about.html">關於我們</a></div>
+          <div class="col-3"><a href="./friends.html">你好新朋友</a></div>
+          <div class="col-3"><a href="./activity.html">我的參與</a></div>
+          <div class="col-3"><a href="./online.html">學習成長</a></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./resource.html">資源專區</a></div>
+          <div class="col-3"><a href="./news.html">公告消息</a></div>
+          <div class="col-3"><a href="./contact.html">聯絡據點</a></div>
+          <div class="col-3"><a href="./members.html">會員中心</a></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-3"><a href="./collection.html">我的收藏</a></div>
+          <div class="col-3"><a href="./register.html">會員註冊條款</a></div>
+          <div class="col-3"><a href="./privacyPolicy.html">隱私權政策</a></div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-4">
+            <i class="bi bi-telephone-fill"></i> 07-2212945
+          </div>
+          <div class="col-8">
+            <i class="bi bi-geo-alt-fill"></i> 高雄市前金區五福三路97號
+          </div>
+        </div>
+        <div class="row footerInfoLink my-2">
+          <div class="col-12">
+            <i class="bi bi-calendar-fill"></i> 週一未營業 / 週二至週日
+            AM9:00-PM5:00
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8792841486347!2d120.29559499999998!3d22.620982599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e418077dd%3A0x47a1c159edf61a0a!2zODAx6auY6ZuE5biC5YmN6YeR5Y2A5LqU56aP5LiJ6LevOTfomZ8!5e0!3m2!1szh-TW!2stw!4v1685451908392!5m2!1szh-TW!2stw"
+          width="400"
+          height="155"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-12 d-flex justify-content-center mt-3">
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/fbIcon.png"
+            alt="fbIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/lineIcon.png"
+            alt="lineIcon"
+        /></a>
+        <a href=""
+          ><img
+            class="socialMediaIcon mx-1"
+            src="./src/assets/images/messengerIcon.png"
+            alt="messengerIcon"
+        /></a>
+      </div>
+    </div>
+    <a href="#" class="scroll-to-top"></a>
+    <footer class="text-white text-center pt-1 footerText">
+      2023 © 前金長老教會 Designed By 耘想科技網頁設計
+    </footer>
+    <!-- footer end -->
+    <script src="./src/assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
