@@ -41,145 +41,173 @@
     <link rel="stylesheet" href="./src/assets/css/all.css" />
   </head>
   <body>
- <!-- 頁首 -->
- <nav class="navbar navbar-expand-md sticky-top bg-primary">
-  <div class="container-fluid text-white d-flex justify-content-center">
-    <a class="logo" href="./index.html">
-      <img src="./src/assets/images/logo.png" alt="logo" /></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="pulldown_select_apear">
-        <a class="nav-link" aria-current="page" href="./about.html">關於我們 <br />
-          <span class="navTitleEn">ABOUT</span>
+    <!-- 頁首 -->
+    <nav class="navbar navbar-expand-md sticky-top bg-primary">
+      <div class="container-fluid text-white d-flex justify-content-center">
+        <a class="logo" href="./index.html">
+          <img src="./src/assets/images/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="pulldown_select_apear">
+            <a class="nav-link" aria-current="page" href="./about.html"
+              >關於我們 <br />
+              <span class="navTitleEn">ABOUT</span>
+            </a>
+            <div class="pulldown_select" style="height: 100px">
+              <ul style="list-style: none; padding: 0px">
+                <li><a href="./about.html">關於我們</a></li>
+                <li><a href="./">牧師專區</a></li>
+                <li><a href="./">同工專區</a></li>
+              </ul>
+            </div>
+          </div>
 
-        </a>
-        <div class="pulldown_select" style="height: 100px;">
-          <ul style="list-style:none; padding: 0px;">
-           <li><a href="./">關於我們</a></li>
-           <li><a href="./">牧師專區</a></li>
-           <li><a href="./">同工專區</a></li>
-          </ul>
+          <div class="pulldown_select_apear">
+            <a class="nav-link" href="./friends.html"
+              >你好新朋友<br />
+              <span class="navTitleEn" style="position: relative">FRIENDS</span>
+            </a>
+            <div class="pulldown_select" style="width: 90px; height: 60px">
+              <ul style="list-style: none; padding: 0px">
+                <li><a href="#">你好新朋友</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pulldown_select_apear">
+            <a class="nav-link" href="./activity.html"
+              >我的參與<br />
+              <span class="navTitleEn" style="position: relative"
+                >ACTIVITY</span
+              >
+            </a>
+            <div class="pulldown_select" style="height: 80px">
+              <ul style="list-style: none; padding: 0px">
+                <li><a href="./activity.html">我的參與</a></li>
+                <li><a href="./activity.html">小組生活</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pulldown_select_apear">
+            <a class="nav-link" href="./online.html"
+              >學習成長<br />
+              <span class="navTitleEn">ONLINE</span>
+            </a>
+            <div class="pulldown_select" style="height: 80px">
+              <ul style="list-style: none; padding: 0px">
+                <li><a href="./online.html">線上課程</a></li>
+                <li><a href="./online.html">課程說明</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pulldown_select_apear">
+            <a class="nav-link" href="./resource.html"
+              >資源專區<br />
+              <span class="navTitleEn">RESOURCE</span>
+            </a>
+            <div class="pulldown_select" style="height: 80px">
+              <ul style="list-style: none; padding: 0px">
+                <li><a href="./resource.html">影音專區</a></li>
+                <li><a href="./resource.html">檔案下載</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pulldown_select_apear">
+            <a class="nav-link" href="./news.html"
+              >公告消息<br />
+              <span class="navTitleEn">NEWS</span>
+            </a>
+            <div class="pulldown_select" style="height: 50px">
+              <ul style="list-style: none; padding: 0px">
+                <li><a href="./news.html">最新公告</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pulldown_select_apear">
+            <a class="nav-link" href="./contact.html"
+              >聯絡據點<br />
+              <span class="navTitleEn">CONTACT</span>
+            </a>
+            <div class="pulldown_select" style="height: 80px">
+              <ul style="list-style: none; padding: 0px">
+                <li><a href="./contact.html">聯絡我們</a></li>
+                <li><a href="./contact.html">祝福網</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navbarIcons d-flex justify-content-center memberpull">
+          <div class="navIcon">
+            <a href="./login.html"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/memberIcon.png"
+                alt="memberIcon"
+            /></a>
+
+            <div class="memberpulldown">
+              <ol style="list-style: none; padding: 0px; margin-top: 5px">
+                <li>
+                  <a href="./membermodify.html" style="text-align: none"
+                    >會員中心</a
+                  >
+                </li>
+                <li><a href="./mycart.html">我的購物車</a></li>
+                <li><a href="./orderreview.html">訂單查詢</a></li>
+                <li><a href="./courseunpay.html">我的收藏清單</a></li>
+                <li><a href="./courseunauth.html">付款說明</a></li>
+                <li><a href="./coursepayed.html">歷史訂單</a></li>
+                <li><a href="./courseqa.html">退換貨說明</a></li>
+                <li><a href="./index.html">登出</a></li>
+              </ol>
+            </div>
+          </div>
+          <div class="navIcon">
+            <a href="./orderreview.html"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/cartIcon.png"
+                alt="cartIcon"
+            /></a>
+          </div>
+          <div class="navIcon">
+            <a href="#"
+              ><img
+                class="navIcon"
+                src="./src/assets/images/searchIcon.png"
+                alt="searchIcon"
+            /></a>
+          </div>
         </div>
       </div>
-
-
-      <div class="pulldown_select_apear">
-        <a class="nav-link" href="./activity.html">你好新朋友<br />
-          <span class="navTitleEn" style="position: relative;">FRIENDS</span>
-
-        </a>
-        <div class="pulldown_select" style="width: 90px; height: 60px;">
-          <ul style="list-style:none; padding: 0px;"> 
-            <li><a href="./">你好新朋友</a></li>
-          </ul>
-        </div>
+    </nav>
+    <div class="header">
+      <img src="./src/assets/images/headerBg.png" alt="headerBg" />
+      <div
+        class="d-flex breadcrumb text-center justify-content-center position-relative"
+      >
+        <a href="./index.html" class="position-absolute" style="top: -100%">
+          <i class="bi bi-house-fill text-primary"></i
+        ></a>
+        HOME / 學習成長
       </div>
-
-      <div class="pulldown_select_apear">
-        <a class="nav-link" href="./activity.html">我的參與<br />
-          <span class="navTitleEn" style="position: relative;">ACTIVITY</span>
-
-        </a>
-        <div class="pulldown_select" style="height: 80px;">
-          <ul style="list-style:none; padding: 0px;">
-            <li><a href="./">我的參與</a></li>
-            <li><a href="./">小組生活</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pulldown_select_apear">
-      <a class="nav-link" href="./online.html">學習成長<br />
-        <span class="navTitleEn">ONLINE</span>
-      </a>
-      <div class="pulldown_select" style="height: 80px;">
-        <ul style="list-style:none; padding: 0px;">
-          <li><a href="./">線上課程</a></li>
-          <li><a href="./">課程說明</a></li>
-        </ul>
-      </div>
-      </div>
-
-      <div class="pulldown_select_apear">
-        <a class="nav-link" href="./online.html">資源專區<br />
-          <span class="navTitleEn">RESOURCE</span>
-        </a>
-        <div class="pulldown_select" style="height: 80px;">
-          <ul style="list-style:none; padding: 0px;">
-            <li><a href="./">影音專區</a></li>
-            <li><a href="./">檔案下載</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pulldown_select_apear">
-        <a class="nav-link" href="./online.html">公告消息<br />
-          <span class="navTitleEn">NEWS</span>
-        </a>
-        <div class="pulldown_select" style="height: 50px;">
-          <ul style="list-style:none; padding: 0px;">
-            <li><a href="./">最新公告</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pulldown_select_apear">
-        <a class="nav-link" href="./online.html">聯絡據點<br />
-          <span class="navTitleEn">CONTACT</span>
-        </a>
-        <div class="pulldown_select" style="height: 80px;">
-          <ul style="list-style:none; padding: 0px;">
-            <li><a href="./">聯絡我們</a></li>
-            <li><a href="./">祝福網</a></li>
-          </ul>
-        </div>
-      </div>
-      
-    
-    
     </div>
-    <div class="navbarIcons d-flex justify-content-center memberpull">
-      <div class="navIcon">
-        <a href="./login.html"><img class="navIcon" src="./src/assets/images/memberIcon.png" alt="memberIcon" /></a>
-
-        <div class="memberpulldown">
-          <ol style="list-style:none; padding: 0px; margin-top: 5px;">
-            <li><a href="./" style="text-align: none;">會員中心</a></li>
-            <li><a href="./">我的購物車</a></li>
-            <li><a href="./">訂單查詢</a></li>
-            <li><a href="./">我的收藏清單</a></li>
-            <li><a href="./">付款說明</a></li>
-            <li><a href="./">歷史訂單</a></li>
-            <li><a href="./">退換貨說明</a></li>
-            <li><a href="./">登出</a></li>
-          </ol>
-        </div>
-
-      </div>
-      <div class="navIcon">
-        <a href="./orderreview.html"><img class="navIcon" src="./src/assets/images/cartIcon.png" alt="cartIcon" /></a>
-      </div>
-      <div class="navIcon">
-        <a href="#"><img class="navIcon" src="./src/assets/images/searchIcon.png" alt="searchIcon" /></a>
-      </div>
-    </div>
-  </div>
-</nav>
-<div class="header">
-  <img src="./src/assets/images/headerBg.png" alt="headerBg" />
-  <div
-    class="d-flex breadcrumb text-center justify-content-center position-relative"
-  >
-    <a href="./index.html" class="position-absolute" style="top: -100%">
-      <i class="bi bi-house-fill text-primary"></i
-    ></a>
-    HOME / 學習成長
-  </div>
-</div>
-<!-- 頁首結束 -->
+    <!-- 頁首結束 -->
     <div style="background-image: url('./src/assets/images/bg.png')">
       <div class="container">
         <div class="row" style="height: 100%; margin-top: 120px">
