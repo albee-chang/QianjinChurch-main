@@ -11314,7 +11314,7 @@ footer .footerText {
 }
 
 .life_item {
-  width: 394px;
+  width: 100%;
   height: 310px;
   margin-bottom: 35px;
   position: relative;
@@ -11322,6 +11322,8 @@ footer .footerText {
 .life_item .fig {
   width: 100%;
   height: 238px;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 .life_item .context {
   margin-top: 16px;
@@ -11339,18 +11341,6 @@ footer .footerText {
   height: 38px;
   border-radius: 100%;
   background-color: white;
-}
-.life_item .inner {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  top: 225px;
-  left: 178px;
-  margin-right: 6px;
-  background-image: url("/src/assets/images/right_arrow.png");
-}
-.life_item .inner:hover {
-  background-image: url("/src/assets/images/right_arrow_hover.png");
 }
 .life_item .topic {
   font-weight: bolder;
@@ -13062,6 +13052,11 @@ input:nth-child(6):checked ~ article:nth-of-type(6) p {
   z-index: 9999;
 }
 
+.schoolLink {
+  margin-bottom: 1rem;
+  float: right;
+}
+
 .vedioImg01 {
   width: 390px;
   height: 260px;
@@ -13378,6 +13373,16 @@ a {
 }
 .inner2:hover {
   background-image: url("/src/assets/images/back_link.png");
+}
+
+.inner3 {
+  width: 35px;
+  height: 35px;
+  background-image: url("/src/assets/images/right_arrow.png");
+  background-repeat: no-repeat;
+}
+.inner3:hover {
+  background-image: url("/src/assets/images/right_arrow_hover.png");
 }
 
 .yearSelect {
