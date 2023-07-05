@@ -37,13 +37,14 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/assets/css/pages/about.css" />
     <link rel="stylesheet" href="./src/assets/css/all.css" />
   </head>
   <body>
     <!-- 頁首 -->
     <nav class="navbar navbar-expand-md sticky-top bg-primary">
-      <div class="container-fluid text-white d-flex justify-content-center">
+      <div class="container-fluid text-white d-flex justify-content-end">
         <a class="logo" href="./index.html">
           <img src="./src/assets/images/logo.png" alt="logo"
         /></a>
@@ -67,8 +68,8 @@
             <div class="pulldown_select" style="height: 100px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./about.html">關於我們</a></li>
-                <li><a href="./">牧師專區</a></li>
-                <li><a href="./">同工專區</a></li>
+                <li><a href="./about.html">牧師專區</a></li>
+                <li><a href="./about.html">同工專區</a></li>
               </ul>
             </div>
           </div>
@@ -80,7 +81,7 @@
             </a>
             <div class="pulldown_select" style="width: 90px; height: 60px">
               <ul style="list-style: none; padding: 0px">
-                <li><a href="#">你好新朋友</a></li>
+                <li><a href="./friendsContentPages.html">你好新朋友</a></li>
               </ul>
             </div>
           </div>
@@ -108,7 +109,7 @@
             <div class="pulldown_select" style="height: 80px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./online.html">線上課程</a></li>
-                <li><a href="./online.html">課程說明</a></li>
+                <li><a href="./onlinecourse.html">課程說明</a></li>
               </ul>
             </div>
           </div>
@@ -146,7 +147,7 @@
             <div class="pulldown_select" style="height: 80px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./contact.html">聯絡我們</a></li>
-                <li><a href="./contact.html">祝福網</a></li>
+                <li><a href="./bless.html">祝福網</a></li>
               </ul>
             </div>
           </div>
@@ -219,7 +220,7 @@
         src="./src/assets/images/bg-right.png"
         alt="bg-right"
       />
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div
           class="row"
           style="height: 100%; margin-top: 125px; margin-bottom: 10rem"
@@ -392,7 +393,7 @@
                     margin-bottom: 35px;
                   "
                 ></div>
-                <p>
+                <p data-aos="fade-up">
                   台灣基督長老教會是普世基督教會及改革宗教會大家庭的一份子。它的歷史根源可
                   以上溯至
                   1865年英國長老教會宣教師馬雅各醫生來台在南部及1872年加拿大長老
@@ -401,7 +402,7 @@
                   屬不同母會的南北大會可以共同討論事工。1951
                   年召開會議議決成立今之台灣基 督長老教會總會。
                 </p>
-                <p>
+                <p data-aos="fade-up">
                   在無數宣教師的熱心事奉及本地傳道人與信徒的積極參與下，長老教會通過醫療、
                   傳道、教育、社會服務等方式，一步步在全台灣各地立下教會的根基，並藉著小會
                   、中會/族群區會、總會的設立，逐漸走向組織化、自主化的階段。
@@ -432,7 +433,7 @@
                       margin-bottom: 35px;
                     "
                   ></div>
-                  <p>願景介紹</p>
+                  <p data-aos="fade-up">願景介紹</p>
                 </div>
               </div>
               <div
@@ -450,7 +451,7 @@
                     margin-bottom: 35px;
                   "
                 ></div>
-                <p>環境交通</p>
+                <p data-aos="fade-up">環境交通</p>
               </div>
               <div
                 class="tab-pane fade"
@@ -467,7 +468,7 @@
                     margin-bottom: 35px;
                   "
                 ></div>
-                <p>聚會資訊</p>
+                <p data-aos="fade-up">聚會資訊</p>
               </div>
               <div
                 class="tab-pane fade"
@@ -484,7 +485,7 @@
                     margin-bottom: 35px;
                   "
                 ></div>
-                <p>奉獻資訊</p>
+                <p data-aos="fade-up">奉獻資訊</p>
               </div>
               <div
                 class="tab-pane fade"
@@ -494,7 +495,7 @@
               >
                 <div style="display: block" id="priestInfoList">
                   <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
-                  <div class="priest_item d-flex">
+                  <div class="priest_item d-flex" data-aos="fade-up">
                     <div class="outside_border">
                       <div
                         class="priest_picture"
@@ -521,7 +522,7 @@
                     </div>
                   </div>
 
-                  <div class="priest_item d-flex flex-row-reverse">
+                  <div class="priest_item d-flex flex-row-reverse" data-aos="fade-up">
                     <div class="outside_border">
                       <div
                         class="priest_picture"
@@ -548,7 +549,7 @@
                     </div>
                   </div>
 
-                  <div class="priest_item d-flex">
+                  <div class="priest_item d-flex" data-aos="fade-up">
                     <div class="outside_border">
                       <div
                         class="priest_picture"
@@ -575,7 +576,7 @@
                     </div>
                   </div>
 
-                  <div class="priest_item d-flex flex-row-reverse">
+                  <div class="priest_item d-flex flex-row-reverse" data-aos="fade-up">
                     <div class="outside_border">
                       <div
                         class="priest_picture"
@@ -602,7 +603,7 @@
                     </div>
                   </div>
 
-                  <div class="priest_item d-flex">
+                  <div class="priest_item d-flex" data-aos="fade-up">
                     <div class="outside_border">
                       <div
                         class="priest_picture"
@@ -629,7 +630,7 @@
                     </div>
                   </div>
 
-                  <div class="priest_item d-flex flex-row-reverse">
+                  <div class="priest_item d-flex flex-row-reverse" data-aos="fade-up">
                     <div class="outside_border">
                       <div
                         class="priest_picture"
@@ -666,7 +667,7 @@
                 </div>
                 <div style="display: none" id="priestInfoSinglePage">
                   <div class="contentTitle">/&ensp;牧師專區&ensp;/</div>
-                  <div class="priestInfo d-flex">
+                  <div class="priestInfo d-flex" data-aos="fade-up">
                     <div
                       style="
                         background-image: url('./src/assets/images/father-james.png');
@@ -688,7 +689,7 @@
                       <p>信義基督教醫院家醫科醫師</p>
                     </div>
                   </div>
-                  <p>
+                  <p data-aos="fade-up">
                     近年台灣教會界有許多不同的方向：<br />
                     有的注重聖經研讀和神學，有的注重聖靈充滿和恩賜；有的注重保持優良傳統，有的注重改革與
                     更新；有的注重傳揚福音搶救靈魂，有的注重生活實踐社會關懷；有的注重訓練門徒，有的注重
@@ -716,7 +717,7 @@
                 role="tabpanel"
                 aria-labelledby="tab-coworkers-tab"
               >
-                <div class="contentTitle">/&ensp;同工專區&ensp;/</div>
+                <div class="contentTitle" data-aos="fade-up">/&ensp;同工專區&ensp;/</div>
                 <div class="priestInfo d-flex flex-wrap">
                   <div class="met_photo">
                     <img src="./src/assets/images/darius.png" />
@@ -734,7 +735,7 @@
                 <br />
                 <div class="field_title">負責事工</div>
                 <div style="padding: 20px">
-                  <p>
+                  <p data-aos="fade-up">
                     原住民宣教委員會(傳道事工：原住民都市宣教夥伴方案、原住民小型教會方案、原宣
                     普世)、中會/族群區會總幹事聯繫(原住民)、教會法規委員會、總委會事工小組
                     ( 緊急
@@ -742,7 +743,7 @@
                     組、宜灣教會產權糾紛善處小組)、台灣普世論壇(TEF)、台灣教會合作協會(NCCT)。
                   </p>
 
-                  <p>
+                  <p data-aos="fade-up">
                     傳道委員會、國外宣教師差派關懷、國外台灣人教會關懷、教會一覽表、21世紀新台
                     灣宣教運動、總委會事工小組(教會音樂專職事奉的養成、聘任和薪資制度研議小組)。
                   </p>
@@ -765,7 +766,7 @@
                 <div class="contentTitle">/&ensp;分類一&ensp;/</div>
 
                 <div class="item_conainer d-flex flex-wrap">
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -773,13 +774,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Emily</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -787,13 +788,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Rose</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -801,13 +802,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Nick</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -815,13 +816,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Nick</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -829,13 +830,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Rose</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -843,13 +844,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Albe</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -857,13 +858,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Rose</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -871,13 +872,13 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Rose</div>
                   </div>
 
-                  <div class="workmetlist_item">
+                  <div class="workmetlist_item" data-aos="fade-up">
                     <div
                       class="fig"
                       style="
@@ -885,7 +886,7 @@
                       "
                     ></div>
                     <div class="circle"></div>
-                    <a href="./about.html">
+                    <a href="#">
                       <div class="inner"></div>
                     </a>
                     <div class="topic">Albe</div>
@@ -893,10 +894,10 @@
                 </div>
                 <div class="pagging">
                   <div class="paging_word current_page">
-                    <a href="./about.html">1</a>
+                    <a href="#">1</a>
                   </div>
-                  <div class="paging_word"><a href="./about.html">2</a></div>
-                  <div class="paging_word"><a href="./about.html">3</a></div>
+                  <div class="paging_word"><a href="#">2</a></div>
+                  <div class="paging_word"><a href="#">3</a></div>
                 </div>
               </div>
             </div>
@@ -1001,6 +1002,10 @@
           priestInfoSinglePage.style.display = "block";
         }
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

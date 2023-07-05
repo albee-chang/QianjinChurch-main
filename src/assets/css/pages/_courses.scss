@@ -173,9 +173,6 @@
       float:right;
       margin-right: 12px;
       background-image: url('/src/assets/images/s_right_arrow.png');
-      &:hover{
-       
-      }
     }
     
   }
@@ -260,4 +257,38 @@ input:nth-child(6):checked ~ article:nth-of-type(6) p {
 
 .coursesLink {
   color: #848484;
+}
+
+
+
+.videoTitle {
+  margin-top: 20px;
+  color: #397e83;
+
+}
+
+.select_tag {
+  button {
+    background-color: white;
+    color: #a8a8a8;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    .active {
+      color: #609397;
+    }
+    &:focus {
+      color: #609397;
+    }
+    &:hover {
+      color: #609397;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 }

@@ -1,0 +1,27 @@
+.joinInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.joinInfo h5 {
+  color: #80c0c5;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+.joinInfo .form-check-label {
+  border: none;
+  margin-top: -7px;
+  font-size: 16px;
+  max-width: 80px;
+  display: contents;
+}
+.joinInfo .week {
+  margin-right: 1rem;
+  font-size: 16px;
+  margin-top: 3px;
+}/*# sourceMappingURL=joinGroup.css.map */

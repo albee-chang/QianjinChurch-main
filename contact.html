@@ -37,6 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/assets/css/pages/contactus.css" />
     <link rel="stylesheet" href="./src/assets/css/pages/bless.css" />
     <link rel="stylesheet" href="./src/assets/css/all.css" />
@@ -44,7 +45,7 @@
   <body>
     <!-- 頁首 -->
     <nav class="navbar navbar-expand-md sticky-top bg-primary">
-      <div class="container-fluid text-white d-flex justify-content-center">
+      <div class="container-fluid text-white d-flex justify-content-end">
         <a class="logo" href="./index.html">
           <img src="./src/assets/images/logo.png" alt="logo"
         /></a>
@@ -68,8 +69,8 @@
             <div class="pulldown_select" style="height: 100px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./about.html">關於我們</a></li>
-                <li><a href="./">牧師專區</a></li>
-                <li><a href="./">同工專區</a></li>
+                <li><a href="./about.html">牧師專區</a></li>
+                <li><a href="./about.html">同工專區</a></li>
               </ul>
             </div>
           </div>
@@ -81,7 +82,7 @@
             </a>
             <div class="pulldown_select" style="width: 90px; height: 60px">
               <ul style="list-style: none; padding: 0px">
-                <li><a href="#">你好新朋友</a></li>
+                <li><a href="./friendsContentPages.html">你好新朋友</a></li>
               </ul>
             </div>
           </div>
@@ -109,7 +110,7 @@
             <div class="pulldown_select" style="height: 80px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./online.html">線上課程</a></li>
-                <li><a href="./online.html">課程說明</a></li>
+                <li><a href="./onlinecourse.html">課程說明</a></li>
               </ul>
             </div>
           </div>
@@ -147,7 +148,7 @@
             <div class="pulldown_select" style="height: 80px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./contact.html">聯絡我們</a></li>
-                <li><a href="./contact.html">祝福網</a></li>
+                <li><a href="./bless.html">祝福網</a></li>
               </ul>
             </div>
           </div>
@@ -317,7 +318,7 @@
                 <div class="contentTitle" style="margin-bottom: 10px">
                   /&ensp;聯絡我們&ensp;/
                 </div>
-                <div style="margin-left: 15px">
+                <div style="margin-left: 15px"  data-aos="fade-up">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8793127756444!2d120.29298997608413!3d22.620981531193866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e423ee131%3A0xaaf6daea0eccc622!2z5Y-w54Gj5Z-6552j6ZW36ICB5pWZ5pyDIOWJjemHkeaVmeacgw!5e0!3m2!1szh-TW!2stw!4v1687003190382!5m2!1szh-TW!2stw"
                     width="100%"
@@ -379,7 +380,7 @@
                   </div>
                 </div>
 
-                <div class="d-flex flex-wrap joinus_input_row">
+                <div class="d-flex flex-wrap joinus_input_row"  data-aos="fade-up">
                   <div class="contact_input_title">姓名</div>
                   <input
                     type="text"
@@ -388,7 +389,7 @@
                     aria-label="First name"
                   />
                 </div>
-                <div class="d-flex flex-wrap joinus_input_row">
+                <div class="d-flex flex-wrap joinus_input_row"  data-aos="fade-up">
                   <div class="contact_input_title">電話</div>
                   <input
                     type="text"
@@ -397,7 +398,7 @@
                     aria-label="First name"
                   />
                 </div>
-                <div class="d-flex flex-wrap joinus_input_row">
+                <div class="d-flex flex-wrap joinus_input_row"  data-aos="fade-up">
                   <div class="contact_input_title">信箱</div>
                   <input
                     type="text"
@@ -406,12 +407,12 @@
                     aria-label="First name"
                   />
                 </div>
-                <div class="d-flex flex-wrap joinus_input_row">
+                <div class="d-flex flex-wrap joinus_input_row"  data-aos="fade-up">
                   <div class="message_title">留言</div>
                   <textarea
                     type="text"
                     class="form-control contact_input_area"
-                    style="height: 200px; margin: auto; margin-left: 12px"
+                    style="height: 200px; margin: auto; margin-right: 5px"
                     placeholder="MESSAGE"
                     aria-label="First name"
                   ></textarea>
@@ -436,11 +437,11 @@
                 aria-labelledby="tab-bless-tab"
               >
                 <div class="contentTitle">/&ensp;祝福網&ensp;/</div>
-                <div class="bless_item row-cols-12 d-flex">
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
                   <div class="duel_content col-6">
                     <img src="/src/assets/images/blessImg01.png" alt="" />
                   </div>
-                  <div class="col-6 d-flex flex-column">
+                  <div class="col-6 d-flex flex-column"  data-aos="fade-up">
                     <div class="buildingName me-3">高雄宣教中心</div>
                     <div class="map_link">
                       <div>
@@ -465,8 +466,8 @@
                   </div>
                 </div>
                 <br><br>
-                <div class="bless_item row-cols-12 d-flex">
-                  <div class="col-6 d-flex flex-column">
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
+                  <div class="col-6 d-flex flex-column"  data-aos="fade-up">
                     <div class="buildingName me-3">台中宣教大樓</div>
                     <div class="map_link">
                       
@@ -495,11 +496,11 @@
                   </div>
                 </div>
                 <br><br>
-                <div class="bless_item row-cols-12 d-flex">
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
                   <div class="duel_content col-6">
                     <img src="/src/assets/images/blessImg03.png" alt="" />
                   </div>
-                  <div class="col-6 d-flex flex-column">
+                  <div class="col-6 d-flex flex-column"  data-aos="fade-up">
                     <div class="buildingName me-3">教會公報社</div>
                     <div class="map_link">
                       <div>
@@ -524,8 +525,8 @@
                   </div>
                 </div>
                 <br><br>
-                <div class="bless_item row-cols-12 d-flex">
-                  <div class="col-6 d-flex flex-column">
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
+                  <div class="col-6 d-flex flex-column"  data-aos="fade-up">
                     <div class="buildingName me-3">台灣婦女展業協會</div>
                     <div class="map_link">
                       
@@ -677,5 +678,9 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -20,3 +20,10 @@ document.addEventListener("click", function (event) {
     });
   }
 });
+
+const downloadLink = document.querySelectorAll(".downloadLink");
+downloadLink.forEach(function (downloadLink) {
+  downloadLink.addEventListener("click", function () {
+    alert("已下載");
+  });
+})

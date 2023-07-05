@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前金教會</title>
+    <!-- 載入 Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- 載入 Bootstrap icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- 載入 Google Noto Sans Traditional Chinese Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Josefin+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Serif+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>前金教會</title>
-  <!-- 載入 Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-  <!-- 載入 Bootstrap icon CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-  <!-- 載入 Google Noto Sans Traditional Chinese Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Josefin+Sans:wght@700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Serif+TC:wght@500&display=swap"
-    rel="stylesheet" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./src/assets/css/pages/bless.css" />
-  <link rel="stylesheet" href="./src/assets/css/all.css" />
-</head>
-
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/assets/css/pages/contactus.css" />
+    <link rel="stylesheet" href="./src/assets/css/pages/bless.css" />
+    <link rel="stylesheet" href="./src/assets/css/all.css" />
+  </head>
+  <body>
     <!-- 頁首 -->
     <nav class="navbar navbar-expand-md sticky-top bg-primary">
-      <div class="container-fluid text-white d-flex justify-content-center">
+      <div class="container-fluid text-white d-flex justify-content-end">
         <a class="logo" href="./index.html">
           <img src="./src/assets/images/logo.png" alt="logo"
         /></a>
@@ -55,8 +69,8 @@
             <div class="pulldown_select" style="height: 100px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./about.html">關於我們</a></li>
-                <li><a href="./">牧師專區</a></li>
-                <li><a href="./">同工專區</a></li>
+                <li><a href="./about.html">牧師專區</a></li>
+                <li><a href="./about.html">同工專區</a></li>
               </ul>
             </div>
           </div>
@@ -68,7 +82,7 @@
             </a>
             <div class="pulldown_select" style="width: 90px; height: 60px">
               <ul style="list-style: none; padding: 0px">
-                <li><a href="#">你好新朋友</a></li>
+                <li><a href="./friendsContentPages.html">你好新朋友</a></li>
               </ul>
             </div>
           </div>
@@ -96,7 +110,7 @@
             <div class="pulldown_select" style="height: 80px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./online.html">線上課程</a></li>
-                <li><a href="./online.html">課程說明</a></li>
+                <li><a href="./onlinecourse.html">課程說明</a></li>
               </ul>
             </div>
           </div>
@@ -134,7 +148,7 @@
             <div class="pulldown_select" style="height: 80px">
               <ul style="list-style: none; padding: 0px">
                 <li><a href="./contact.html">聯絡我們</a></li>
-                <li><a href="./contact.html">祝福網</a></li>
+                <li><a href="./bless.html">祝福網</a></li>
               </ul>
             </div>
           </div>
@@ -192,165 +206,392 @@
         <a href="./index.html" class="position-absolute" style="top: -100%">
           <i class="bi bi-house-fill text-primary"></i
         ></a>
-        HOME / 祝福網
+        HOME / 聯絡據點
       </div>
     </div>
     <!-- 頁首結束 -->
-  <div class="innerPageBg">
-    <img class="bg-left" src="./src/assets/images/bg-left.png" alt="bg-left">
-    <img class="bg-right" src="./src/assets/images/bg-right.png" alt="bg-right">
-    <div class="container">
-      <div class="row" style="height: 100%; margin-top: 120px;margin-bottom: 10rem;">
-        <div class="col-12 col-md-3" style="align-items: center;">
-          <div class="lsTitle">聯絡我們</div>
+    <div class="innerPageBg">
+      <img
+        class="bg-left"
+        src="./src/assets/images/bg-left.png"
+        alt="bg-left"
+      />
+      <img
+        class="bg-right"
+        src="./src/assets/images/bg-right.png"
+        alt="bg-right"
+      />
+      <div class="container">
+        <div
+          class="row"
+          style="height: 100%; margin-top: 120px; margin-bottom: 10rem"
+        >
+          <div class="col-12 col-md-3" style="align-items: center">
+            <ul
+              class="nav mb-3 d-flex flex-column"
+              id="pills-tab"
+              role="tablist"
+              style="align-items: center"
+            >
+              <li class="lsTitle" role="presentation">
+                <div
+                  class="tab-link "
+                  id="tab-churchAbout-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-churchAbout"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-churchAbout"
+                  aria-selected="false"
+                >
+                  聯絡我們
+                </div>
+              </li>
+              <li class="lsTitle" role="presentation" style="margin-top: 78px">
+                <div
+                  class="tab-link active"
+                  id="tab-bless-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-bless"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-bless"
+                  aria-selected="true"
+                >
+                  祝福網
+                </div>
+              </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-coworkers1-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-coworkers1"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-coworkers1"
+                  aria-selected="false"
+                >
+                  分類一
+                </div>
+              </li>
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-coworkers2-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-coworkers2"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-coworkers2"
+                  aria-selected="false"
+                >
+                  分類二
+                </div>
+              </li>
 
-          <div class="lsTitle" style="margin-top: 78px;">祝福網</div>
-          <div class="lsContent">分類一</div>
-          <div class="lsContent">分類二</div>
-          <div class="lsContent">分類三</div>
-        </div>
-        <div class="col-12 col-md-8">
-          <div class="contentTitle">/&ensp;祝福網&ensp;/</div>
-          <div class="bless_item">
-            <div class="duel_content">
-              <div class="fig" style="background-image: url('/src/assets/images/kaoshiung_center.png') ;"></div>
-                <div class="d-flex carte">
-                  <div class="title">
-                    <ul>
-                      <li>聯絡人</li>
-                      <li>E-mail</li>
-                      <li>電話</li>
-                      <li>傳真</li>
-                      <li>地址</li>
-                    </ul>
-                  </div>
-                  <div class="context">
-                    <ul>
-                      <li>白哲宏 長老(分機170)</li>
-                      <li>think@gmail.com</li>
-                      <li>02-23625282</li>
-                      <li>02-23625283</li>
-                      <li>台北市羅斯福路三段269巷3號</li>
-                    </ul>
-                  </div>
-              </div>
-            
-              <h2>高雄宣教中心</h2>
-              <div class="map_link">
-                <div><a href="./about.html"><img src="./src/assets/images/googleMap.png"></a></div>
-                <div class="move_word">Google Map</div>
-              </div>
-            </div>        
+              <li class="lsContent" role="presentation">
+                <div
+                  class="tab-title"
+                  id="tab-coworkers3-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tab-coworkers3"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab-coworkers3"
+                  aria-selected="false"
+                >
+                  分類三
+                </div>
+              </li>
+            </ul>
           </div>
 
-          <div class="bless_item">
-            <div class="duel_content">
-              <div class="fig" style="background-image: url('/src/assets/images/taichung_center.png') ;"></div>
-                <div class="d-flex carte">
-                  <div class="title">
-                    <ul>
-                      <li>聯絡人</li>
-                      <li>E-mail</li>
-                      <li>電話</li>
-                      <li>傳真</li>
-                      <li>地址</li>
-                    </ul>
+          <div class="col-12 col-md-8">
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade"
+                id="tab-churchAbout"
+                role="tabpanel"
+                aria-labelledby="tab-churchAbout-tab"
+              >
+                <div class="contentTitle" style="margin-bottom: 10px">
+                  /&ensp;聯絡我們&ensp;/
+                </div>
+                <div style="margin-left: 15px"  data-aos="fade-up">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8793127756444!2d120.29298997608413!3d22.620981531193866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047e423ee131%3A0xaaf6daea0eccc622!2z5Y-w54Gj5Z-6552j6ZW36ICB5pWZ5pyDIOWJjemHkeaVmeacgw!5e0!3m2!1szh-TW!2stw!4v1687003190382!5m2!1szh-TW!2stw"
+                    width="100%"
+                    height="315"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+
+                  <div
+                    class="d-flex flex-wrap justify-content-between"
+                    style="margin-top: 20px"
+                  >
+                    <div>
+                      <img src="/src/assets/images/contact_phone.png" />
+                      <span style="margin-left: 15px; line-height: 50px"
+                        >07-2212945</span
+                      >
+                    </div>
+                    <div>
+                      <img src="/src/assets/images/contact_map.png" />
+                      <span style="margin-left: 15px; line-height: 50px"
+                        >高雄市前金區五福三路97號</span
+                      >
+                    </div>
+                    <div style="align-items: center; margin-top: 5px">
+                      <img type="button" src="/src/assets/images/fb.png" />
+                      <img type="button" src="/src/assets/images/line.png" />
+                      <img
+                        type="button"
+                        src="/src/assets/images/messenger.png"
+                      />
+                    </div>
                   </div>
-                  <div class="context">
-                    <ul>
-                      <li>白哲宏 長老(分機170)</li>
-                      <li>think@gmail.com</li>
-                      <li>02-23625282</li>
-                      <li>02-23625283</li>
-                      <li>台北市羅斯福路三段269巷3號</li>
-                    </ul>
+
+                  <div
+                    class="d-flex flex-wrap"
+                    style="margin-top: 20px; margin-bottom: 30px"
+                  >
+                    <div>
+                      <img src="/src/assets/images/contact_date.png" />
+                    </div>
+                    <div>
+                      <span style="margin-left: 15px; line-height: 30px"
+                        >週一 | 教會公休</span
+                      >
+                      <br />
+                      <span style="margin-left: 15px; line-height: 30px"
+                        >週二至週六 | 行政辦公室 &ensp;&ensp;AM 9:00 - PM
+                        18:00</span
+                      >
+                      <br />
+                      <span style="margin-left: 15px; line-height: 30px"
+                        >周日 | AM 6:30 - PM 18:00</span
+                      >
+                      <br />
+                    </div>
                   </div>
+                </div>
+
+                <div class="d-flex flex-wrap joinus_input_row">
+                  <div class="contact_input_title">姓名</div>
+                  <input
+                    type="text"
+                    class="form-control contact_input_area"
+                    placeholder="NAME"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="d-flex flex-wrap joinus_input_row">
+                  <div class="contact_input_title">電話</div>
+                  <input
+                    type="text"
+                    class="form-control contact_input_area"
+                    placeholder="TEL"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="d-flex flex-wrap joinus_input_row">
+                  <div class="contact_input_title">信箱</div>
+                  <input
+                    type="text"
+                    class="form-control contact_input_area"
+                    placeholder="EMAIL"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="d-flex flex-wrap joinus_input_row">
+                  <div class="message_title">留言</div>
+                  <textarea
+                    type="text"
+                    class="form-control contact_input_area"
+                    style="height: 200px; margin: auto; margin-right: 5px"
+                    placeholder="MESSAGE"
+                    aria-label="First name"
+                  ></textarea>
+                </div>
+
+                <div
+                  class="move_link"
+                  style="margin-top: 40px; margin-right: 10px"
+                >
+                  <div class="move_word font_bolder">SEND</div>
+                  <div>
+                    <a href="./about.html"
+                      ><img src="./src/assets/images/right_arrow.png"
+                    /></a>
+                  </div>
+                </div>
               </div>
-            
-              <h2>台中宣教大樓</h2>
-              <div class="map_link">
-                <div><a href="./about.html"><img src="./src/assets/images/googleMap.png"></a></div>
-                <div class="move_word">Google Map</div>
+              <div
+                class="tab-pane fade  show active"
+                id="tab-bless"
+                role="tabpanel"
+                aria-labelledby="tab-bless-tab"
+              >
+                <div class="contentTitle">/&ensp;祝福網&ensp;/</div>
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
+                  <div class="duel_content col-6">
+                    <img src="/src/assets/images/blessImg01.png" alt="" />
+                  </div>
+                  <div class="col-6 d-flex flex-column">
+                    <div class="buildingName me-3">高雄宣教中心</div>
+                    <div class="map_link">
+                      <div>
+                        <a href="#"
+                          ><img
+                            class="mapLinkIcon"
+                            src="./src/assets/images/googleMap.png"
+                        /></a>
+                      </div>
+                      <div class="move_word">Google Map</div>
+                      <div class="col-12 my-3 me-3">
+                        <img
+                          src="/src/assets/images/buildNameIcon.png"
+                          alt=""
+                        />&ensp;店名&ensp;
+                        <img src="/src/assets/images/phoneIcon.png" alt="" />
+                        02-23625282
+                      </div>
+                      <div class="col-12 my-2 me-3"><img src="/src/assets/images/mapIcon.png" alt="">台北市羅斯福路三段269巷3號</div>
+                      <div class="col-12 my-2 me-3">服務項目：項目一、項目二、項目三</div>
+                    </div>
+                  </div>
+                </div>
+                <br><br>
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
+                  <div class="col-6 d-flex flex-column">
+                    <div class="buildingName me-3">台中宣教大樓</div>
+                    <div class="map_link">
+                      
+                      <div>
+                        <a href="#"
+                          ><img
+                            class="mapLinkIcon"
+                            src="./src/assets/images/googleMap.png"
+                        /></a>
+                      </div>
+                      <div class="move_word">Google Map</div>
+                      <div class="col-12 my-3 me-3">
+                        <img
+                          src="/src/assets/images/buildNameIcon.png"
+                          alt=""
+                        />&ensp;店名&ensp;
+                        <img src="/src/assets/images/phoneIcon.png" alt="" />
+                        02-23625282
+                      </div>
+                      <div class="col-12 my-2 me-3"><img src="/src/assets/images/mapIcon.png" alt="">台北市羅斯福路三段269巷3號</div>
+                      <div class="col-12 my-2 me-3">服務項目：項目一、項目二、項目三</div>
+                    </div>
+                  </div>
+                  <div class="duel_content col-6">
+                    <img src="/src/assets/images/blessImg01.png" alt="" />
+                  </div>
+                </div>
+                <br><br>
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
+                  <div class="duel_content col-6">
+                    <img src="/src/assets/images/blessImg03.png" alt="" />
+                  </div>
+                  <div class="col-6 d-flex flex-column">
+                    <div class="buildingName me-3">教會公報社</div>
+                    <div class="map_link">
+                      <div>
+                        <a href="#"
+                          ><img
+                            class="mapLinkIcon"
+                            src="./src/assets/images/googleMap.png"
+                        /></a>
+                      </div>
+                      <div class="move_word">Google Map</div>
+                      <div class="col-12 my-3 me-3">
+                        <img
+                          src="/src/assets/images/buildNameIcon.png"
+                          alt=""
+                        />&ensp;店名&ensp;
+                        <img src="/src/assets/images/phoneIcon.png" alt="" />
+                        02-23625282
+                      </div>
+                      <div class="col-12 my-2 me-3"><img src="/src/assets/images/mapIcon.png" alt="">台北市羅斯福路三段269巷3號</div>
+                      <div class="col-12 my-2 me-3">服務項目：項目一、項目二、項目三</div>
+                    </div>
+                  </div>
+                </div>
+                <br><br>
+                <div class="bless_item row-cols-12 d-flex"  data-aos="fade-up">
+                  <div class="col-6 d-flex flex-column">
+                    <div class="buildingName me-3">台灣婦女展業協會</div>
+                    <div class="map_link">
+                      
+                      <div>
+                        <a href="#"
+                          ><img
+                            class="mapLinkIcon"
+                            src="./src/assets/images/googleMap.png"
+                        /></a>
+                      </div>
+                      <div class="move_word">Google Map</div>
+                      <div class="col-12 my-3 me-3">
+                        <img
+                          src="/src/assets/images/buildNameIcon.png"
+                          alt=""
+                        />&ensp;店名&ensp;
+                        <img src="/src/assets/images/phoneIcon.png" alt="" />
+                        02-23625282
+                      </div>
+                      <div class="col-12 my-2 me-3"><img src="/src/assets/images/mapIcon.png" alt="">台北市羅斯福路三段269巷3號</div>
+                      <div class="col-12 my-2 me-3">服務項目：項目一、項目二、項目三</div>
+                    </div>
+                  </div>
+                  <div class="duel_content col-6">
+                    <img src="/src/assets/images/blessImg04.png" alt="" />
+                  </div>
+                </div>
+                <br><br>
+                <div class="pagging">
+                  <div class="paging_word current_page">
+                    <a href="./about.html">1</a>
+                  </div>
+                  <div class="paging_word"><a href="./about.html">2</a></div>
+                  <div class="paging_word"><a href="./about.html">3</a></div>
+                </div>
               </div>
-            </div>        
+              <div
+                class="tab-pane fade"
+                id="tab-coworkers1"
+                role="tabpanel"
+                aria-labelledby="tab-coworkers1-tab"
+              >
+                <div class="contentTitle">/&ensp;分類一&ensp;/</div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-coworkers2"
+                role="tabpanel"
+                aria-labelledby="tab-coworkers2-tab"
+              >
+                <div class="contentTitle">/&ensp;分類二&ensp;/</div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab-coworkers3"
+                role="tabpanel"
+                aria-labelledby="tab-coworkers3-tab"
+              >
+                <div class="contentTitle">/&ensp;分類三&ensp;/</div>
+              </div>
+            </div>
           </div>
-
-          <div class="bless_item">
-            <div class="duel_content">
-              <div class="fig" style="background-image: url('/src/assets/images/church_public.png') ;"></div>
-                <div class="d-flex carte">
-                  <div class="title">
-                    <ul>
-                      <li>聯絡人</li>
-                      <li>E-mail</li>
-                      <li>電話</li>
-                      <li>傳真</li>
-                      <li>地址</li>
-                    </ul>
-                  </div>
-                  <div class="context">
-                    <ul>
-                      <li>白哲宏 長老(分機170)</li>
-                      <li>think@gmail.com</li>
-                      <li>02-23625282</li>
-                      <li>02-23625283</li>
-                      <li>台北市羅斯福路三段269巷3號</li>
-                    </ul>
-                  </div>
-              </div>
-            
-              <h2>教會公報社</h2>
-              <div class="map_link">
-                <div><a href="./about.html"><img src="./src/assets/images/googleMap.png"></a></div>
-                <div class="move_word">Google Map</div>
-              </div>
-            </div>        
-          </div>
-
-          <div class="bless_item">
-            <div class="duel_content">
-              <div class="fig" style="background-image: url('/src/assets/images/taiwan_lady.png') ;"></div>
-                <div class="d-flex carte">
-                  <div class="title">
-                    <ul>
-                      <li>聯絡人</li>
-                      <li>E-mail</li>
-                      <li>電話</li>
-                      <li>傳真</li>
-                      <li>地址</li>
-                    </ul>
-                  </div>
-                  <div class="context">
-                    <ul>
-                      <li>白哲宏 長老(分機170)</li>
-                      <li>think@gmail.com</li>
-                      <li>02-23625282</li>
-                      <li>02-23625283</li>
-                      <li>台北市羅斯福路三段269巷3號</li>
-                    </ul>
-                  </div>
-              </div>
-            
-              <h2>台灣婦女展業協會</h2>
-              <div class="map_link">
-                <div><a href="./about.html"><img src="./src/assets/images/googleMap.png"></a></div>
-                <div class="move_word">Google Map</div>
-              </div>
-            </div>        
-          </div>
-
-
-          <div class="pagging">
-            <div class="paging_word current_page"><a href="./about.html">1</a></div>
-            <div class="paging_word"><a href="./about.html">2</a></div>
-            <div class="paging_word"><a href="./about.html">3</a></div>
-          </div>
-
         </div>
       </div>
-
     </div>
-  </div>
     <!-- footer start -->
     <div
       class="footerInfo d-flex justify-content-center row innerPageFooter"
@@ -431,10 +672,15 @@
       2023 © 前金長老教會 Designed By 耘想科技網頁設計
     </footer>
     <!-- footer end -->
-  <script src="./src/assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="./src/assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

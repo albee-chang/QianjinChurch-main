@@ -15,11 +15,10 @@ nav a {
   overflow: hidden;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 355px;
-  padding-left: 5%;
   img {
     padding: 20px;
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     object-fit: cover;
   }
 }
@@ -34,33 +33,30 @@ nav a {
   background-position: right;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: 5rem auto;
   .aboutBgColors1 {
     position: absolute;
-    top: 200px;
-    left: 15%;
+    top: 60px;
+    left: 2%;
     background-color: $secondary;
-    width: 20%;
+    width: 10%;
     height: 380px;
     z-index: -1;
   }
   .aboutBgColors2 {
     position: absolute;
-    top: 200px;
-    left: 35%;
+    top: 60px;
+    left: 10%;
     background-color: $primary;
-    width: 50%;
+    width: 70%;
     height: 380px;
     z-index: -2;
   }
   .about1 {
-    position: absolute;
     color: $primary;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin-top: 140px;
-    margin-left: 27%;
+    justify-content: center;
 
     h1 {
       font-size: 2rem;
@@ -71,28 +67,23 @@ nav a {
     .aboutContent {
       color: white;
       margin-top: 2rem;
-      margin-left: 8rem;
+      margin-left: 5rem;
     }
   }
   .about2 {
-    position: absolute;
     color: $primary;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin-top: 140px;
-    margin-left: 51%;
+    justify-content: center;
 
     h1 {
       font-size: 2rem;
       font-weight: bold;
-      padding-left: 5rem;
       transition: all 0.2s ease-in-out;
     }
     .aboutContent {
       color: white;
       margin-top: 2rem;
-      margin-left: 8rem;
     }
   }
   .moreBtn {
@@ -108,34 +99,34 @@ nav a {
   color: #000;
 }
 
-
 // about 區塊 RWD
 @media screen and (max-width: 768px) {
   .about {
     .aboutBgColors1 {
       position: absolute;
-      top: 50px;
+      top: 0px;
       left: 0%;
       background-color: $secondary;
       width: 100%;
-      height: 380px;
+      height: 50px;
       z-index: -1;
     }
     .aboutBgColors2 {
       position: absolute;
-      top: 550px;
+      top: 20px;
       left: 0;
       background-color: $primary;
       width: 100%;
-      height: 380px;
+      height: 450px;
       z-index: -2;
     }
     .about1 {
-      margin-top: 100px;
-      margin-left: 10%;
+      margin-top: 70px;
+      margin-left: 5%;
       h1 {
         font-size: 1.5rem;
         padding-left: 2rem;
+        color: white;
       }
       .aboutContent {
         margin-top: 1rem;
@@ -143,11 +134,12 @@ nav a {
       }
     }
     .about2 {
-      margin-top: 250px;
-      margin-left: 10%;
+      margin-top: 30px;
+      margin-left: 5%;
       h1 {
         font-size: 1.5rem;
         padding-left: 2rem;
+        color: white;
       }
       .aboutContent {
         margin-top: 1rem;
@@ -231,24 +223,27 @@ nav a {
 }
 
 .reunion {
-  background-image: url("../images/reunionBg.png");
+  background-image: url("../images/reunionBgImg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  z-index: -999;
+  overflow: hidden;
+  z-index: -9;
   width: 100%;
-  height: 1600px;
-  margin: 0 auto;
+  height: 100%;
+padding-bottom: 12%;
+margin-bottom: -10%;
   .reunionTitleEn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    padding-top: 12rem;
+    padding-top: 7rem;
     .reunionTitle {
       font-size: 1rem;
       font-weight: bold;
+      background-color: #ffe66f;
     }
   }
   .reunionImg {
@@ -256,11 +251,12 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 10%;
-    width: 600px;
-    height: 800px;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    width: 400px;
+    height: 700px;
     object-fit: cover;
-    z-index: -999;
+    z-index: -9;
   }
 }
 .linkBtn {
@@ -326,7 +322,6 @@ footer {
   font-weight: bold;
   a {
     color: #9a8162;
-
     &:hover {
       color: #64c2c9;
     }
